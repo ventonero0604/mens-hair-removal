@@ -1,0 +1,447 @@
+.Rank {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: grid;
+  gap: 1.5rem;
+
+  &_header {
+    display: grid;
+    gap: 1rem;
+    &_title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      img {
+        width: 5rem;
+      }
+      a {
+        color: var(--primary);
+        font-size: 2rem;
+        text-decoration-line: underline;
+        font-weight: bold;
+      }
+    }
+    &_lead {
+      display: flex;
+      &_label {
+        background: var(--red);
+        color: white;
+        font-family: Inter;
+        font-weight: bold;
+        padding: 0.2rem 0.5rem;
+        line-height: 1;
+        text-align: center;
+        font-size: 1.2rem;
+        display: grid;
+        place-items: center;
+      }
+      &_text {
+        background: var(--gray);
+        font-size: 1.4rem;
+        padding: 0.2rem 0.5rem 0.2rem 1rem;
+        line-height: 1.2;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &_kv {
+    padding: 1rem 0;
+    border: 1px solid var(--gray);
+  }
+
+  &_rate {
+    background: var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    &_stars {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      img {
+        height: 2.4rem;
+      }
+    }
+    &_value {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  &_info {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    li {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #cecece;
+      display: grid;
+      gap: 1rem;
+    }
+    &_title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: bold;
+      border-bottom: 1px solid #cecece;
+      padding-bottom: 1rem;
+      img {
+        width: 2rem;
+      }
+    }
+    &_text {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+
+  &_title {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-top: 2rem;
+    img {
+      height: 3rem;
+      justify-self: center;
+    }
+    &_text {
+      font-size: 2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4rem;
+      white-space: nowrap;
+      width: 100%;
+      &:before,
+      &:after {
+        content: '';
+        display: inline-block;
+        height: 0.2rem;
+        width: 100%;
+        background: #afafaf;
+      }
+    }
+  }
+
+  &_price {
+    display: grid;
+    gap: 1rem;
+    &_table {
+      width: calc(100% + 1rem);
+      margin: 0 -0.5rem;
+      border-collapse: separate;
+      border-spacing: 0.5rem;
+      background: white;
+      border-radius: 0.5rem;
+      th {
+        background: var(--primary);
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        &:first-of-type {
+          border-radius: 0.5rem 0 0 0;
+        }
+        &:last-of-type {
+          border-radius: 0 0.5rem 0 0;
+        }
+      }
+      td {
+        background: var(--gray);
+        padding: 1rem;
+        text-align: center;
+        vertical-align: middle;
+        border: none;
+      }
+    }
+    &_link {
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration: underline;
+      text-align: right;
+      margin-top: -0.5rem;
+    }
+  }
+
+  &_machine {
+    overflow-x: scroll;
+    &_list {
+      padding: 1rem 0;
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      counter-reset: machine-counter;
+      li {
+        flex-shrink: 0;
+        min-width: max-content;
+        box-shadow: 2px 2px 0 0 #4b4b4b;
+        border-radius: 5px;
+        overflow: hidden;
+        counter-increment: machine-counter;
+      }
+    }
+    &_header {
+      background: var(--black);
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem 0.5rem 0 0;
+      &_title {
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        &:before {
+          content: counter(machine-counter);
+          font-size: 1.2rem;
+          color: var(--black);
+          background: white;
+          width: 1.6rem;
+          height: 1.6rem;
+          border-radius: 100%;
+          display: grid;
+          place-items: center;
+          line-height: 1;
+        }
+      }
+      &_label {
+        background: var(--red);
+        padding: 0.2rem;
+        line-height: 1;
+        border-radius: 0.4rem;
+        font-size: 1rem;
+      }
+    }
+    &_body {
+      display: flex;
+      gap: 1rem;
+      background: var(--gray);
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      &_image {
+        width: 10rem;
+        height: 12rem;
+        background: white;
+        img {
+          object-fit: cover;
+          object-position: center;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    &_content {
+      display: grid;
+      gap: 0.8rem;
+      height: min-content;
+      &_item {
+        display: grid;
+        gap: 0.4rem;
+      }
+      &_label {
+        background: var(--primary);
+        color: white;
+        line-height: 1;
+        width: 5rem;
+        padding: 0.2rem;
+        display: grid;
+        place-items: center;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 0.4rem;
+      }
+    }
+  }
+
+  &_shops {
+    text-align: center;
+    &_title {
+      text-align: center;
+      margin: 1rem;
+      font-weight: 500;
+    }
+    &_content {
+      display: grid;
+      gap: 1rem;
+    }
+    &_pickup {
+      background: #fff8eb;
+      border: 2px solid var(--black);
+      border-radius: 0.5rem;
+      padding: 1rem;
+      display: grid;
+      gap: 1rem;
+      &_header {
+        border-bottom: 1px solid #afafaf;
+        text-align: left;
+        padding-bottom: 1rem;
+        &_link {
+          color: var(--primary);
+          text-decoration: underline;
+          font-weight: bold;
+        }
+      }
+      &_body {
+        display: grid;
+        gap: 1rem;
+        text-align: left;
+        &_item {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          &_icon {
+            width: 2rem;
+            flex-shrink: 0;
+            img {
+              width: 2rem;
+            }
+          }
+          &_text {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    &_area {
+      border: 1px solid var(--black);
+      border-radius: 0.5rem;
+    }
+
+    // エキスパンド機能
+    &_toggle {
+      display: none;
+    }
+
+    &_button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-bottom: 1px solid #afafaf;
+      .text {
+        font-weight: bold;
+      }
+
+      .icon {
+        width: 1rem;
+        height: 1rem;
+        position: relative;
+        transition: transform 0.3s ease;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          background: var(--black);
+        }
+
+        // 縦線
+        &::before {
+          width: 0.2rem;
+          height: 1rem;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        // 横線
+        &::after {
+          width: 1rem;
+          height: 0.2rem;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+      }
+
+      &:hover {
+        background: #e0e0e0;
+      }
+    }
+
+    &_list {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background: white;
+      border-radius: 0.5rem;
+    }
+
+    &_item {
+      padding: 1rem;
+      border-bottom: 1px solid #afafaf;
+      text-align: left;
+      display: grid;
+      gap: 0.7rem;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &_header {
+        &_link {
+          color: var(--primary);
+          text-decoration: underline;
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+      }
+
+      &_body {
+        display: grid;
+        gap: 0.7rem;
+        text-align: left;
+        &_item {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          &_icon {
+            width: 1.4rem;
+            flex-shrink: 0;
+            img {
+              width: 2rem;
+            }
+          }
+          &_text {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    // チェックされた時の状態
+    &_toggle:checked ~ &_button {
+      .icon {
+        // チェック時は縦線を非表示にして-（マイナス）にする
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    &_toggle:checked ~ &_list {
+      max-height: 500px; // 十分な高さを設定
+    }
+  }
+
+  &_small {
+    small {
+      display: block;
+      font-size: 1rem;
+    }
+  }
+}

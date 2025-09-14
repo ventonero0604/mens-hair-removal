@@ -1,0 +1,53 @@
+.Privacy {
+  .company {
+    padding: 2rem 1.5rem;
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    table {
+      th,
+      td {
+        padding: 0.5rem;
+        border: 5px solid white;
+      }
+      th {
+        background: #8d8d8d;
+        color: white;
+      }
+      td {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .privacy {
+    padding: 2rem 1.5rem;
+    background: var(--gray);
+    margin-bottom: 2rem;
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .list {
+      display: grid;
+      gap: 2rem;
+
+      li {
+        display: grid;
+        gap: 1rem;
+      }
+      .lead {
+        font-weight: bold;
+      }
+      .text {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

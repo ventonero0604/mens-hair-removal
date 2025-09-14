@@ -1,0 +1,57 @@
+.Card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 2rem 1rem;
+  display: grid;
+  gap: 1.5rem;
+
+  &_header {
+    display: grid;
+    gap: 1.5rem;
+
+    &_link {
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration-line: underline;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  }
+
+  &_body {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  &_table {
+    width: calc(100% + 1rem); // ボーダー分だけ幅を広げる
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    th,
+    td {
+      vertical-align: middle;
+      text-align: center;
+      padding: 1rem 0.5rem;
+      font-weight: 500;
+    }
+    th {
+      background: #8d8d8d;
+      color: white;
+      border: 0.5rem solid white;
+      max-width: 12rem;
+    }
+    td {
+      background: var(--gray);
+      border: 0.5rem solid white;
+    }
+  }
+
+  &_info {
+    line-height: 1.5;
+    margin-top: -0.5rem;
+    &.-small {
+      font-size: 1.2rem;
+    }
+  }
+}

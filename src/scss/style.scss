@@ -7,9 +7,21 @@
 
 /* component */
 @use './component/annotation.scss';
+@use './component/button.scss';
+@use './component/card.scss';
+@use './component/search.scss';
 
 /* ui */
 @use './ui/header.scss';
+@use './ui/buttonUnit.scss';
+@use './ui/rank.scss';
+@use './ui/modal.scss';
+@use './ui/footer.scss';
+
+/* page */
+@use './page/top.scss';
+@use './page/privacy.scss';
+@use './page/result.scss';
 
 /* tailwind */
 @tailwind base;

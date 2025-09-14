@@ -1,0 +1,11 @@
+.Header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .area {
+    border: 1px solid var(--black);
+    padding: 0.5rem 1rem;
+  }
+}

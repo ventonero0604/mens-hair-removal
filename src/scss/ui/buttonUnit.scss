@@ -1,0 +1,81 @@
+.ButtonUnit {
+  display: grid;
+  gap: 0.5rem;
+  place-items: center;
+  position: relative;
+
+  &.-full {
+    margin-top: 2rem;
+  }
+
+  .tooltip {
+    border: 2px solid #afafaf;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0.5rem;
+    border-radius: 100vh;
+    width: max-content;
+    background: white;
+    position: relative;
+    em {
+      color: var(--red);
+    }
+
+    // 三角形の突起（グレーの境界線）
+    &::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 0.6rem solid transparent;
+      border-right: 0.6rem solid transparent;
+      border-top: 0.6rem solid #afafaf;
+    }
+
+    // 三角形の突起（白い内側）
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 0.4rem solid transparent;
+      border-right: 0.4rem solid transparent;
+      border-top: 0.4rem solid white;
+      margin-top: -0.2rem;
+    }
+
+    &.-inside {
+      position: absolute;
+      top: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .attention {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    &:before,
+    &:after {
+      display: inline-block;
+      content: '|';
+      font-size: 1rem;
+    }
+    &:before {
+      transform: rotate(-20deg);
+    }
+    &:after {
+      transform: rotate(20deg);
+    }
+  }
+
+  &.-full {
+  }
+}

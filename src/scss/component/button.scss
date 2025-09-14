@@ -1,0 +1,56 @@
+.Button {
+  border-radius: 100vh;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: bold;
+
+  &.-primary {
+    background: #ff0051;
+    box-shadow: 0 0.2rem 0 0 #b54141;
+  }
+
+  &.-large {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  &.-medium {
+    padding: 1rem 1.5rem;
+  }
+  &.-small {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  &.-detail {
+    background: var(--gray);
+    box-shadow: 0 0.2rem 0 0 #d7d7d7;
+    padding: 1rem;
+    width: 100%;
+    color: var(--black);
+    font-weight: normal;
+  }
+
+  &.-reserve {
+    background: #ff9600;
+    box-shadow: 0 2px 0 0 #c43b00;
+    padding: 1rem 1.5rem;
+    width: max-content;
+    justify-self: center;
+    width: 22rem;
+  }
+
+  &.-reserveSmall {
+    background: #ff9600;
+    box-shadow: 0 2px 0 0 #c43b00;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    width: max-content;
+    justify-self: center;
+  }
+
+  &.-submit {
+    background: var(--primary);
+    box-shadow: 2.394px 2.394px 0 0 #00617e;
+  }
+}

@@ -1,0 +1,99 @@
+.Search {
+  border: 2px solid var(--black);
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  display: grid;
+  gap: 1rem;
+  background: white;
+
+  .condition {
+    background: #4b4b4b;
+    color: white;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    img {
+      width: 3rem;
+    }
+  }
+
+  &_form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  }
+
+  &_form_group {
+    display: grid;
+    gap: 1rem;
+  }
+
+  &_select_wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  &_select {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--black);
+    border-radius: 0.5rem;
+    background: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--black);
+    appearance: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    // プレースホルダー的な最初のオプション
+    option:first-child {
+      color: #999;
+    }
+  }
+
+  &_select_arrow {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 0.6rem;
+    pointer-events: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 0.5rem solid transparent;
+      border-right: 0.5rem solid transparent;
+      border-top: 0.6rem solid var(--black);
+    }
+  }
+
+  .reset {
+    font-size: 1.2rem;
+    text-decoration-line: underline;
+    margin-top: 1rem;
+    text-align: center;
+    justify-self: center;
+    display: block;
+  }
+}
