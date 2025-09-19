@@ -5,6 +5,12 @@
   color: white;
   font-weight: bold;
 
+  &:hover {
+    opacity: 1;
+    transform: translateY(2px);
+    box-shadow: none !important;
+  }
+
   &.-primary {
     background: #ff0051;
     box-shadow: 0 0.2rem 0 0 #b54141;

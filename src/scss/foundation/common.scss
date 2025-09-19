@@ -19,6 +19,20 @@ body {
   position: relative;
   background: #fff;
   color: var(--black);
+  @include pc {
+    display: grid;
+    grid-template-columns: 1fr 390px auto;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+main {
+  @include pc {
+    position: relative;
+    overflow-y: auto;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  }
 }
 
 a {

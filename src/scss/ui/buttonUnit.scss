@@ -17,6 +17,7 @@
     width: max-content;
     background: white;
     position: relative;
+    z-index: 2;
     em {
       color: var(--red);
     }

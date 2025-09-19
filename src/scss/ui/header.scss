@@ -1,8 +1,14 @@
+@use '../foundation/breakPoint.scss' as *;
+
 .Header {
   padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include pc {
+    display: none;
+  }
 
   .area {
     border: 1px solid var(--black);
