@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック札幌院",
+    "regionName": "北海道・東北",
+    "prefectureName": "北海道",
+    "town": "札幌市中央区",
+    "address": "南一条西5丁目13‑1 太陽ビルアネックス 6階",
+    "accses": "札幌市営地下鉄各線「大通駅」より徒歩2分"
+  },
+  {
+    "id": 2,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック仙台院",
+    "regionName": "北海道・東北",
+    "prefectureName": "宮城県",
+    "town": "仙台市青葉区",
+    "address": "中央2丁目5‑5 三経60ビル 6階",
+    "accses": "JR各線「仙台駅」、地下鉄「仙台駅」より徒歩6分／JR仙石線「あおば通駅」より徒歩3分"
+  },
+  {
+    "id": 3,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック銀座院",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "中央区",
+    "address": "銀座6丁目6‑1 銀座風月堂ビル 6階",
+    "accses": "東京メトロ日比谷線「銀座駅」B3出口より徒歩2分"
+  },
+  {
+    "id": 4,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック渋谷院",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "渋谷区",
+    "address": "宇田川町12‑9 JouLe SHIBUYA B1階",
+    "accses": "渋谷駅から徒歩5分"
+  },
+  {
+    "id": 5,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック新宿院",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "新宿区",
+    "address": "新宿3丁目17‑4 新宿レミナビル 9階",
+    "accses": "JR各線「新宿駅」東口より徒歩3分"
+  },
+  {
+    "id": 6,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック池袋院",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "豊島区",
+    "address": "東池袋1丁目41‑4 池袋とうきゅうビル 5階",
+    "accses": "JR各線「池袋駅」東口（北）より徒歩2分"
+  },
+  {
+    "id": 7,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック上野院",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "台東区",
+    "address": "上野7丁目6‑5 VORT上野ⅡA棟 5階",
+    "accses": "JR山手線「上野駅」より徒歩3分"
+  },
+  {
+    "id": 8,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック吉祥寺院",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "武蔵野市",
+    "address": "吉祥寺本町1丁目8‑10 Kichijoji ex 地下1階",
+    "accses": "JR中央線・京王井の頭線「吉祥寺駅」より徒歩4分"
+  },
+  {
+    "id": 9,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック町田院",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "町田市",
+    "address": "原町田6丁目13‑17 アーバンビルミサワ 4階",
+    "accses": "小田急小田原線「町田駅」西口より徒歩2分／JR横浜線「町田駅」北口より徒歩4分"
+  },
+  {
+    "id": 10,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック横浜院",
+    "regionName": "関東",
+    "prefectureName": "神奈川県",
+    "town": "横浜市神奈川区",
+    "address": "鶴屋町3丁目29‑4 CRANE CORNER 3階",
+    "accses": "各線「横浜駅」ジョイナス地下街北9番出口より徒歩4分"
+  },
+  {
+    "id": 11,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック大宮院",
+    "regionName": "関東",
+    "prefectureName": "埼玉県",
+    "town": "さいたま市大宮区",
+    "address": "大門町1丁目92‑1 大宮大門安藤ビル 8階",
+    "accses": "各線「大宮駅」東口（北）より徒歩1分"
+  },
+  {
+    "id": 12,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック柏院",
+    "regionName": "関東",
+    "prefectureName": "千葉県",
+    "town": "柏市",
+    "address": "柏2丁目5‑3 マルマンビル 5階",
+    "accses": "常磐線「柏駅」東口より徒歩3分"
+  },
+  {
+    "id": 13,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック千葉院",
+    "regionName": "関東",
+    "prefectureName": "千葉県",
+    "town": "千葉市中央区",
+    "address": "富士見2丁目14‑6 LHビル千葉中央 5階",
+    "accses": "京成線「千葉中央駅」より徒歩4分"
+  },
+  {
+    "id": 14,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック静岡院",
+    "regionName": "中部",
+    "prefectureName": "静岡県",
+    "town": "静岡市葵区",
+    "address": "御幸町3‑21 ペガサート B1F",
+    "accses": "静鉄「新静岡駅」より徒歩1分"
+  },
+  {
+    "id": 15,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック名古屋院",
+    "regionName": "中部",
+    "prefectureName": "愛知県",
+    "town": "名古屋市中村区",
+    "address": "名駅3丁目8‑13 ファーストKHビル 2階",
+    "accses": "地下鉄桜通線「国際センター駅」より徒歩4分"
+  },
+  {
+    "id": 16,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック京都四条河原町院",
+    "regionName": "関西",
+    "prefectureName": "京都府",
+    "town": "京都市下京区",
+    "address": "貞安前之町613 東風館ビル 3階",
+    "accses": "阪急「京都河原町駅」10番出口より徒歩2分"
+  },
+  {
+    "id": 17,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック心斎橋院",
+    "regionName": "関西",
+    "prefectureName": "大阪府",
+    "town": "大阪市中央区",
+    "address": "心斎橋筋1丁目10‑11 敬和ビル ルフレ21 5階",
+    "accses": "御堂筋線「心斎橋駅」より徒歩3分"
+  },
+  {
+    "id": 18,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック大阪梅田院",
+    "regionName": "関西",
+    "prefectureName": "大阪府",
+    "town": "大阪市北区",
+    "address": "曾根崎新地1丁目4‑20 桜橋IMビル B1階",
+    "accses": "JR東西線「北新地駅」より徒歩2分"
+  },
+  {
+    "id": 19,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック神戸三宮院",
+    "regionName": "関西",
+    "prefectureName": "兵庫県",
+    "town": "神戸市中央区",
+    "address": "三宮町1丁目10‑1 神戸交通センタービル 5階",
+    "accses": "JR「三ノ宮駅」直結、阪急・阪神・地下鉄・ポートライナー「三宮駅」より徒歩すぐ"
+  },
+  {
+    "id": 20,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック広島院",
+    "regionName": "中国",
+    "prefectureName": "広島県",
+    "town": "広島市中区",
+    "address": "本通4‑7 コズミックビル 6階",
+    "accses": "アストラムライン・広電「本通駅」より徒歩3分"
+  },
+  {
+    "id": 21,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック福岡博多天神院",
+    "regionName": "九州・沖縄",
+    "prefectureName": "福岡県",
+    "town": "福岡市中央区",
+    "address": "天神2丁目4‑30 天神エムズ64スクエア 2階",
+    "accses": "西鉄天神大牟田線「西鉄福岡（天神）駅」より徒歩4分"
+  },
+  {
+    "id": 22,
+    "service": "レジーナクリニック",
+    "clinicName": "レジーナクリニック沖縄那覇院",
+    "regionName": "九州・沖縄",
+    "prefectureName": "沖縄県",
+    "town": "那覇市",
+    "address": "おもろまち4丁目17‑17 SOLビル 2階",
+    "accses": "ゆいレール「おもろまち駅」より徒歩4分"
+  }
+]

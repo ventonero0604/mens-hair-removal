@@ -8,19 +8,14 @@ import handlebars from 'vite-plugin-handlebars';
 //HTML上で出し分けたい各ページごとの情報
 const pageData = {
   'index.html': {
-    isHome: true,
-    title: 'Main Page'
-  },
-  'hoge.html': {
-    isHome: false,
-    title: 'Hoge'
+    isHome: true
   }
 };
 
 const root = 'src';
 
 export default defineConfig({
-  base: "./",
+  base: './',
   server: {
     host: true //IPアドレスを有効化
   },
@@ -45,23 +40,24 @@ export default defineConfig({
         entryFileNames: 'assets/js/[name].js'
       },
       input: {
-        index: resolve(__dirname, 'index.html'),
-        hoge: resolve(__dirname, 'hoge.html')
+        index: resolve(__dirname, root, 'index.html'),
+        privacy: resolve(__dirname, root, 'privacy.html'),
+        result: resolve(__dirname, root, 'result.html')
       }
     }
   },
   /*
     プラグインの設定を追加
   */
-    plugins: [
-      handlebars({
-        //コンポーネントの格納ディレクトリを指定
-        partialDirectory: resolve(__dirname, root, "components"),
-        //各ページ情報の読み込み
-        context(pagePath) {
-          const pageName = pagePath.split("/").pop();
-          return pageData[pageName];
-        },
-      }),
-    ],
+  plugins: [
+    handlebars({
+      //コンポーネントの格納ディレクトリを指定
+      partialDirectory: resolve(__dirname, root, 'components'),
+      //各ページ情報の読み込み
+      context(pagePath) {
+        const pageName = pagePath.split('/').pop();
+        return pageData[pageName];
+      }
+    })
+  ]
 });
