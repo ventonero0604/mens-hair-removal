@@ -1,5 +1,16 @@
 [
   {
+    "id": 0,
+    "areaNameJp": "全国",
+    "areaNameEn": "",
+    "item01ServiceName": "レジーナクリニック",
+    "item01ClinicName": "レジーナクリニック",
+    "item02ServiceName": "エミナルクリニック",
+    "item02ClinicName": "エミナルクリニック",
+    "item03ServiceName": "メンズリゼ",
+    "item03ClinicName": "メンズリゼ"
+  },
+  {
     "id": 1,
     "areaNameJp": "北海道",
     "areaNameEn": "Hokkaido",

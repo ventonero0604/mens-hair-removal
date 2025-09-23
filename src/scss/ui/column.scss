@@ -9,11 +9,11 @@
     &:before {
       content: '';
       display: block;
-      height: 500px;
+      height: 50rem;
       width: 150%;
       transform: rotate(-10deg);
       position: absolute;
-      top: 35%;
+      top: calc(50% - 25rem);
       left: -10%;
       background: #bfe0ea;
     }

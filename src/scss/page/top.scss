@@ -236,6 +236,7 @@
                   em {
                     font-size: 1.4rem;
                     font-weight: bold;
+                    line-height: 1;
                   }
                 }
                 .label {
@@ -251,8 +252,8 @@
                   &.-red {
                     background: var(--red);
                   }
-                  &.-gray {
-                    background: #b3b3b3;
+                  &.-orange {
+                    background: #ff9600;
                   }
                 }
                 img {
@@ -303,6 +304,11 @@
             display: grid;
             place-items: center;
             gap: 0.5rem;
+            em {
+              font-size: 1.4rem;
+              font-weight: bold;
+              line-height: 1;
+            }
             .rate {
               display: flex;
               align-items: center;

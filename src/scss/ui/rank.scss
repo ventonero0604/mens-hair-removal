@@ -5,6 +5,10 @@
   display: grid;
   gap: 1.5rem;
 
+  & + & {
+    margin-top: 2rem;
+  }
+
   &_header {
     display: grid;
     gap: 1rem;
@@ -161,6 +165,20 @@
         vertical-align: middle;
         border: none;
       }
+      .total {
+        em {
+          font-weight: bold;
+          font-size: 2rem;
+          line-height: 1;
+        }
+      }
+      .spot {
+        em {
+          font-weight: bold;
+          font-size: 2rem;
+          color: var(--red);
+        }
+      }
     }
     &_link {
       color: var(--primary);
@@ -181,11 +199,12 @@
       counter-reset: machine-counter;
       li {
         flex-shrink: 0;
-        min-width: max-content;
+        min-width: fit-content;
         box-shadow: 2px 2px 0 0 #4b4b4b;
         border-radius: 5px;
         overflow: hidden;
         counter-increment: machine-counter;
+        max-width: 10rem;
       }
     }
     &_header {
@@ -229,6 +248,7 @@
       background: var(--gray);
       padding: 1rem 2rem;
       font-size: 1.2rem;
+      line-height: 1.2;
       &_image {
         width: 10rem;
         height: 12rem;
@@ -434,7 +454,7 @@
     }
 
     &_toggle:checked ~ &_list {
-      max-height: 500px; // 十分な高さを設定
+      max-height: 2000px; // 十分に大きな値を設定（多数の店舗に対応）
     }
   }
 

@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
+<?php include './function/getProduct.php'; ?>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
-    rel="stylesheet">
-  <script type="module" crossorigin src="./assets/js/main.js"></script>
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+<?php include './components/head.php'; ?>
+
 <body>
   <section class="ColumnLeft">
     <div class="ColumnLeft_header">
@@ -24,10 +9,10 @@
         <img src="./img/logo.svg" alt="MYメンズ脱毛ガイド">
       </a>
       <p class="area">
-        北海道版
+        <?php echo isset($_GET['area']) && $_GET['area'] != 0 ? htmlspecialchars($compare1['areaNameJp']) . '版' : $currentMonth . '月最新版'; ?>
       </p>
     </div>
-  
+
     <div class="Search">
       <div class="header">
         <img src="./img/ico-search.svg" alt="">
@@ -104,13 +89,14 @@
         </form>
         <button type="submit" class="Button -submit -medium w-full mt-3">検索する</button>
       </div>
-    </div></section>
+    </div>
+  </section>
   <header class="Header">
     <a href="/" class="logo">
       <img src="./img/logo.svg" alt="MYメンズ脱毛ガイド">
     </a>
     <p class="area">
-      北海道版
+      <?php echo isset($_GET['area']) && $_GET['area'] != 0 ? htmlspecialchars($compare1['areaNameJp']) . '版' : $currentMonth . '月最新版'; ?>
     </p>
   </header>
   <main class="Top">
@@ -164,7 +150,7 @@
         </h3>
         <div class="title">
           <p class="upper">
-            <span class="name">あああ</span>の
+            <span class="name"><?php echo isset($_GET['area']) && $_GET['area'] != 0 ? htmlspecialchars($compare1['areaNameJp']) : $currentMonth . '月最新版'; ?></span><?php echo isset($_GET['area']) && $_GET['area'] != 0 ? 'の' : ''; ?>
           </p>
           <p class="bottom">
             メンズ医療脱毛クリニック<em class="gradient"><span class="number">3</span><span class="text">選</span></em>
@@ -173,551 +159,232 @@
       </div>
       <div class="content -list">
         <ul class="list">
-          <li class="item">
-            <img class="rank" src="./img/img-no1.png" alt="1">
-            <div class="body">
-              <div class="left">
-                <a href="#" class="logo">
-                  <img src="./img/logo/regina.png" alt="レジーナクリニック">
-                </a>
-                <div class="rate">
-                  <div class="stars">
+          <?php
+          $rankings = [$compare1, $compare2, $compare3];
+          $rankImages = ['./img/img-no1.png', './img/img-no2.png', './img/img-no3.png'];
+          $rankNumbers = [1, 2, 3];
+
+          foreach ($rankings as $index => $ranking):
+          ?>
+            <li class="item">
+              <img class="rank" src="<?php echo $rankImages[$index]; ?>" alt="<?php echo $rankNumbers[$index]; ?>">
+              <div class="body">
+                <div class="left">
+                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="logo">
+                    <img src="./img/logo/<?php echo $ranking['imageLogo'] ?: 'regina.png'; ?>" alt="<?php echo htmlspecialchars($ranking['service']); ?>">
+                  </a>
+                  <div class="rate">
+                    <div class="stars">
+                    </div>
+                    <p class="value js-value">
+                      <?php echo htmlspecialchars($ranking['rate'] ?? '4.5'); ?>
+                    </p>
                   </div>
-                  <p class="value js-value">
-                    4.5
-                  </p>
+                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="name">
+                    <?php echo htmlspecialchars($ranking['service']); ?>
+                  </a>
                 </div>
-                <a href="#" class="name">
-                  レジーナクリニック
-                </a>
-              </div>
-              <div class="right">
-                <ul class="compare">
-                  <li>
-                    <div class="header -first">
-                      ひげ脱毛
-                    </div>
-                    <div class="info">
-                      <img src="./img/ico-circle-double.svg" alt="">
-                      <div class="texts">
-                        <p class="text">
-                          <em>9,900</em>円
-                          /3回
-                        </p>
+                <div class="right">
+                  <ul class="compare">
+                    <li>
+                      <div class="header -first">
+                        ひげ脱毛
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="header">
-                      全身脱毛
-                    </div>
-                    <div class="info">
-                      <img src="./img/ico-circle.svg" alt="">
-                      <div class="texts">
-                        <p class="text">
-                          <em>258,000</em>円
-                          /3回
-                        </p>
+                      <div class="info">
+                        <img src="<?php echo flagToIcon($ranking['flagCompareHige']); ?>" alt="">
+                        <div class="texts">
+                          <p class="text">
+                            <?php echo $ranking['plan01TotalPrice']; ?>
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="header -last">
-                      脱毛器
-                    </div>
-                    <div class="info">
-                      <img src="./img/ico-triangle.svg" alt="">
-                      <p class="label -red">
-                        熱破壊式
-                      </p>
-                      <p class="label -gray">
-                        蓄熱式
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-                <div class="comment">
-                  <img src="./img/img-compare-person.png" alt="">
-                  <p class="text">
-                    人気のジェントルマックスプロを最安値で提供！高いコスパと効果が売りです！高いコスパと効果が売りです！
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="footer">
-              <div class="ButtonUnit">
-                <p class="tooltip"><em>最安値</em>のネット予約</p>
-                <a href="#" class="Button -primary -medium">公式サイトはコチラ</a>
-              </div>
-              <div class="ButtonUnit">
-                <p class="attention">店舗一覧/コース…等</p>
-                <a href="#" class="Button -detail">詳細を見る</a>
-              </div>
-            </div>
-          </li>
-          <li class="item">
-            <img class="rank" src="./img/img-no2.png" alt="2">
-            <div class="body">
-              <div class="left">
-                <a href="#" class="logo">
-                  <img src="./img/logo/regina.png" alt="レジーナクリニック">
-                </a>
-                <div class="rate">
-                  <div class="stars">
+                    </li>
+                    <li>
+                      <div class="header">
+                        全身脱毛
+                      </div>
+                      <div class="info">
+                        <img src="<?php echo flagToIcon($ranking['flagCompareBody']); ?>" alt="">
+                        <div class="texts">
+                          <p class="text">
+                            <?php echo $ranking['planBodyTotalPrice']; ?>
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="header -last">
+                        脱毛器
+                      </div>
+                      <div class="info">
+                        <img src="<?php echo flagToIcon($ranking['flagCompareMachine']); ?>" alt="">
+                        <?php echo generateMachineLabels($ranking['flagMachine']); ?>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="comment">
+                    <img src="./img/img-compare-person.png" alt="">
+                    <p class="text">
+                      <?php echo htmlspecialchars($ranking['pickupCopy']); ?>
+                    </p>
                   </div>
-                  <p class="value js-value">
-                    3
-                  </p>
-                </div>
-                <a href="#" class="name">
-                  レジーナクリニック
-                </a>
-              </div>
-              <div class="right">
-                <ul class="compare">
-                  <li>
-                    <div class="header -first">
-                      ひげ脱毛
-                    </div>
-                    <div class="info">
-                      <img src="./img/ico-circle-double.svg" alt="">
-                      <div class="texts">
-                        <p class="text">
-                          <em>9,900</em>円
-                          /3回
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="header">
-                      全身脱毛
-                    </div>
-                    <div class="info">
-                      <img src="./img/ico-circle.svg" alt="">
-                      <div class="texts">
-                        <p class="text">
-                          <em>258,000</em>円
-                          /3回
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="header -last">
-                      脱毛器
-                    </div>
-                    <div class="info">
-                      <img src="./img/ico-triangle.svg" alt="">
-                      <p class="label -red">
-                        熱破壊式
-                      </p>
-                      <p class="label -gray">
-                        蓄熱式
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-                <div class="comment">
-                  <img src="./img/img-compare-person.png" alt="">
-                  <p class="text">
-                    人気のジェントルマックスプロを最安値で提供！高いコスパと効果が売りです！高いコスパと効果が売りです！
-                  </p>
                 </div>
               </div>
-            </div>
-            <div class="footer">
-              <div class="ButtonUnit">
-                <p class="tooltip"><em>最安値</em>のネット予約</p>
-                <a href="#" class="Button -primary -medium">公式サイトはコチラ</a>
-              </div>
-              <div class="ButtonUnit">
-                <p class="attention">店舗一覧/コース…等</p>
-                <a href="#" class="Button -detail">詳細を見る</a>
-              </div>
-            </div>
-          </li>
-          <li class="item">
-            <img class="rank" src="./img/img-no3.png" alt="3">
-            <div class="body">
-              <div class="left">
-                <a href="#" class="logo">
-                  <img src="./img/logo/regina.png" alt="レジーナクリニック">
-                </a>
-                <div class="rate">
-                  <div class="stars">
-                  </div>
-                  <p class="value js-value">
-                    4.5
-                  </p>
+              <div class="footer">
+                <div class="ButtonUnit">
+                  <p class="tooltip"><em>最安値</em>のネット予約</p>
+                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="Button -primary -medium">公式サイトはコチラ</a>
                 </div>
-                <a href="#" class="name">
-                  レジーナクリニック
-                </a>
-              </div>
-              <div class="right">
-                <ul class="compare">
-                  <li>
-                    <div class="header -first">
-                      ひげ脱毛
-                    </div>
-                    <div class="info">
-                      <img src="./img/ico-circle-double.svg" alt="">
-                      <div class="texts">
-                        <p class="text">
-                          <em>9,900</em>円
-                          /3回
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="header">
-                      全身脱毛
-                    </div>
-                    <div class="info">
-                      <img src="./img/ico-circle.svg" alt="">
-                      <div class="texts">
-                        <p class="text">
-                          <em>258,000</em>円
-                          /3回
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="header -last">
-                      脱毛器
-                    </div>
-                    <div class="info">
-                      <img src="./img/ico-triangle.svg" alt="">
-                      <p class="label -red">
-                        熱破壊式
-                      </p>
-                      <p class="label -gray">
-                        蓄熱式
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-                <div class="comment">
-                  <img src="./img/img-compare-person.png" alt="">
-                  <p class="text">
-                    人気のジェントルマックスプロを最安値で提供！高いコスパと効果が売りです！高いコスパと効果が売りです！
-                  </p>
+                <div class="ButtonUnit">
+                  <p class="attention">店舗一覧/コース…等</p>
+                  <a href="#<?php echo htmlspecialchars($ranking['strAnchor']); ?>" class="Button -detail">詳細を見る</a>
                 </div>
               </div>
-            </div>
-            <div class="footer">
-              <div class="ButtonUnit">
-                <p class="tooltip"><em>最安値</em>のネット予約</p>
-                <a href="#" class="Button -primary -medium">公式サイトはコチラ</a>
-              </div>
-              <div class="ButtonUnit">
-                <p class="attention">店舗一覧/コース…等</p>
-                <a href="#" class="Button -detail">詳細を見る</a>
-              </div>
-            </div>
-          </li>
+            </li>
+          <?php endforeach; ?>
         </ul>
       </div>
 
       <div class="content -table">
+        <?php
+        $compareRankings = [$compare1, $compare2, $compare3];
+        ?>
         <table class="table">
           <tbody>
             <tr>
               <th>
                 <span class="text-sm">クリニック名</span>
               </th>
-              <td>
-                <div class="item">
-                  <a href="#" class="logo">
-                    <img src="./img/logo/regina.png" alt="レジーナクリニック">
-                  </a>
-                  <div class="rate">
-                    <div class="stars">
+              <?php foreach ($compareRankings as $ranking): ?>
+                <td>
+                  <div class="item">
+                    <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="logo">
+                      <img src="./img/logo/<?php echo htmlspecialchars($ranking['imageLogo']); ?>" alt="<?php echo htmlspecialchars($ranking['service']); ?>">
+                    </a>
+                    <div class="rate">
+                      <div class="stars">
+                      </div>
+                      <p class="value js-value">
+                        <?php echo htmlspecialchars($ranking['rate']); ?>
+                      </p>
                     </div>
-                    <p class="value js-value">
-                      4.2
-                    </p>
+                    <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="name">
+                      <?php echo htmlspecialchars($ranking['service']); ?>
+                    </a>
                   </div>
-                  <a href="#" class="name">
-                    レジーナクリニック
-                  </a>
-                </div>
-              </td>
-              <td>
-                <div class="item">
-                  <a href="#" class="logo">
-                    <img src="./img/logo/regina.png" alt="レジーナクリニック">
-                  </a>
-                  <div class="rate">
-                    <div class="stars">
-                    </div>
-                    <p class="value js-value">
-                      3.8
-                    </p>
-                  </div>
-                  <a href="#" class="name">
-                    レジーナクリニック
-                  </a>
-                </div>
-              </td>
-              <td>
-                <div class="item">
-                  <a href="#" class="logo">
-                    <img src="./img/logo/regina.png" alt="レジーナクリニック">
-                  </a>
-                  <div class="rate">
-                    <div class="stars">
-                    </div>
-                    <p class="value js-value">
-                      2
-                    </p>
-                  </div>
-                  <a href="#" class="name">
-                    レジーナクリニック
-                  </a>
-                </div>
-              </td>
+                </td>
+              <?php endforeach; ?>
             </tr>
             <tr>
               <th>
                 <img src="./img/ico-hige.png" alt="">
                 ヒゲ脱毛料金
               </th>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle-double.svg" alt="" class="icon">
-                  <div class="texts">
-                    <p class="text text-xs">
-                      <em class="text-sm font-bold">9,900</em>円
-                      /3回
-                    </p>
+              <?php foreach ($compareRankings as $ranking): ?>
+                <td>
+                  <div class="item">
+                    <img src="<?php echo flagToIcon($ranking['flagCompareHige']); ?>" alt="" class="icon">
+                    <div class="texts">
+                      <p class="text text-xs">
+                        <?php echo $ranking['plan01TotalPrice']; ?>
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </td>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle-double.svg" alt="" class="icon">
-                  <div class="texts">
-                    <p class="text text-xs">
-                      <em class="text-sm font-bold">9,900</em>円
-                      /3回
-                    </p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle-double.svg" alt="" class="icon">
-                  <div class="texts">
-                    <p class="text text-xs">
-                      <em class="text-sm font-bold">9,900</em>円
-                      /3回
-                    </p>
-                  </div>
-                </div>
-              </td>
+                </td>
+              <?php endforeach; ?>
             </tr>
             <tr>
               <th>
                 <img src="./img/ico-all.png" alt="">
                 全身脱毛
               </th>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle-double.svg" alt="" class="icon">
-                  <div class="texts">
-                    <p class="text text-xs">
-                      <em class="text-sm font-bold">9,900</em>円
-                      /3回
-                    </p>
+              <?php foreach ($compareRankings as $ranking): ?>
+                <td>
+                  <div class="item">
+                    <img src="<?php echo flagToIcon($ranking['flagCompareBody']); ?>" alt="" class="icon">
+                    <div class="texts">
+                      <p class="text text-xs">
+                        <?php echo $ranking['planBodyTotalPrice']; ?>
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </td>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle-double.svg" alt="" class="icon">
-                  <div class="texts">
-                    <p class="text text-xs">
-                      <em class="text-sm font-bold">9,900</em>円
-                      /3回
-                    </p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle-double.svg" alt="" class="icon">
-                  <div class="texts">
-                    <p class="text text-xs">
-                      <em class="text-sm font-bold">9,900</em>円
-                      /3回
-                    </p>
-                  </div>
-                </div>
-              </td>
+                </td>
+              <?php endforeach; ?>
             </tr>
             <tr>
               <th>
                 <img src="./img/ico-tool.png" alt="">
                 脱毛器
               </th>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle-double.svg" alt="" class="icon">
-                  <div class="labels">
-                    <div class="label -red">
-                      熱破壊式
-                    </div>
-                    <div class="label -orange">
-                      蓄熱式
-                    </div>
-                    <div class="label -white">
-                      最新の脱毛器を
-                      <span class="red font-bold">2種類利用</span>
+              <?php foreach ($compareRankings as $ranking): ?>
+                <td>
+                  <div class="item">
+                    <img src="<?php echo flagToIcon($ranking['flagCompareMachine']); ?>" alt="" class="icon">
+                    <div class="labels">
+                      <?php echo generateMachineLabels($ranking['flagMachine']); ?>
+                      <div class="label -white">
+                        <?php echo htmlspecialchars($ranking['machineSumarry']); ?>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </td>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle-double.svg" alt="" class="icon">
-                  <div class="labels">
-                    <div class="label -red">
-                      熱破壊式
-                    </div>
-                    <div class="label -orange">
-                      蓄熱式
-                    </div>
-                    <div class="label -white">
-                      最新の脱毛器を
-                      <span class="red font-bold">2種類利用</span>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle-double.svg" alt="" class="icon">
-                  <div class="labels">
-                    <div class="label -red">
-                      熱破壊式
-                    </div>
-                    <div class="label -orange">
-                      蓄熱式
-                    </div>
-                    <div class="label -white">
-                      最新の脱毛器を
-                      <span class="red font-bold">2種類利用</span>
-                    </div>
-                  </div>
-                </div>
-              </td>
+                </td>
+              <?php endforeach; ?>
             </tr>
             <tr>
               <th>
                 <img src="./img/ico-care.png" alt="">
                 痛みのケア
               </th>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle.svg" alt="" class="icon">
-                  <div class="texts">
-                    <p class="text text-sm">
-                      <span class="font-bold">麻酔全て<span class="red">無料</span></span>
-                      <span class="text-xs block leading-none">※デビュープランを除く</span>
-                    </p>
+              <?php foreach ($compareRankings as $ranking): ?>
+                <td>
+                  <div class="item">
+                    <img src="<?php echo flagToIcon($ranking['flagCompareCare']); ?>" alt="" class="icon">
+                    <div class="texts">
+                      <p class="text text-sm">
+                        <?php echo $ranking['care']; ?>
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </td>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-line.svg" alt="" class="icon">
-                  <div class="texts">
-                    <p class="text text-sm">
-                      <span class="font-bold">麻酔全て<span class="red">無料</span></span>
-                      <span class="text-xs block leading-none">※デビュープランを除く</span>
-                    </p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle-double.svg" alt="" class="icon">
-                  <div class="texts">
-                    <p class="text text-sm">
-                      <span class="font-bold">麻酔全て<span class="red">無料</span></span>
-                      <span class="text-xs block leading-none">※デビュープランを除く</span>
-                    </p>
-                  </div>
-                </div>
-              </td>
+                </td>
+              <?php endforeach; ?>
             </tr>
             <tr>
               <th>
                 <img src="./img/ico-clinic.png" alt="">
                 院数
               </th>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle.svg" alt="" class="icon">
-                  <div class="texts">
-                    <a href="#" class="link js-modal">全国26院</a>
+              <?php foreach ($compareRankings as $ranking): ?>
+                <td>
+                  <div class="item">
+                    <img src="<?php echo flagToIcon($ranking['flagCompareNumOfClinic']); ?>" alt="" class="icon">
+                    <div class="texts">
+                      <a href="#" class="link js-modal">全国<?php echo htmlspecialchars($ranking['numOfClinic']); ?>院</a>
+                    </div>
                   </div>
-                </div>
-              </td>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-triangle.svg" alt="" class="icon">
-                  <div class="texts">
-                    <a href="#" class="link js-modal">全国26院</a>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="item">
-                  <img src="./img/ico-circle.svg" alt="" class="icon">
-                  <div class="texts">
-                    <a href="#" class="link js-modal">全国26院</a>
-                  </div>
-                </div>
-              </td>
+                </td>
+              <?php endforeach; ?>
             </tr>
             <tr>
               <th>
                 総評
               </th>
-              <td>
-                <p class="text-[1.1rem] text-left leading-tight">
-                  人気のジェントルマックスプロを最安値で提供！高いコスパと効果が売りです！
-                </p>
-              </td>
-              <td>
-                <p class="text-[1.1rem] text-left leading-tight">
-                  人気のジェントルマックスプロを最安値で提供！高いコスパと効果が売りです！
-                </p>
-              </td>
-              <td>
-                <p class="text-[1.1rem] text-left leading-tight">
-                  人気のジェントルマックスプロを最安値で提供！高いコスパと効果が売りです！
-                </p>
-              </td>
+              <?php foreach ($compareRankings as $ranking): ?>
+                <td>
+                  <p class="text-[1.1rem] text-left leading-tight">
+                    <?php echo htmlspecialchars($ranking['pickupCopy']); ?>
+                  </p>
+                </td>
+              <?php endforeach; ?>
             </tr>
             <tr>
               <th>
                 公式サイト
               </th>
-              <td>
-                <a href="#" class="Button -primary -small leading-tight">公式<br>サイト</a>
-              </td>
-              <td>
-                <a href="#" class="Button -primary -small leading-tight">公式<br>サイト</a>
-              </td>
-              <td>
-                <a href="#" class="Button -primary -small leading-tight">公式<br>サイト</a>
-              </td>
+              <?php foreach ($compareRankings as $ranking): ?>
+                <td>
+                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="Button -primary -small leading-tight">公式<br>サイト</a>
+                </td>
+              <?php endforeach; ?>
             </tr>
           </tbody>
         </table>
@@ -783,7 +450,7 @@
       <div class="header">
         <p class="lead">
           <span class="label">
-            宮崎県版
+            <?php echo isset($_GET['area']) && $_GET['area'] != 0 ? htmlspecialchars($compare1['areaNameJp']) . '版' : $currentMonth . '月最新版'; ?>
           </span>
           <em>実績</em>と<em>コスパ</em>で選ぶ
         </p>
@@ -795,408 +462,282 @@
         </div>
       </div>
       <div class="content">
-        <aside class="Rank">
-          <div class="Rank_header">
-            <h3 class="Rank_header_title">
-              <img src="./img/img-ranking-badge-1.png" alt="1">
-              <a href="#">
-                レジーナクリニック
-              </a>
-            </h3>
-            <p class="Rank_header_lead">
-              <span class="Rank_header_lead_label">POINT</span>
-              <span class="Rank_header_lead_text">
-                麻酔込みの明朗会計と確かな施術クオリティ
-              </span>
-            </p>
-          </div>
-          <div class="Rank_kv">
-            <img src="./img/ranking/no1.jpg" alt="">
-          </div>
-          <div class="Rank_rate">
-            <div class="Rank_rate_stars">
-            </div>
-            <p class="Rank_rate_value js-value">
-              3.3
-            </p>
-          </div>
-          <div class="ButtonUnit -full">
-            <p class="tooltip -inside"><em>最安値</em>のネット予約</p>
-            <a href="#" class="Button -primary -large">公式サイトはコチラ</a>
-          </div>
-          <ul class="Rank_info">
-            <li>
-              <div class="Rank_info_title">
-                <img src="./img/img-ranking-badge.png" alt="">
-                いつでも解約できる特別返金保証
-              </div>
-              <p class="Rank_info_text">
-                メンズリゼはいつでも解約可能！解約すると、残り回数分全額が手数料なしで返金。転勤・転居の心配なく安心して契約できます。
-              </p>
-            </li>
-            <li>
-              <div class="Rank_info_title">
-                <img src="./img/img-ranking-badge.png" alt="">
-                いつでも解約できる特別返金保証いつでも解約できる特別返金保証
-              </div>
-              <p class="Rank_info_text">
-                メンズリゼはいつでも解約可能！解約すると、残り回数分全額が手数料なしで返金。転勤・転居の心配なく安心して契約できます。
-              </p>
-            </li>
-            <li>
-              <div class="Rank_info_title">
-                <img src="./img/img-ranking-badge.png" alt="">
-                いつでも解約できる特別返金保証
-              </div>
-              <p class="Rank_info_text">
-                メンズリゼはいつでも解約可能！解約すると、残り回数分全額が手数料なしで返金。転勤・転居の心配なく安心して契約できます。
-              </p>
-            </li>
-          </ul>
-          <div class="Rank_price">
-            <div class="Rank_title">
-              <img src="./img/ico-yen.svg" alt="">
-              <p class="Rank_title_text">
-                料金プラン
+        <?php
+        $rankings = [$compare1, $compare2, $compare3];
+        $rankImages = ['./img/img-ranking-badge-1.png', './img/img-ranking-badge-2.png', './img/img-ranking-badge-3.png'];
+        $rankNumbers = [1, 2, 3];
+
+        foreach ($rankings as $index => $ranking):
+        ?>
+          <aside class="Rank">
+            <div class="Rank_header">
+              <h3 class="Rank_header_title">
+                <img src="<?php echo $rankImages[$index]; ?>" alt="<?php echo $rankNumbers[$index]; ?>">
+                <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>">
+                  <?php echo htmlspecialchars($ranking['clinicName']); ?>
+                </a>
+              </h3>
+              <p class="Rank_header_lead">
+                <span class="Rank_header_lead_label">POINT</span>
+                <span class="Rank_header_lead_text">
+                  <?php echo htmlspecialchars($compare1['rankingCopy']); ?>
+                </span>
               </p>
             </div>
-            <table class="Rank_price_table">
-              <thead>
-                <tr>
-                  <th>部位</th>
-                  <th>総額</th>
-                  <th>1回あたり</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <img src="./img/ico-hige.png" alt="" class="w-10 justify-self-center">
-                    <p class="font-bold text-md mt-1">
-                      ヒゲ3部位
-                    </p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="text-xl font-bold">8,900</span>円
-                    </p>
-                    <p>
-                      (3回)
-                    </p>
-                  </td>
-                  <td><span class="font-bold text-xl red">2,800</span>円</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="./img/ico-hige.png" alt="" class="w-10 justify-self-center">
-                    <p class="font-bold text-md mt-1">
-                      ヒゲ3部位
-                    </p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="text-xl font-bold">8,900</span>円
-                    </p>
-                    <p>
-                      (3回)
-                    </p>
-                  </td>
-                  <td><span class="font-bold text-xl red">2,800</span>円</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="./img/ico-hige.png" alt="" class="w-10 justify-self-center">
-                    <p class="font-bold text-md mt-1">
-                      ヒゲ3部位
-                    </p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="text-xl font-bold">8,900</span>円
-                    </p>
-                    <p>
-                      (3回)
-                    </p>
-                  </td>
-                  <td><span class="font-bold text-xl red">2,800</span>円</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="./img/ico-hige.png" alt="" class="w-10 justify-self-center">
-                    <p class="font-bold text-md mt-1">
-                      ヒゲ3部位
-                    </p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="text-xl font-bold">8,900</span>円
-                    </p>
-                    <p>
-                      (3回)
-                    </p>
-                  </td>
-                  <td><span class="font-bold text-xl red">2,800</span>円</td>
-                </tr>
-              </tbody>
-            </table>
-            <a href="#" class="Rank_price_link">料金プランの詳細をチェック >></a>
-          </div>
-          <div class="Rank_machine">
-            <div class="Rank_title">
-              <img src="./img/ico-machine.svg" alt="">
-              <p class="Rank_title_text">
-                取り扱い脱毛器
+            <div class="Rank_kv">
+              <img src="./img/ranking/<?php echo htmlspecialchars($ranking['imageBanner']); ?>" alt="">
+            </div>
+            <div class="Rank_rate">
+              <div class="Rank_rate_stars">
+              </div>
+              <p class="Rank_rate_value js-value">
+                <?php echo htmlspecialchars($ranking['rate']); ?>
               </p>
             </div>
-            <ul class="Rank_machine_list">
+            <div class="ButtonUnit -full">
+              <p class="tooltip -inside"><em>最安値</em>のネット予約</p>
+              <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="Button -primary -large">公式サイトはコチラ</a>
+            </div>
+            <ul class="Rank_info">
               <li>
-                <div class="Rank_machine_header">
-                  <p class="Rank_machine_header_title">
-                    ジェントルマックスプロ
-                  </p>
-                  <p class="Rank_machine_header_label">
-                    オススメ
-                  </p>
+                <div class="Rank_info_title">
+                  <img src="./img/img-ranking-badge.png" alt="">
+                  <?php echo htmlspecialchars($ranking['point01Title']); ?>
                 </div>
-                <div class="Rank_machine_body">
-                  <figure class="Rank_machine_body_image">
-                    <img src="./img/img-machine.png" alt="">
-                  </figure>
-                  <div class="Rank_machine_content">
-                    <p class="Rank_machine_content_label">
-                      タイプ
-                    </p>
-                    <p class="Rank_machine_content_text">
-                      <span class="red">熱破壊式</span>
-                    </p>
-                    <p class="Rank_machine_content_label">
-                      痛み
-                    </p>
-                    <p class="Rank_machine_content_text">
-                      やや強い
-                    </p>
-                    <p class="Rank_machine_content_label">
-                      特長
-                    </p>
-                    <p class="Rank_machine_content_text">
-                      細かい出力調整が可能
-                    </p>
-                  </div>
-                </div>
+                <p class="Rank_info_text">
+                  <?php echo htmlspecialchars($ranking['point01Description']); ?>
+                </p>
               </li>
               <li>
-                <div class="Rank_machine_header">
-                  <p class="Rank_machine_header_title">
-                    ジェントルマックスプロ
-                  </p>
-                  <p class="Rank_machine_header_label">
-                    オススメ
-                  </p>
+                <div class="Rank_info_title">
+                  <img src="./img/img-ranking-badge.png" alt="">
+                  <?php echo htmlspecialchars($ranking['point02Title']); ?>
                 </div>
-                <div class="Rank_machine_body">
-                  <figure class="Rank_machine_body_image">
-                    <img src="./img/img-machine.png" alt="">
-                  </figure>
-                  <div class="Rank_machine_content">
-                    <p class="Rank_machine_content_label">
-                      タイプ
-                    </p>
-                    <p class="Rank_machine_content_text">
-                      <span class="red">熱破壊式</span>
-                    </p>
-                    <p class="Rank_machine_content_label">
-                      痛み
-                    </p>
-                    <p class="Rank_machine_content_text">
-                      やや強い
-                    </p>
-                    <p class="Rank_machine_content_label">
-                      特長
-                    </p>
-                    <p class="Rank_machine_content_text">
-                      細かい出力調整が可能
-                    </p>
-                  </div>
+                <p class="Rank_info_text">
+                  <?php echo htmlspecialchars($ranking['point02Description']); ?>
+                </p>
+              </li>
+              <li>
+                <div class="Rank_info_title">
+                  <img src="./img/img-ranking-badge.png" alt="">
+                  <?php echo htmlspecialchars($ranking['point03Title']); ?>
                 </div>
+                <p class="Rank_info_text">
+                  <?php echo htmlspecialchars($ranking['point03Description']); ?>
+                </p>
               </li>
             </ul>
-          </div>
-          <div class="Rank_shops">
-            <div class="Rank_title">
-              <img src="./img/ico-building.svg" alt="">
-              <p class="Rank_title_text">
-                店舗一覧
-              </p>
+            <div class="Rank_price">
+              <div class="Rank_title">
+                <img src="./img/ico-yen.svg" alt="">
+                <p class="Rank_title_text">
+                  料金プラン
+                </p>
+              </div>
+              <table class="Rank_price_table">
+                <thead>
+                  <tr>
+                    <th>部位</th>
+                    <th>総額</th>
+                    <th>1回あたり</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php
+                  $planNumbers = ['01', '02', '03', '04'];
+                  foreach ($planNumbers as $planNum):
+                  ?>
+                    <tr>
+                      <td>
+                        <img src="./img/parts/<?php echo htmlspecialchars($ranking['plan' . $planNum . 'Icon']); ?>" alt="" class="w-10 justify-self-center">
+                        <p class="font-bold text-md mt-1">
+                          <?php echo htmlspecialchars($ranking['plan' . $planNum . 'Title']); ?>
+                        </p>
+                      </td>
+                      <td class="total">
+                        <p>
+                          <?php echo $ranking['plan' . $planNum . 'TotalPrice']; ?>
+                        </p>
+                      </td>
+                      <td class="spot"><?php echo $ranking['plan' . $planNum . 'OncePrice']; ?></td>
+                    </tr>
+                  <?php endforeach; ?>
+                  <tr>
+                    <td>
+                      <img src="./img/ico-all.png" alt="" class="w-10 justify-self-center">
+                      <p class="font-bold text-md mt-1">
+                        <?php echo htmlspecialchars($ranking['planBodyTitle']); ?>
+                      </p>
+                    </td>
+                    <td class="total">
+                      <p>
+                        <?php echo $ranking['planBodyTotalPrice']; ?>
+                      </p>
+                    </td>
+                    <td class="spot"><?php echo $ranking['planBodyOncePrice']; ?></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="<?php echo htmlspecialchars($ranking['linkUrlForm']); ?>" class="Rank_price_link">料金プランの詳細をチェック >></a>
             </div>
-            <p class="Rank_shops_title">
-              \ <span class="red">○○にお住いの方の最寄り店舗</span>はこちら /
-            </p>
-            <div class="Rank_shops_content">
-              <div class="Rank_shops_pickup">
-                <div class="Rank_shops_pickup_header">
-                  <a href="#" class="Rank_shops_pickup_header_link">レジーナクリニック札幌院</a>
-                </div>
-                <div class="Rank_shops_pickup_body">
-                  <div class="Rank_shops_pickup_body_item">
-                    <figure class="Rank_shops_pickup_body_item_icon">
-                      <img src="./img/ico-building.svg" alt="">
-                    </figure>
-                    <div class="Rank_shops_pickup_body_item_text">
-                      北海道札幌市中央区北1条西3丁目3－11桂和北1条ビル8F
-                    </div>
-                  </div>
-                  <div class="Rank_shops_pickup_body_item">
-                    <figure class="Rank_shops_pickup_body_item_icon">
-                      <img src="./img/ico-train.svg" alt="">
-                    </figure>
-                    <div class="Rank_shops_pickup_body_item_text">
-                      大通駅7番出口より徒歩5分または札幌駅前通地下歩行空間9番出口より徒歩1分
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="Button -reserve">
-                  無料カウンセリング予約
-                </a>
+            <div class="Rank_machine">
+              <div class="Rank_title">
+                <img src="./img/ico-machine.svg" alt="">
+                <p class="Rank_title_text">
+                  取り扱い脱毛器
+                </p>
               </div>
-
-              <div class="Rank_shops_area">
-                <input type="checkbox" id="expand-shops1" class="Rank_shops_toggle" hidden checked>
-                <label for="expand-shops1" class="Rank_shops_button">
-                  <span class="text">北海道・東北</span>
-                  <span class="icon"></span>
-                </label>
-                <ul class="Rank_shops_list">
-                  <li class="Rank_shops_item">
-                    <div class="Rank_shops_item_header">
-                      <a href="#" class="Rank_shops_item_header_link">レジーナクリニック札幌院</a>
-                    </div>
-                    <div class="Rank_shops_item_body">
-                      <div class="Rank_shops_item_body_item">
-                        <figure class="Rank_shops_item_body_item_icon">
-                          <img src="./img/ico-building.svg" alt="">
+              <ul class="Rank_machine_list">
+                <?php
+                $machineNumbers = ['01', '02', '03', '04'];
+                foreach ($machineNumbers as $machineNum):
+                  $machineName = $ranking['machine' . $machineNum . 'Name'];
+                  if (!empty($machineName)): // nameが空でない場合のみ表示
+                ?>
+                    <li>
+                      <div class="Rank_machine_header">
+                        <p class="Rank_machine_header_title">
+                          <?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Name']); ?>
+                        </p>
+                        <?php if ($machineNum === '01'): ?>
+                          <p class="Rank_machine_header_label">
+                            オススメ
+                          </p>
+                        <?php endif; ?>
+                      </div>
+                      <div class="Rank_machine_body">
+                        <figure class="Rank_machine_body_image">
+                          <img src="./img/machine/<?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Image']); ?>" alt="">
                         </figure>
-                        <div class="Rank_shops_item_body_item_text">
-                          北海道札幌市中央区北1条西3丁目3－11桂和北1条ビル8F
+                        <div class="Rank_machine_content">
+                          <p class="Rank_machine_content_label">
+                            タイプ
+                          </p>
+                          <p class="Rank_machine_content_text">
+                            <span class="red"><?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Type']); ?></span>
+                          </p>
+                          <p class="Rank_machine_content_label">
+                            痛み
+                          </p>
+                          <p class="Rank_machine_content_text">
+                            <?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Pain']); ?>
+                          </p>
+                          <p class="Rank_machine_content_label">
+                            特長
+                          </p>
+                          <p class="Rank_machine_content_text">
+                            <?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Feature']); ?>
+                          </p>
                         </div>
                       </div>
-                      <div class="Rank_shops_item_body_item">
-                        <figure class="Rank_shops_item_body_item_icon">
-                          <img src="./img/ico-train.svg" alt="">
-                        </figure>
-                        <div class="Rank_shops_item_body_item_text">
-                          大通駅7番出口より徒歩5分または札幌駅前通地下歩行空間9番出口より徒歩1分
-                        </div>
-                      </div>
-                    </div>
-                    <a href="#" class="Button -reserveSmall">
-                      無料カウンセリング予約
-                    </a>
-                  </li>
-                  <li class="Rank_shops_item">
-                    <div class="Rank_shops_item_header">
-                      <a href="#" class="Rank_shops_item_header_link">レジーナクリニック札幌院</a>
-                    </div>
-                    <div class="Rank_shops_item_body">
-                      <div class="Rank_shops_item_body_item">
-                        <figure class="Rank_shops_item_body_item_icon">
-                          <img src="./img/ico-building.svg" alt="">
-                        </figure>
-                        <div class="Rank_shops_item_body_item_text">
-                          北海道札幌市中央区北1条西3丁目3－11桂和北1条ビル8F
-                        </div>
-                      </div>
-                      <div class="Rank_shops_item_body_item">
-                        <figure class="Rank_shops_item_body_item_icon">
-                          <img src="./img/ico-train.svg" alt="">
-                        </figure>
-                        <div class="Rank_shops_item_body_item_text">
-                          大通駅7番出口より徒歩5分または札幌駅前通地下歩行空間9番出口より徒歩1分
-                        </div>
-                      </div>
-                    </div>
-                    <a href="#" class="Button -reserveSmall">
-                      無料カウンセリング予約
-                    </a>
-                  </li>
-                </ul>
+                    </li>
+                <?php
+                  endif; // nameが空でない場合の終了
+                endforeach; // ループの終了
+                ?>
+              </ul>
+            </div>
+            <div class="Rank_shops">
+              <div class="Rank_title">
+                <img src="./img/ico-building.svg" alt="">
+                <p class="Rank_title_text">
+                  店舗一覧
+                </p>
               </div>
+              <?php if (isset($_GET['area']) && $_GET['area'] != 0): ?>
+                <p class="Rank_shops_title">
+                  \ <span class="red"> <?php echo htmlspecialchars($compare1['areaNameJp']); ?>にお住いの方の最寄り店舗</span>はこちら /
+                </p>
+              <?php endif; ?>
+              <div class="Rank_shops_content">
+                <?php if ($pickupStoreData): ?>
+                  <div class="Rank_shops_pickup">
+                    <div class="Rank_shops_pickup_header">
+                      <a href="<?php echo htmlspecialchars($ranking['linkUrlForm']); ?>" class="Rank_shops_pickup_header_link"><?php echo htmlspecialchars($pickupStoreData['clinicName']); ?></a>
+                    </div>
+                    <div class="Rank_shops_pickup_body">
+                      <div class="Rank_shops_pickup_body_item">
+                        <figure class="Rank_shops_pickup_body_item_icon">
+                          <img src="./img/ico-building.svg" alt="">
+                        </figure>
+                        <div class="Rank_shops_pickup_body_item_text">
+                          <?php echo htmlspecialchars($pickupStoreData['prefectureName'] . $pickupStoreData['town'] . $pickupStoreData['address']); ?>
+                        </div>
+                      </div>
+                      <div class="Rank_shops_pickup_body_item">
+                        <figure class="Rank_shops_pickup_body_item_icon">
+                          <img src="./img/ico-train.svg" alt="">
+                        </figure>
+                        <div class="Rank_shops_pickup_body_item_text">
+                          <?php echo htmlspecialchars($pickupStoreData['accses']); ?>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="<?php echo htmlspecialchars($ranking['linkUrlForm']); ?>" class="Button -reserve">
+                      無料カウンセリング予約
+                    </a>
+                  </div>
+                <?php endif; ?>
 
-              <div class="Rank_shops_area">
-                <input type="checkbox" id="expand-shops1" class="Rank_shops_toggle" hidden>
-                <label for="expand-shops1" class="Rank_shops_button">
-                  <span class="text">北海道・東北</span>
-                  <span class="icon"></span>
-                </label>
-                <ul class="Rank_shops_list">
-                  <li class="Rank_shops_item">
-                    <div class="Rank_shops_item_header">
-                      <a href="#" class="Rank_shops_item_header_link">レジーナクリニック札幌院</a>
+                <?php if (!empty($groupedStores)): ?>
+                  <?php $regionIndex = 1; ?>
+                  <?php foreach ($groupedStores as $regionName => $stores): ?>
+                    <div class="Rank_shops_area">
+                      <input type="checkbox" id="expand-shops<?php echo $regionIndex; ?>" class="Rank_shops_toggle" hidden>
+                      <label for="expand-shops<?php echo $regionIndex; ?>" class="Rank_shops_button">
+                        <span class="text"><?php echo htmlspecialchars($regionName); ?></span>
+                        <span class="icon"></span>
+                      </label>
+                      <ul class="Rank_shops_list">
+                        <?php foreach ($stores as $store): ?>
+                          <li class="Rank_shops_item">
+                            <div class="Rank_shops_item_header">
+                              <a href="<?php echo htmlspecialchars($ranking['linkUrlForm']); ?>" class="Rank_shops_item_header_link"><?php echo htmlspecialchars($store['clinicName']); ?></a>
+                            </div>
+                            <div class="Rank_shops_item_body">
+                              <div class="Rank_shops_item_body_item">
+                                <figure class="Rank_shops_item_body_item_icon">
+                                  <img src="./img/ico-building.svg" alt="">
+                                </figure>
+                                <div class="Rank_shops_item_body_item_text">
+                                  <?php echo htmlspecialchars($store['prefectureName'] . $store['town'] . $store['address']); ?>
+                                </div>
+                              </div>
+                              <div class="Rank_shops_item_body_item">
+                                <figure class="Rank_shops_item_body_item_icon">
+                                  <img src="./img/ico-train.svg" alt="">
+                                </figure>
+                                <div class="Rank_shops_item_body_item_text">
+                                  <?php echo htmlspecialchars($store['accses']); ?>
+                                </div>
+                              </div>
+                            </div>
+                            <a href="<?php echo htmlspecialchars($ranking['linkUrlForm']); ?>" class="Button -reserveSmall">
+                              無料カウンセリング予約
+                            </a>
+                          </li>
+                        <?php endforeach; ?>
+                      </ul>
                     </div>
-                    <div class="Rank_shops_item_body">
-                      <div class="Rank_shops_item_body_item">
-                        <figure class="Rank_shops_item_body_item_icon">
-                          <img src="./img/ico-building.svg" alt="">
-                        </figure>
-                        <div class="Rank_shops_item_body_item_text">
-                          北海道札幌市中央区北1条西3丁目3－11桂和北1条ビル8F
-                        </div>
-                      </div>
-                      <div class="Rank_shops_item_body_item">
-                        <figure class="Rank_shops_item_body_item_icon">
-                          <img src="./img/ico-train.svg" alt="">
-                        </figure>
-                        <div class="Rank_shops_item_body_item_text">
-                          大通駅7番出口より徒歩5分または札幌駅前通地下歩行空間9番出口より徒歩1分
-                        </div>
-                      </div>
-                    </div>
-                    <a href="#" class="Button -reserveSmall">
-                      無料カウンセリング予約
-                    </a>
-                  </li>
-                  <li class="Rank_shops_item">
-                    <div class="Rank_shops_item_header">
-                      <a href="#" class="Rank_shops_item_header_link">レジーナクリニック札幌院</a>
-                    </div>
-                    <div class="Rank_shops_item_body">
-                      <div class="Rank_shops_item_body_item">
-                        <figure class="Rank_shops_item_body_item_icon">
-                          <img src="./img/ico-building.svg" alt="">
-                        </figure>
-                        <div class="Rank_shops_item_body_item_text">
-                          北海道札幌市中央区北1条西3丁目3－11桂和北1条ビル8F
-                        </div>
-                      </div>
-                      <div class="Rank_shops_item_body_item">
-                        <figure class="Rank_shops_item_body_item_icon">
-                          <img src="./img/ico-train.svg" alt="">
-                        </figure>
-                        <div class="Rank_shops_item_body_item_text">
-                          大通駅7番出口より徒歩5分または札幌駅前通地下歩行空間9番出口より徒歩1分
-                        </div>
-                      </div>
-                    </div>
-                    <a href="#" class="Button -reserveSmall">
-                      無料カウンセリング予約
-                    </a>
-                  </li>
-                </ul>
+                    <?php $regionIndex++; ?>
+                  <?php endforeach; ?>
+                <?php endif; ?>
               </div>
             </div>
-          </div>
-          <div class="ButtonUnit -full">
-            <p class="tooltip -inside"><em>最安値</em>のネット予約</p>
-            <a href="#" class="Button -primary -large">公式サイトはコチラ</a>
-          </div>
-          <div class="Rank_small">
-            <small>
-              ※注釈1が入ります
-            </small>
-            <small>
-              ※注釈2が入ります
-            </small>
-          </div>
-        </aside>
+            <div class="ButtonUnit -full">
+              <p class="tooltip -inside"><em>最安値</em>のネット予約</p>
+              <a href="<?php echo htmlspecialchars($ranking['linkUrlForm']); ?>" class="Button -primary -large">公式サイトはコチラ</a>
+            </div>
+            <div class="Rank_small">
+              <small>
+                ※注釈1が入ります
+              </small>
+              <small>
+                ※注釈2が入ります
+              </small>
+            </div>
+          </aside>
+        <?php endforeach; ?>
       </div>
     </section>
 
@@ -1247,72 +788,44 @@
         <img src="./img/title-undecided.svg" alt="迷ったらやっぱりここが安心！人気の大手脱毛クリニック2選">
       </h3>
       <ul class="Undecided_list">
-        <li class="Card">
-          <div class="Card_header">
-            <figure class="Card_image">
-              <img src="./img/ranking/no1.jpg" alt="">
-            </figure>
-            <a href="#" class="Card_header_link">
-              レジーナクリニック
-            </a>
-          </div>
-          <div class="Card_body">
-            <table class="Card_table">
-              <tr>
-                <th>総額</th>
-                <td>
-                  <p><span class="red font-bold text-md">9,900</span>円</p>
-                  <p>/3回</p>
-                </td>
-              </tr>
-              <tr>
-                <th>1回あたり</th>
-                <td>
-                  <p>全国13院</p>
-                </td>
-              </tr>
-            </table>
-            <p class="Card_info -small">
-              人気のジェントルマックスプロを最安値で提供！高いコスパと効果が売りです！
-            </p>
-            <a href="#" class="Button -primary -small">
-              公式サイトはコチラ
-            </a>
-          </div>
-        </li>
-        <li class="Card">
-          <div class="Card_header">
-            <figure class="Card_image">
-              <img src="./img/ranking/no1.jpg" alt="">
-            </figure>
-            <a href="#" class="Card_header_link">
-              レジーナクリニック
-            </a>
-          </div>
-          <div class="Card_body">
-            <table class="Card_table">
-              <tr>
-                <th>総額</th>
-                <td>
-                  <p><span class="red font-bold text-md">9,900</span>円</p>
-                  <p>/3回</p>
-                </td>
-              </tr>
-              <tr>
-                <th>1回あたり</th>
-                <td>
-                  <p>全国13院</p>
-                </td>
-              </tr>
-            </table>
-            <p class="Card_info -small">
-              人気のジェントルマックスプロを最安値で提供！高いコスパと効果が売りです！
-            </p>
-            <a href="#" class="Button -primary -small">
-              公式サイトはコチラ
-            </a>
-          </div>
-        </li>
+        <?php
+        $undecidedData = [$compare1, $compare2];
+        $undecidedImages = ['no1.jpg', 'no2.jpg'];
+        foreach ($undecidedData as $index => $clinic):
+        ?>
+          <li class="Card">
+            <div class="Card_header">
+              <figure class="Card_image">
+                <img src="./img/ranking/<?php echo $undecidedImages[$index]; ?>" alt="">
+              </figure>
+              <a href="<?php echo htmlspecialchars($clinic['linkUrlLp']); ?>" class="Card_header_link">
+                <?php echo htmlspecialchars($clinic['service']); ?>
+              </a>
+            </div>
+            <div class="Card_body">
+              <table class="Card_table">
+                <tr>
+                  <th>総額</th>
+                  <td>
+                    <?php echo $clinic['planBodyTotalPrice']; ?>
+                  </td>
+                </tr>
+                <tr>
+                  <th>院数</th>
+                  <td>
+                    <p>全国<?php echo htmlspecialchars($clinic['numOfClinic']); ?>院</p>
+                  </td>
+                </tr>
+              </table>
+              <p class="Card_info -small">
+                <?php echo htmlspecialchars($clinic['pickupCopy']); ?>
+              </p>
+              <a href="<?php echo htmlspecialchars($clinic['linkUrlLp']); ?>" class="Button -primary -small">
+                公式サイトはコチラ
+              </a>
+            </div>
+          </li>
+        <?php endforeach; ?>
       </ul>
     </section>
 
@@ -1326,8 +839,8 @@
             <figure class="Card_image">
               <img src="./img/ranking/no1.jpg" alt="">
             </figure>
-            <a href="#" class="Card_header_link">
-              レジーナクリニック
+            <a href="<?php echo htmlspecialchars($compare1['linkUrlLp']); ?>" class="Card_header_link">
+              <?php echo htmlspecialchars($compare1['service']); ?>
             </a>
           </div>
           <div class="Card_body">
@@ -1335,21 +848,20 @@
               <tr>
                 <th class="w-30">総額</th>
                 <td>
-                  <p><span class="red font-bold text-md">9,900</span>円</p>
-                  <p>/3回</p>
+                  <?php echo $compare1['planBodyTotalPrice']; ?>
                 </td>
               </tr>
               <tr>
-                <th class="w-30">1回あたり</th>
+                <th class="w-30">院数</th>
                 <td>
-                  <p>全国13院</p>
+                  <p>全国<?php echo htmlspecialchars($compare1['numOfClinic']); ?>院</p>
                 </td>
               </tr>
             </table>
             <p class="Card_info">
-              人気のジェントルマックスプロを最安値で提供！高いコスパと効果が売りです！
+              <?php echo htmlspecialchars($compare1['pickupCopy']); ?>
             </p>
-            <a href="#" class="Button -primary -medium">
+            <a href="<?php echo htmlspecialchars($compare1['linkUrlLp']); ?>" class="Button -primary -medium">
               公式サイトはコチラ
             </a>
           </div>
@@ -1358,90 +870,11 @@
     </section>
 
     <section class="SearchClinic">
-      <div class="Search">
-        <div class="header">
-          <img src="./img/ico-search.svg" alt="">
-          <h3 class="title">
-            あなたに合ったクリニックを検索
-          </h3>
-        </div>
-        <div class="body">
-          <form action="" class="Search_form">
-            <div class="Search_form_group">
-              <div class="Search_select_wrapper">
-                <select name="region" class="Search_select">
-                  <option value="">お住まいの地域</option>
-                  <option value="hokkaido">北海道</option>
-                  <option value="tohoku">東北</option>
-                  <option value="kanto">関東</option>
-                  <option value="chubu">中部</option>
-                  <option value="kansai">関西</option>
-                  <option value="chugoku">中国</option>
-                  <option value="shikoku">四国</option>
-                  <option value="kyushu">九州</option>
-                </select>
-                <span class="Search_select_arrow"></span>
-              </div>
-            </div>
-            <div class="Search_form_group">
-              <div class="Search_select_wrapper">
-                <select name="region" class="Search_select">
-                  <option value="">検討している施術</option>
-                  <option value="hokkaido">北海道</option>
-                  <option value="tohoku">東北</option>
-                  <option value="kanto">関東</option>
-                  <option value="chubu">中部</option>
-                  <option value="kansai">関西</option>
-                  <option value="chugoku">中国</option>
-                  <option value="shikoku">四国</option>
-                  <option value="kyushu">九州</option>
-                </select>
-                <span class="Search_select_arrow"></span>
-              </div>
-            </div>
-            <div class="Search_form_group">
-              <div class="Search_select_wrapper">
-                <select name="region" class="Search_select">
-                  <option value="">お支払い方法</option>
-                  <option value="hokkaido">北海道</option>
-                  <option value="tohoku">東北</option>
-                  <option value="kanto">関東</option>
-                  <option value="chubu">中部</option>
-                  <option value="kansai">関西</option>
-                  <option value="chugoku">中国</option>
-                  <option value="shikoku">四国</option>
-                  <option value="kyushu">九州</option>
-                </select>
-                <span class="Search_select_arrow"></span>
-              </div>
-            </div>
-            <div class="Search_form_group">
-              <div class="Search_select_wrapper">
-                <select name="region" class="Search_select">
-                  <option value="">重視するポイント</option>
-                  <option value="hokkaido">北海道</option>
-                  <option value="tohoku">東北</option>
-                  <option value="kanto">関東</option>
-                  <option value="chubu">中部</option>
-                  <option value="kansai">関西</option>
-                  <option value="chugoku">中国</option>
-                  <option value="shikoku">四国</option>
-                  <option value="kyushu">九州</option>
-                </select>
-                <span class="Search_select_arrow"></span>
-              </div>
-            </div>
-          </form>
-          <button type="submit" class="Button -submit -medium w-full mt-3">検索する</button>
-        </div>
-      </div>    </section>
+      <?php include './components/search.php'; ?>
+    </section>
 
-    <footer class="Footer">
-      <a href="./privacy.html" class="link">運営者情報・プライバシーポリシー</a>
-      <small>
-        Copyright© , 2025 All Rights Reserved Myメンズ脱毛ガイド
-      </small>
-    </footer>  </main>
+    <?php include './components/footer.php'; ?>
+  </main>
 
   <section class="ColumnRight">
     <ul class="list">
@@ -1455,8 +888,8 @@
         <a href="./privacy.html" class="text-base">運営者情報・プライバシーポリシー</a>
       </li>
     </ul>
-  
   </section>
+
   <div class="Modal">
     <button class="close">
       <img src="./img/ico-modal-close.svg" alt="">
@@ -1470,136 +903,92 @@
       </div>
       <div class="body">
         <p class="font-bold text-center text-xl">店舗一覧</p>
-        <div class="clinic">
-          <p class="text-md font-bold text-center">
-            北海道・東北
-          </p>
-          <ul class="list">
-            <li>
-              <p class="title">
-                北海道
+        <?php if (!empty($groupedStores)): ?>
+          <?php foreach ($groupedStores as $regionName => $stores): ?>
+            <div class="clinic">
+              <p class="text-md font-bold text-center">
+                <?php echo htmlspecialchars($regionName); ?>
               </p>
-              <div class="items">
-                <div class="item">
-                  <a href="" class="link">
-                    札幌院
-                    <img src="./img/ico-external.svg" alt="">
-                  </a>
-                  <div class="texts">
-                    <p class="text">
-                      <img src="./img/ico-building.svg" alt="">
-                      北海道札幌市中央区北1条西3丁目3－11桂和北1条ビル8F
+              <ul class="list">
+                <?php
+                // 都道府県でグルーピング
+                $storesByPrefecture = [];
+                foreach ($stores as $store) {
+                  $prefecture = $store['prefectureName'];
+                  if (!isset($storesByPrefecture[$prefecture])) {
+                    $storesByPrefecture[$prefecture] = [];
+                  }
+                  $storesByPrefecture[$prefecture][] = $store;
+                }
+                ?>
+                <?php foreach ($storesByPrefecture as $prefecture => $prefectureStores): ?>
+                  <li>
+                    <p class="title">
+                      <?php echo htmlspecialchars($prefecture); ?>
                     </p>
-                    <p class="text">
-                      <img src="./img/ico-train.svg" alt="">
-                      大通駅7番出口より徒歩5分または札幌駅前通地下歩行空間9番出口より徒歩1分
-                    </p>
+                    <div class="items">
+                      <?php foreach ($prefectureStores as $store): ?>
+                        <div class="item">
+                          <a href="<?php echo htmlspecialchars($compare1['linkUrlForm']); ?>" class="link">
+                            <?php echo htmlspecialchars($store['clinicName']); ?>
+                            <img src="./img/ico-external.svg" alt="">
+                          </a>
+                          <div class="texts">
+                            <p class="text">
+                              <img src="./img/ico-building.svg" alt="">
+                              <?php echo htmlspecialchars($store['prefectureName'] . $store['town'] . $store['address']); ?>
+                            </p>
+                            <p class="text">
+                              <img src="./img/ico-train.svg" alt="">
+                              <?php echo htmlspecialchars($store['accses']); ?>
+                            </p>
+                          </div>
+                        </div>
+                      <?php endforeach; ?>
+                    </div>
+                  </li>
+                <?php endforeach; ?>
+              </ul>
+            </div>
+          <?php endforeach; ?>
+        <?php else: ?>
+          <div class="clinic">
+            <p class="text-md font-bold text-center">
+              北海道・東北
+            </p>
+            <ul class="list">
+              <li>
+                <p class="title">
+                  北海道
+                </p>
+                <div class="items">
+                  <div class="item">
+                    <a href="<?php echo htmlspecialchars($compare1['linkUrlForm']); ?>" class="link">
+                      札幌院
+                      <img src="./img/ico-external.svg" alt="">
+                    </a>
+                    <div class="texts">
+                      <p class="text">
+                        <img src="./img/ico-building.svg" alt="">
+                        北海道札幌市中央区北1条西3丁目3－11桂和北1条ビル8F
+                      </p>
+                      <p class="text">
+                        <img src="./img/ico-train.svg" alt="">
+                        大通駅7番出口より徒歩5分または札幌駅前通地下歩行空間9番出口より徒歩1分
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="item">
-                  <a href="" class="link">
-                    札幌院札幌院札
-                    <img src="./img/ico-external.svg" alt="">
-                  </a>
-                  <div class="texts">
-                    <p class="text">
-                      <img src="./img/ico-building.svg" alt="">
-                      北海道札幌市中央区北1条
-                    </p>
-                    <p class="text">
-                      <img src="./img/ico-train.svg" alt="">
-                      大通駅7番出口より徒歩5
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <p class="title">
-                北海道
-              </p>
-              <div class="items">
-                <div class="item">
-                  <a href="" class="link">
-                    札幌院
-                    <img src="./img/ico-external.svg" alt="">
-                  </a>
-                  <div class="texts">
-                    <p class="text">
-                      <img src="./img/ico-building.svg" alt="">
-                      北海道札幌市中央区北1条西3丁目3－11桂和北1条ビル8F
-                    </p>
-                    <p class="text">
-                      <img src="./img/ico-train.svg" alt="">
-                      大通駅7番出口より徒歩5分または札幌駅前通地下歩行空間9番出口より徒歩1分
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <a href="" class="link">
-                    札幌院札幌院札
-                    <img src="./img/ico-external.svg" alt="">
-                  </a>
-                  <div class="texts">
-                    <p class="text">
-                      <img src="./img/ico-building.svg" alt="">
-                      北海道札幌市中央区北1条
-                    </p>
-                    <p class="text">
-                      <img src="./img/ico-train.svg" alt="">
-                      大通駅7番出口より徒歩5
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <p class="title">
-                北海道
-              </p>
-              <div class="items">
-                <div class="item">
-                  <a href="" class="link">
-                    札幌院
-                    <img src="./img/ico-external.svg" alt="">
-                  </a>
-                  <div class="texts">
-                    <p class="text">
-                      <img src="./img/ico-building.svg" alt="">
-                      北海道札幌市中央区北1条西3丁目3－11桂和北1条ビル8F
-                    </p>
-                    <p class="text">
-                      <img src="./img/ico-train.svg" alt="">
-                      大通駅7番出口より徒歩5分または札幌駅前通地下歩行空間9番出口より徒歩1分
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <a href="" class="link">
-                    札幌院札幌院札
-                    <img src="./img/ico-external.svg" alt="">
-                  </a>
-                  <div class="texts">
-                    <p class="text">
-                      <img src="./img/ico-building.svg" alt="">
-                      北海道札幌市中央区北1条
-                    </p>
-                    <p class="text">
-                      <img src="./img/ico-train.svg" alt="">
-                      大通駅7番出口より徒歩5
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+              </li>
+            </ul>
+          </div>
+        <?php endif; ?>
       </div>
     </div>
   </div>
 
 
-  
+
 </body>
 
 </html>
