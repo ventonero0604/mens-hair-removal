@@ -9,94 +9,30 @@
         <img src="./img/logo.svg" alt="MYメンズ脱毛ガイド">
       </a>
       <p class="area">
-        <?php echo isset($_GET['area']) && $_GET['area'] != 0 ? htmlspecialchars($compare1['areaNameJp']) . '版' : $currentMonth . '月最新版'; ?>
+        <?php
+        if (isset($_GET['area']) && $_GET['area'] != 0 && !empty($compare1['areaNameJp'])) {
+          echo htmlspecialchars($compare1['areaNameJp']) . '版';
+        } else {
+          echo $currentMonth . '月最新版';
+        }
+        ?>
       </p>
     </div>
-
-    <div class="Search">
-      <div class="header">
-        <img src="./img/ico-search.svg" alt="">
-        <h3 class="title">
-          あなたに合ったクリニックを検索
-        </h3>
-      </div>
-      <div class="body">
-        <form action="" class="Search_form">
-          <div class="Search_form_group">
-            <div class="Search_select_wrapper">
-              <select name="region" class="Search_select">
-                <option value="">お住まいの地域</option>
-                <option value="hokkaido">北海道</option>
-                <option value="tohoku">東北</option>
-                <option value="kanto">関東</option>
-                <option value="chubu">中部</option>
-                <option value="kansai">関西</option>
-                <option value="chugoku">中国</option>
-                <option value="shikoku">四国</option>
-                <option value="kyushu">九州</option>
-              </select>
-              <span class="Search_select_arrow"></span>
-            </div>
-          </div>
-          <div class="Search_form_group">
-            <div class="Search_select_wrapper">
-              <select name="region" class="Search_select">
-                <option value="">検討している施術</option>
-                <option value="hokkaido">北海道</option>
-                <option value="tohoku">東北</option>
-                <option value="kanto">関東</option>
-                <option value="chubu">中部</option>
-                <option value="kansai">関西</option>
-                <option value="chugoku">中国</option>
-                <option value="shikoku">四国</option>
-                <option value="kyushu">九州</option>
-              </select>
-              <span class="Search_select_arrow"></span>
-            </div>
-          </div>
-          <div class="Search_form_group">
-            <div class="Search_select_wrapper">
-              <select name="region" class="Search_select">
-                <option value="">お支払い方法</option>
-                <option value="hokkaido">北海道</option>
-                <option value="tohoku">東北</option>
-                <option value="kanto">関東</option>
-                <option value="chubu">中部</option>
-                <option value="kansai">関西</option>
-                <option value="chugoku">中国</option>
-                <option value="shikoku">四国</option>
-                <option value="kyushu">九州</option>
-              </select>
-              <span class="Search_select_arrow"></span>
-            </div>
-          </div>
-          <div class="Search_form_group">
-            <div class="Search_select_wrapper">
-              <select name="region" class="Search_select">
-                <option value="">重視するポイント</option>
-                <option value="hokkaido">北海道</option>
-                <option value="tohoku">東北</option>
-                <option value="kanto">関東</option>
-                <option value="chubu">中部</option>
-                <option value="kansai">関西</option>
-                <option value="chugoku">中国</option>
-                <option value="shikoku">四国</option>
-                <option value="kyushu">九州</option>
-              </select>
-              <span class="Search_select_arrow"></span>
-            </div>
-          </div>
-        </form>
-        <button type="submit" class="Button -submit -medium w-full mt-3">検索する</button>
-      </div>
-    </div>
+    <?php $searchFormId = 'searchForm1';
+    include './components/search.php'; ?>
   </section>
   <header class="Header">
     <a href="/" class="logo">
       <img src="./img/logo.svg" alt="MYメンズ脱毛ガイド">
     </a>
     <p class="area">
-      <?php echo isset($_GET['area']) && $_GET['area'] != 0 ? htmlspecialchars($compare1['areaNameJp']) . '版' : $currentMonth . '月最新版'; ?>
+      <?php
+      if (isset($_GET['area']) && $_GET['area'] != 0 && !empty($compare1['areaNameJp'])) {
+        echo htmlspecialchars($compare1['areaNameJp']) . '版';
+      } else {
+        echo $currentMonth . '月最新版';
+      }
+      ?>
     </p>
   </header>
   <main class="Top">
@@ -109,24 +45,24 @@
     <section class="LogoList">
       <div class="logo-marquee">
         <div class="logo-track">
-          <div class="Logo">
-            <img src="./img//logo/amazon.png" alt="ロゴ1">
-          </div>
-          <div class="Logo">
-            <img src="./img/logo/starbucks.png" alt="ロゴ2">
-          </div>
-          <div class="Logo">
-            <img src="./img/logo/uniqlo.png" alt="ロゴ3">
-          </div>
-          <div class="Logo">
-            <img src="./img//logo/amazon.png" alt="ロゴ1">
-          </div>
-          <div class="Logo">
-            <img src="./img/logo/starbucks.png" alt="ロゴ2">
-          </div>
-          <div class="Logo">
-            <img src="./img/logo/uniqlo.png" alt="ロゴ3">
-          </div>
+          <?php
+          // ./img/logoディレクトリからロゴファイルを取得
+          $logoDir = './img/logo/';
+          $logoFiles = array_filter(scandir($logoDir), function ($file) {
+            return !in_array($file, ['.', '..', '.DS_Store']) &&
+              preg_match('/\.(png|jpg|jpeg|gif|svg)$/i', $file);
+          });
+
+          // ロゴを2回繰り返して表示（マーキー効果のため）
+          for ($i = 0; $i < 2; $i++) {
+            foreach ($logoFiles as $index => $file) {
+              $logoNumber = $index + 1;
+              echo '<div class="Logo">';
+              echo '<img src="' . $logoDir . htmlspecialchars($file) . '" alt="ロゴ' . $logoNumber . '">';
+              echo '</div>';
+            }
+          }
+          ?>
         </div>
       </div>
     </section>
@@ -150,7 +86,13 @@
         </h3>
         <div class="title">
           <p class="upper">
-            <span class="name"><?php echo isset($_GET['area']) && $_GET['area'] != 0 ? htmlspecialchars($compare1['areaNameJp']) : $currentMonth . '月最新版'; ?></span><?php echo isset($_GET['area']) && $_GET['area'] != 0 ? 'の' : ''; ?>
+            <span class="name"><?php
+                                if (isset($_GET['area']) && $_GET['area'] != 0 && !empty($compare1['areaNameJp'])) {
+                                  echo htmlspecialchars($compare1['areaNameJp']);
+                                } else {
+                                  echo $currentMonth . '月最新版';
+                                }
+                                ?></span><?php echo isset($_GET['area']) && $_GET['area'] != 0 ? 'の' : ''; ?>
           </p>
           <p class="bottom">
             メンズ医療脱毛クリニック<em class="gradient"><span class="number">3</span><span class="text">選</span></em>
@@ -170,8 +112,8 @@
               <img class="rank" src="<?php echo $rankImages[$index]; ?>" alt="<?php echo $rankNumbers[$index]; ?>">
               <div class="body">
                 <div class="left">
-                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="logo">
-                    <img src="./img/logo/<?php echo $ranking['imageLogo'] ?: 'regina.png'; ?>" alt="<?php echo htmlspecialchars($ranking['service']); ?>">
+                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="logo">
+                    <img src="./img/logo/<?php echo $ranking['imageLogo'] ?: 'regina.png'; ?>" alt="<?php echo htmlspecialchars($ranking['service'] ?? ''); ?>">
                   </a>
                   <div class="rate">
                     <div class="stars">
@@ -180,8 +122,8 @@
                       <?php echo htmlspecialchars($ranking['rate'] ?? '4.5'); ?>
                     </p>
                   </div>
-                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="name">
-                    <?php echo htmlspecialchars($ranking['service']); ?>
+                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="name">
+                    <?php echo htmlspecialchars($ranking['service'] ?? ''); ?>
                   </a>
                 </div>
                 <div class="right">
@@ -218,14 +160,14 @@
                       </div>
                       <div class="info">
                         <img src="<?php echo flagToIcon($ranking['flagCompareMachine']); ?>" alt="">
-                        <?php echo generateMachineLabels($ranking['flagMachine']); ?>
+                        <?php echo generateMachineLabels($ranking); ?>
                       </div>
                     </li>
                   </ul>
                   <div class="comment">
                     <img src="./img/img-compare-person.png" alt="">
                     <p class="text">
-                      <?php echo htmlspecialchars($ranking['pickupCopy']); ?>
+                      <?php echo htmlspecialchars($ranking['pickupCopy'] ?? ''); ?>
                     </p>
                   </div>
                 </div>
@@ -233,11 +175,11 @@
               <div class="footer">
                 <div class="ButtonUnit">
                   <p class="tooltip"><em>最安値</em>のネット予約</p>
-                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="Button -primary -medium">公式サイトはコチラ</a>
+                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="Button -primary -medium">公式サイトはコチラ</a>
                 </div>
                 <div class="ButtonUnit">
                   <p class="attention">店舗一覧/コース…等</p>
-                  <a href="#<?php echo htmlspecialchars($ranking['strAnchor']); ?>" class="Button -detail">詳細を見る</a>
+                  <a href="#<?php echo htmlspecialchars($ranking['strAnchor'] ?? ''); ?>" class="Button -detail">詳細を見る</a>
                 </div>
               </div>
             </li>
@@ -249,7 +191,7 @@
         <?php
         $compareRankings = [$compare1, $compare2, $compare3];
         ?>
-        <table class="table">
+        <table class="table table-sticky">
           <tbody>
             <tr>
               <th>
@@ -258,18 +200,18 @@
               <?php foreach ($compareRankings as $ranking): ?>
                 <td>
                   <div class="item">
-                    <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="logo">
-                      <img src="./img/logo/<?php echo htmlspecialchars($ranking['imageLogo']); ?>" alt="<?php echo htmlspecialchars($ranking['service']); ?>">
+                    <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="logo">
+                      <img src="./img/logo/<?php echo htmlspecialchars($ranking['imageLogo'] ?? 'regina.png'); ?>" alt="<?php echo htmlspecialchars($ranking['service'] ?? ''); ?>">
                     </a>
                     <div class="rate">
                       <div class="stars">
                       </div>
                       <p class="value js-value">
-                        <?php echo htmlspecialchars($ranking['rate']); ?>
+                        <?php echo htmlspecialchars($ranking['rate'] ?? '4.5'); ?>
                       </p>
                     </div>
-                    <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="name">
-                      <?php echo htmlspecialchars($ranking['service']); ?>
+                    <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="name">
+                      <?php echo htmlspecialchars($ranking['service'] ?? ''); ?>
                     </a>
                   </div>
                 </td>
@@ -321,9 +263,9 @@
                   <div class="item">
                     <img src="<?php echo flagToIcon($ranking['flagCompareMachine']); ?>" alt="" class="icon">
                     <div class="labels">
-                      <?php echo generateMachineLabels($ranking['flagMachine']); ?>
+                      <?php echo generateMachineLabels($ranking); ?>
                       <div class="label -white">
-                        <?php echo htmlspecialchars($ranking['machineSumarry']); ?>
+                        <?php echo htmlspecialchars($ranking['machineSumarry'] ?? ''); ?>
                       </div>
                     </div>
                   </div>
@@ -358,7 +300,7 @@
                   <div class="item">
                     <img src="<?php echo flagToIcon($ranking['flagCompareNumOfClinic']); ?>" alt="" class="icon">
                     <div class="texts">
-                      <a href="#" class="link js-modal">全国<?php echo htmlspecialchars($ranking['numOfClinic']); ?>院</a>
+                      <a href="#" class="link js-modal" data-service="<?php echo htmlspecialchars($ranking['service'] ?? ''); ?>" data-logo="<?php echo htmlspecialchars($ranking['imageLogo'] ?? 'regina.png'); ?>">全国<?php echo htmlspecialchars($ranking['numOfClinic'] ?? '0'); ?>院</a>
                     </div>
                   </div>
                 </td>
@@ -371,7 +313,7 @@
               <?php foreach ($compareRankings as $ranking): ?>
                 <td>
                   <p class="text-[1.1rem] text-left leading-tight">
-                    <?php echo htmlspecialchars($ranking['pickupCopy']); ?>
+                    <?php echo htmlspecialchars($ranking['pickupCopy'] ?? ''); ?>
                   </p>
                 </td>
               <?php endforeach; ?>
@@ -382,7 +324,7 @@
               </th>
               <?php foreach ($compareRankings as $ranking): ?>
                 <td>
-                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="Button -primary -small leading-tight">公式<br>サイト</a>
+                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="Button -primary -small leading-tight">公式<br>サイト</a>
                 </td>
               <?php endforeach; ?>
             </tr>
@@ -450,7 +392,13 @@
       <div class="header">
         <p class="lead">
           <span class="label">
-            <?php echo isset($_GET['area']) && $_GET['area'] != 0 ? htmlspecialchars($compare1['areaNameJp']) . '版' : $currentMonth . '月最新版'; ?>
+            <?php
+            if (isset($_GET['area']) && $_GET['area'] != 0 && !empty($compare1['areaNameJp'])) {
+              echo htmlspecialchars($compare1['areaNameJp']) . '版';
+            } else {
+              echo $currentMonth . '月最新版';
+            }
+            ?>
           </span>
           <em>実績</em>と<em>コスパ</em>で選ぶ
         </p>
@@ -473,57 +421,57 @@
             <div class="Rank_header">
               <h3 class="Rank_header_title">
                 <img src="<?php echo $rankImages[$index]; ?>" alt="<?php echo $rankNumbers[$index]; ?>">
-                <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>">
-                  <?php echo htmlspecialchars($ranking['clinicName']); ?>
+                <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>">
+                  <?php echo htmlspecialchars($ranking['clinicName'] ?? ''); ?>
                 </a>
               </h3>
               <p class="Rank_header_lead">
                 <span class="Rank_header_lead_label">POINT</span>
                 <span class="Rank_header_lead_text">
-                  <?php echo htmlspecialchars($compare1['rankingCopy']); ?>
+                  <?php echo htmlspecialchars($ranking['rankingCopy'] ?? ''); ?>
                 </span>
               </p>
             </div>
             <div class="Rank_kv">
-              <img src="./img/ranking/<?php echo htmlspecialchars($ranking['imageBanner']); ?>" alt="">
+              <img src="./img/ranking/<?php echo htmlspecialchars($ranking['imageBanner'] ?? 'no1.jpg'); ?>" alt="">
             </div>
             <div class="Rank_rate">
               <div class="Rank_rate_stars">
               </div>
               <p class="Rank_rate_value js-value">
-                <?php echo htmlspecialchars($ranking['rate']); ?>
+                <?php echo htmlspecialchars($ranking['rate'] ?? '4.5'); ?>
               </p>
             </div>
             <div class="ButtonUnit -full">
               <p class="tooltip -inside"><em>最安値</em>のネット予約</p>
-              <a href="<?php echo htmlspecialchars($ranking['linkUrlLp']); ?>" class="Button -primary -large">公式サイトはコチラ</a>
+              <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="Button -primary -large">公式サイトはコチラ</a>
             </div>
             <ul class="Rank_info">
               <li>
                 <div class="Rank_info_title">
                   <img src="./img/img-ranking-badge.png" alt="">
-                  <?php echo htmlspecialchars($ranking['point01Title']); ?>
+                  <?php echo htmlspecialchars($ranking['point01Title'] ?? ''); ?>
                 </div>
                 <p class="Rank_info_text">
-                  <?php echo htmlspecialchars($ranking['point01Description']); ?>
+                  <?php echo htmlspecialchars($ranking['point01Description'] ?? ''); ?>
                 </p>
               </li>
               <li>
                 <div class="Rank_info_title">
                   <img src="./img/img-ranking-badge.png" alt="">
-                  <?php echo htmlspecialchars($ranking['point02Title']); ?>
+                  <?php echo htmlspecialchars($ranking['point02Title'] ?? ''); ?>
                 </div>
                 <p class="Rank_info_text">
-                  <?php echo htmlspecialchars($ranking['point02Description']); ?>
+                  <?php echo htmlspecialchars($ranking['point02Description'] ?? ''); ?>
                 </p>
               </li>
               <li>
                 <div class="Rank_info_title">
                   <img src="./img/img-ranking-badge.png" alt="">
-                  <?php echo htmlspecialchars($ranking['point03Title']); ?>
+                  <?php echo htmlspecialchars($ranking['point03Title'] ?? ''); ?>
                 </div>
                 <p class="Rank_info_text">
-                  <?php echo htmlspecialchars($ranking['point03Description']); ?>
+                  <?php echo htmlspecialchars($ranking['point03Description'] ?? ''); ?>
                 </p>
               </li>
             </ul>
@@ -546,27 +494,36 @@
                   <?php
                   $planNumbers = ['01', '02', '03', '04'];
                   foreach ($planNumbers as $planNum):
+                    // データが存在するかチェック
+                    $planTitle = $ranking['plan' . $planNum . 'Title'] ?? '';
+                    $planTotalPrice = $ranking['plan' . $planNum . 'TotalPrice'] ?? '';
+                    $planOncePrice = $ranking['plan' . $planNum . 'OncePrice'] ?? '';
+
+                    // タイトルが空またはnullの場合は行を非表示
+                    if (empty($planTitle) || $planTitle === null):
+                      continue;
+                    endif;
                   ?>
                     <tr>
                       <td>
-                        <img src="./img/parts/<?php echo htmlspecialchars($ranking['plan' . $planNum . 'Icon']); ?>" alt="" class="w-10 justify-self-center">
+                        <img src="./img/parts/<?php echo htmlspecialchars($ranking['plan' . $planNum . 'Icon'] ?? ''); ?>" alt="" class="w-10 justify-self-center">
                         <p class="font-bold text-md mt-1">
-                          <?php echo htmlspecialchars($ranking['plan' . $planNum . 'Title']); ?>
+                          <?php echo htmlspecialchars($planTitle); ?>
                         </p>
                       </td>
                       <td class="total">
                         <p>
-                          <?php echo $ranking['plan' . $planNum . 'TotalPrice']; ?>
+                          <?php echo $planTotalPrice; ?>
                         </p>
                       </td>
-                      <td class="spot"><?php echo $ranking['plan' . $planNum . 'OncePrice']; ?></td>
+                      <td class="spot"><?php echo $planOncePrice; ?></td>
                     </tr>
                   <?php endforeach; ?>
                   <tr>
                     <td>
                       <img src="./img/ico-all.png" alt="" class="w-10 justify-self-center">
                       <p class="font-bold text-md mt-1">
-                        <?php echo htmlspecialchars($ranking['planBodyTitle']); ?>
+                        <?php echo htmlspecialchars($ranking['planBodyTitle'] ?? ''); ?>
                       </p>
                     </td>
                     <td class="total">
@@ -578,7 +535,7 @@
                   </tr>
                 </tbody>
               </table>
-              <a href="<?php echo htmlspecialchars($ranking['linkUrlForm']); ?>" class="Rank_price_link">料金プランの詳細をチェック >></a>
+              <a href="<?php echo htmlspecialchars($ranking['linkUrlForm'] ?? '#'); ?>" class="Rank_price_link">料金プランの詳細をチェック >></a>
             </div>
             <div class="Rank_machine">
               <div class="Rank_title">
@@ -597,7 +554,7 @@
                     <li>
                       <div class="Rank_machine_header">
                         <p class="Rank_machine_header_title">
-                          <?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Name']); ?>
+                          <?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Name'] ?? ''); ?>
                         </p>
                         <?php if ($machineNum === '01'): ?>
                           <p class="Rank_machine_header_label">
@@ -607,26 +564,26 @@
                       </div>
                       <div class="Rank_machine_body">
                         <figure class="Rank_machine_body_image">
-                          <img src="./img/machine/<?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Image']); ?>" alt="">
+                          <img src="./img/machine/<?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Image'] ?? ''); ?>" alt="">
                         </figure>
                         <div class="Rank_machine_content">
                           <p class="Rank_machine_content_label">
                             タイプ
                           </p>
                           <p class="Rank_machine_content_text">
-                            <span class="red"><?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Type']); ?></span>
+                            <span class="red"><?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Type'] ?? ''); ?></span>
                           </p>
                           <p class="Rank_machine_content_label">
                             痛み
                           </p>
                           <p class="Rank_machine_content_text">
-                            <?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Pain']); ?>
+                            <?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Pain'] ?? ''); ?>
                           </p>
                           <p class="Rank_machine_content_label">
                             特長
                           </p>
                           <p class="Rank_machine_content_text">
-                            <?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Feature']); ?>
+                            <?php echo htmlspecialchars($ranking['machine' . $machineNum . 'Feature'] ?? ''); ?>
                           </p>
                         </div>
                       </div>
@@ -646,14 +603,18 @@
               </div>
               <?php if (isset($_GET['area']) && $_GET['area'] != 0): ?>
                 <p class="Rank_shops_title">
-                  \ <span class="red"> <?php echo htmlspecialchars($compare1['areaNameJp']); ?>にお住いの方の最寄り店舗</span>はこちら /
+                  \ <span class="red"> <?php echo htmlspecialchars($compare1['areaNameJp'] ?? ''); ?>にお住いの方の最寄り店舗</span>はこちら /
                 </p>
               <?php endif; ?>
               <div class="Rank_shops_content">
-                <?php if ($pickupStoreData): ?>
+                <?php
+                // 現在のランキングのサービスに応じたピックアップ店舗を取得
+                $currentPickupStore = getPickupStoreByService($stores, $ranking['service'], $ranking['clinicName']);
+                ?>
+                <?php if ($currentPickupStore): ?>
                   <div class="Rank_shops_pickup">
                     <div class="Rank_shops_pickup_header">
-                      <a href="<?php echo htmlspecialchars($ranking['linkUrlForm']); ?>" class="Rank_shops_pickup_header_link"><?php echo htmlspecialchars($pickupStoreData['clinicName']); ?></a>
+                      <a href="<?php echo htmlspecialchars($ranking['linkUrlForm'] ?? '#'); ?>" class="Rank_shops_pickup_header_link"><?php echo htmlspecialchars($currentPickupStore['clinicName'] ?? ''); ?></a>
                     </div>
                     <div class="Rank_shops_pickup_body">
                       <div class="Rank_shops_pickup_body_item">
@@ -661,7 +622,7 @@
                           <img src="./img/ico-building.svg" alt="">
                         </figure>
                         <div class="Rank_shops_pickup_body_item_text">
-                          <?php echo htmlspecialchars($pickupStoreData['prefectureName'] . $pickupStoreData['town'] . $pickupStoreData['address']); ?>
+                          <?php echo htmlspecialchars(($currentPickupStore['prefectureName'] ?? '') . ($currentPickupStore['town'] ?? '') . ($currentPickupStore['address'] ?? '')); ?>
                         </div>
                       </div>
                       <div class="Rank_shops_pickup_body_item">
@@ -669,30 +630,34 @@
                           <img src="./img/ico-train.svg" alt="">
                         </figure>
                         <div class="Rank_shops_pickup_body_item_text">
-                          <?php echo htmlspecialchars($pickupStoreData['accses']); ?>
+                          <?php echo htmlspecialchars($currentPickupStore['accses'] ?? ''); ?>
                         </div>
                       </div>
                     </div>
-                    <a href="<?php echo htmlspecialchars($ranking['linkUrlForm']); ?>" class="Button -reserve">
+                    <a href="<?php echo htmlspecialchars($ranking['linkUrlForm'] ?? '#'); ?>" class="Button -reserve">
                       無料カウンセリング予約
                     </a>
                   </div>
                 <?php endif; ?>
 
-                <?php if (!empty($groupedStores)): ?>
+                <?php
+                // 現在のランキングのサービス名に応じた店舗のみをフィルタリング
+                $filteredStores = getFilteredStoresByService($stores, $ranking['service']);
+                ?>
+                <?php if (!empty($filteredStores)): ?>
                   <?php $regionIndex = 1; ?>
-                  <?php foreach ($groupedStores as $regionName => $stores): ?>
+                  <?php foreach ($filteredStores as $regionName => $storeList): ?>
                     <div class="Rank_shops_area">
-                      <input type="checkbox" id="expand-shops<?php echo $regionIndex; ?>" class="Rank_shops_toggle" hidden>
-                      <label for="expand-shops<?php echo $regionIndex; ?>" class="Rank_shops_button">
-                        <span class="text"><?php echo htmlspecialchars($regionName); ?></span>
+                      <input type="checkbox" id="expand-shops<?php echo $regionIndex; ?>-<?php echo $index; ?>" class="Rank_shops_toggle" hidden>
+                      <label for="expand-shops<?php echo $regionIndex; ?>-<?php echo $index; ?>" class="Rank_shops_button">
+                        <span class="text"><?php echo htmlspecialchars($regionName ?? ''); ?></span>
                         <span class="icon"></span>
                       </label>
                       <ul class="Rank_shops_list">
-                        <?php foreach ($stores as $store): ?>
+                        <?php foreach ($storeList as $store): ?>
                           <li class="Rank_shops_item">
                             <div class="Rank_shops_item_header">
-                              <a href="<?php echo htmlspecialchars($ranking['linkUrlForm']); ?>" class="Rank_shops_item_header_link"><?php echo htmlspecialchars($store['clinicName']); ?></a>
+                              <a href="<?php echo htmlspecialchars($ranking['linkUrlForm'] ?? '#'); ?>" class="Rank_shops_item_header_link"><?php echo htmlspecialchars($store['clinicName'] ?? ''); ?></a>
                             </div>
                             <div class="Rank_shops_item_body">
                               <div class="Rank_shops_item_body_item">
@@ -700,7 +665,7 @@
                                   <img src="./img/ico-building.svg" alt="">
                                 </figure>
                                 <div class="Rank_shops_item_body_item_text">
-                                  <?php echo htmlspecialchars($store['prefectureName'] . $store['town'] . $store['address']); ?>
+                                  <?php echo htmlspecialchars(($store['prefectureName'] ?? '') . ($store['town'] ?? '') . ($store['address'] ?? '')); ?>
                                 </div>
                               </div>
                               <div class="Rank_shops_item_body_item">
@@ -708,11 +673,11 @@
                                   <img src="./img/ico-train.svg" alt="">
                                 </figure>
                                 <div class="Rank_shops_item_body_item_text">
-                                  <?php echo htmlspecialchars($store['accses']); ?>
+                                  <?php echo htmlspecialchars($store['accses'] ?? ''); ?>
                                 </div>
                               </div>
                             </div>
-                            <a href="<?php echo htmlspecialchars($ranking['linkUrlForm']); ?>" class="Button -reserveSmall">
+                            <a href="<?php echo htmlspecialchars($ranking['linkUrlForm'] ?? '#'); ?>" class="Button -reserveSmall">
                               無料カウンセリング予約
                             </a>
                           </li>
@@ -726,16 +691,15 @@
             </div>
             <div class="ButtonUnit -full">
               <p class="tooltip -inside"><em>最安値</em>のネット予約</p>
-              <a href="<?php echo htmlspecialchars($ranking['linkUrlForm']); ?>" class="Button -primary -large">公式サイトはコチラ</a>
+              <a href="<?php echo htmlspecialchars($ranking['linkUrlForm'] ?? '#'); ?>" class="Button -primary -large">公式サイトはコチラ</a>
             </div>
-            <div class="Rank_small">
-              <small>
-                ※注釈1が入ります
-              </small>
-              <small>
-                ※注釈2が入ります
-              </small>
-            </div>
+            <?php if (!empty($ranking['noticeCommon']) && $ranking['noticeCommon'] !== 'noticeCommon'): ?>
+              <div class="Rank_small">
+                <small>
+                  <?php echo htmlspecialchars($ranking['noticeCommon']); ?>
+                </small>
+              </div>
+            <?php endif; ?>
           </aside>
         <?php endforeach; ?>
       </div>
@@ -790,16 +754,17 @@
       <ul class="Undecided_list">
         <?php
         $undecidedData = [$compare1, $compare2];
-        $undecidedImages = ['no1.jpg', 'no2.jpg'];
         foreach ($undecidedData as $index => $clinic):
         ?>
           <li class="Card">
             <div class="Card_header">
-              <figure class="Card_image">
-                <img src="./img/ranking/<?php echo $undecidedImages[$index]; ?>" alt="">
-              </figure>
-              <a href="<?php echo htmlspecialchars($clinic['linkUrlLp']); ?>" class="Card_header_link">
-                <?php echo htmlspecialchars($clinic['service']); ?>
+              <?php if (!empty($clinic['imageBanner'])): ?>
+                <figure class="Card_image">
+                  <img src="./img/ranking/<?php echo htmlspecialchars($clinic['imageBanner']); ?>" alt="">
+                </figure>
+              <?php endif; ?>
+              <a href="<?php echo htmlspecialchars($clinic['linkUrlLp'] ?? '#'); ?>" class="Card_header_link">
+                <?php echo htmlspecialchars($clinic['service'] ?? ''); ?>
               </a>
             </div>
             <div class="Card_body">
@@ -813,14 +778,14 @@
                 <tr>
                   <th>院数</th>
                   <td>
-                    <p>全国<?php echo htmlspecialchars($clinic['numOfClinic']); ?>院</p>
+                    <p>全国<?php echo htmlspecialchars($clinic['numOfClinic'] ?? '0'); ?>院</p>
                   </td>
                 </tr>
               </table>
               <p class="Card_info -small">
-                <?php echo htmlspecialchars($clinic['pickupCopy']); ?>
+                <?php echo htmlspecialchars($clinic['pickupCopy'] ?? ''); ?>
               </p>
-              <a href="<?php echo htmlspecialchars($clinic['linkUrlLp']); ?>" class="Button -primary -small">
+              <a href="<?php echo htmlspecialchars($clinic['linkUrlLp'] ?? '#'); ?>" class="Button -primary -small">
                 公式サイトはコチラ
               </a>
             </div>
@@ -836,11 +801,13 @@
       <div class="body">
         <div class="Card">
           <div class="Card_header">
-            <figure class="Card_image">
-              <img src="./img/ranking/no1.jpg" alt="">
-            </figure>
-            <a href="<?php echo htmlspecialchars($compare1['linkUrlLp']); ?>" class="Card_header_link">
-              <?php echo htmlspecialchars($compare1['service']); ?>
+            <?php if (!empty($compare1['imageBanner']) && $compare1['imageBanner'] !== 'imageBanner'): ?>
+              <figure class="Card_image">
+                <img src="./img/ranking/<?php echo htmlspecialchars($compare1['imageBanner']); ?>" alt="<?php echo htmlspecialchars($compare1['service'] ?? ''); ?>">
+              </figure>
+            <?php endif; ?>
+            <a href="<?php echo htmlspecialchars($compare1['linkUrlLp'] ?? '#'); ?>" class="Card_header_link">
+              <?php echo htmlspecialchars($compare1['service'] ?? ''); ?>
             </a>
           </div>
           <div class="Card_body">
@@ -854,14 +821,14 @@
               <tr>
                 <th class="w-30">院数</th>
                 <td>
-                  <p>全国<?php echo htmlspecialchars($compare1['numOfClinic']); ?>院</p>
+                  <p>全国<?php echo htmlspecialchars($compare1['numOfClinic'] ?? '0'); ?>院</p>
                 </td>
               </tr>
             </table>
             <p class="Card_info">
-              <?php echo htmlspecialchars($compare1['pickupCopy']); ?>
+              <?php echo htmlspecialchars($compare1['pickupCopy'] ?? ''); ?>
             </p>
-            <a href="<?php echo htmlspecialchars($compare1['linkUrlLp']); ?>" class="Button -primary -medium">
+            <a href="<?php echo htmlspecialchars($compare1['linkUrlLp'] ?? '#'); ?>" class="Button -primary -medium">
               公式サイトはコチラ
             </a>
           </div>
@@ -870,7 +837,8 @@
     </section>
 
     <section class="SearchClinic">
-      <?php include './components/search.php'; ?>
+      <?php $searchFormId = 'searchForm2';
+      include './components/search.php'; ?>
     </section>
 
     <?php include './components/footer.php'; ?>
@@ -885,62 +853,52 @@
         <a href="./privacy.html" class="text-lg">ヒゲ脱毛クリニック5選</a>
       </li>
       <li>
-        <a href="./privacy.html" class="text-base">運営者情報・プライバシーポリシー</a>
+        <a href="./privacy.php" class="text-base">運営者情報・プライバシーポリシー</a>
       </li>
     </ul>
   </section>
 
-  <div class="Modal">
+  <!-- 1位のモーダル -->
+  <div class="Modal" id="storeModal-<?php echo htmlspecialchars($compare1['service'] ?? ''); ?>">
     <button class="close">
       <img src="./img/ico-modal-close.svg" alt="">
     </button>
     <div class="content">
       <div class="header">
         <figure class="logo">
-          <img src="./img/logo/regina.png" alt="">
+          <img src="./img/logo/<?php echo htmlspecialchars($compare1['imageLogo'] ?? 'logo_mensrize.png'); ?>" alt="">
         </figure>
-        <a href="#" class="link text-xl">レジーナクリニック</a>
+        <a href="<?php echo htmlspecialchars($compare1['linkUrlForm'] ?? '#'); ?>" class="link text-xl"><?php echo htmlspecialchars($compare1['service'] ?? 'メンズリゼ'); ?></a>
       </div>
       <div class="body">
         <p class="font-bold text-center text-xl">店舗一覧</p>
-        <?php if (!empty($groupedStores)): ?>
-          <?php foreach ($groupedStores as $regionName => $stores): ?>
+        <?php if (!empty($modalStoresByService[$compare1['service']])): ?>
+          <?php foreach ($modalStoresByService[$compare1['service']] as $areaName => $regionGroups): ?>
             <div class="clinic">
               <p class="text-md font-bold text-center">
-                <?php echo htmlspecialchars($regionName); ?>
+                <?php echo htmlspecialchars($areaName ?? ''); ?>
               </p>
               <ul class="list">
-                <?php
-                // 都道府県でグルーピング
-                $storesByPrefecture = [];
-                foreach ($stores as $store) {
-                  $prefecture = $store['prefectureName'];
-                  if (!isset($storesByPrefecture[$prefecture])) {
-                    $storesByPrefecture[$prefecture] = [];
-                  }
-                  $storesByPrefecture[$prefecture][] = $store;
-                }
-                ?>
-                <?php foreach ($storesByPrefecture as $prefecture => $prefectureStores): ?>
+                <?php foreach ($regionGroups as $regionName => $storeList): ?>
                   <li>
                     <p class="title">
-                      <?php echo htmlspecialchars($prefecture); ?>
+                      <?php echo htmlspecialchars($regionName ?? ''); ?>
                     </p>
                     <div class="items">
-                      <?php foreach ($prefectureStores as $store): ?>
+                      <?php foreach ($storeList as $store): ?>
                         <div class="item">
-                          <a href="<?php echo htmlspecialchars($compare1['linkUrlForm']); ?>" class="link">
-                            <?php echo htmlspecialchars($store['clinicName']); ?>
+                          <a href="<?php echo htmlspecialchars($compare1['linkUrlForm'] ?? '#'); ?>" class="link">
+                            <?php echo htmlspecialchars($store['clinicName'] ?? ''); ?>
                             <img src="./img/ico-external.svg" alt="">
                           </a>
                           <div class="texts">
                             <p class="text">
                               <img src="./img/ico-building.svg" alt="">
-                              <?php echo htmlspecialchars($store['prefectureName'] . $store['town'] . $store['address']); ?>
+                              <?php echo htmlspecialchars(($store['prefectureName'] ?? '') . ($store['town'] ?? '') . ($store['address'] ?? '')); ?>
                             </p>
                             <p class="text">
                               <img src="./img/ico-train.svg" alt="">
-                              <?php echo htmlspecialchars($store['accses']); ?>
+                              <?php echo htmlspecialchars($store['accses'] ?? ''); ?>
                             </p>
                           </div>
                         </div>
@@ -951,44 +909,122 @@
               </ul>
             </div>
           <?php endforeach; ?>
-        <?php else: ?>
-          <div class="clinic">
-            <p class="text-md font-bold text-center">
-              北海道・東北
-            </p>
-            <ul class="list">
-              <li>
-                <p class="title">
-                  北海道
-                </p>
-                <div class="items">
-                  <div class="item">
-                    <a href="<?php echo htmlspecialchars($compare1['linkUrlForm']); ?>" class="link">
-                      札幌院
-                      <img src="./img/ico-external.svg" alt="">
-                    </a>
-                    <div class="texts">
-                      <p class="text">
-                        <img src="./img/ico-building.svg" alt="">
-                        北海道札幌市中央区北1条西3丁目3－11桂和北1条ビル8F
-                      </p>
-                      <p class="text">
-                        <img src="./img/ico-train.svg" alt="">
-                        大通駅7番出口より徒歩5分または札幌駅前通地下歩行空間9番出口より徒歩1分
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
         <?php endif; ?>
       </div>
     </div>
   </div>
 
+  <!-- 2位のモーダル -->
+  <div class="Modal" id="storeModal-<?php echo htmlspecialchars($compare2['service'] ?? ''); ?>">
+    <button class="close">
+      <img src="./img/ico-modal-close.svg" alt="">
+    </button>
+    <div class="content">
+      <div class="header">
+        <figure class="logo">
+          <img src="./img/logo/<?php echo htmlspecialchars($compare2['imageLogo'] ?? 'logo_freya.png'); ?>" alt="">
+        </figure>
+        <a href="<?php echo htmlspecialchars($compare2['linkUrlForm'] ?? '#'); ?>" class="link text-xl"><?php echo htmlspecialchars($compare2['service'] ?? 'メンズフレイア'); ?></a>
+      </div>
+      <div class="body">
+        <p class="font-bold text-center text-xl">店舗一覧</p>
+        <?php if (!empty($modalStoresByService[$compare2['service']])): ?>
+          <?php foreach ($modalStoresByService[$compare2['service']] as $areaName => $regionGroups): ?>
+            <div class="clinic">
+              <p class="text-md font-bold text-center">
+                <?php echo htmlspecialchars($areaName ?? ''); ?>
+              </p>
+              <ul class="list">
+                <?php foreach ($regionGroups as $regionName => $storeList): ?>
+                  <li>
+                    <p class="title">
+                      <?php echo htmlspecialchars($regionName ?? ''); ?>
+                    </p>
+                    <div class="items">
+                      <?php foreach ($storeList as $store): ?>
+                        <div class="item">
+                          <a href="<?php echo htmlspecialchars($compare2['linkUrlForm'] ?? '#'); ?>" class="link">
+                            <?php echo htmlspecialchars($store['clinicName'] ?? ''); ?>
+                            <img src="./img/ico-external.svg" alt="">
+                          </a>
+                          <div class="texts">
+                            <p class="text">
+                              <img src="./img/ico-building.svg" alt="">
+                              <?php echo htmlspecialchars(($store['prefectureName'] ?? '') . ($store['town'] ?? '') . ($store['address'] ?? '')); ?>
+                            </p>
+                            <p class="text">
+                              <img src="./img/ico-train.svg" alt="">
+                              <?php echo htmlspecialchars($store['accses'] ?? ''); ?>
+                            </p>
+                          </div>
+                        </div>
+                      <?php endforeach; ?>
+                    </div>
+                  </li>
+                <?php endforeach; ?>
+              </ul>
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
+      </div>
+    </div>
+  </div>
 
-
+  <!-- 3位のモーダル -->
+  <div class="Modal" id="storeModal-<?php echo htmlspecialchars($compare3['service'] ?? ''); ?>">
+    <button class="close">
+      <img src="./img/ico-modal-close.svg" alt="">
+    </button>
+    <div class="content">
+      <div class="header">
+        <figure class="logo">
+          <img src="./img/logo/<?php echo htmlspecialchars($compare3['imageLogo'] ?? 'regina.png'); ?>" alt="">
+        </figure>
+        <a href="<?php echo htmlspecialchars($compare3['linkUrlForm'] ?? '#'); ?>" class="link text-xl"><?php echo htmlspecialchars($compare3['service'] ?? 'レジーナ'); ?></a>
+      </div>
+      <div class="body">
+        <p class="font-bold text-center text-xl">店舗一覧</p>
+        <?php if (!empty($modalStoresByService[$compare3['service']])): ?>
+          <?php foreach ($modalStoresByService[$compare3['service']] as $areaName => $regionGroups): ?>
+            <div class="clinic">
+              <p class="text-md font-bold text-center">
+                <?php echo htmlspecialchars($areaName ?? ''); ?>
+              </p>
+              <ul class="list">
+                <?php foreach ($regionGroups as $regionName => $storeList): ?>
+                  <li>
+                    <p class="title">
+                      <?php echo htmlspecialchars($regionName ?? ''); ?>
+                    </p>
+                    <div class="items">
+                      <?php foreach ($storeList as $store): ?>
+                        <div class="item">
+                          <a href="<?php echo htmlspecialchars($compare3['linkUrlForm'] ?? '#'); ?>" class="link">
+                            <?php echo htmlspecialchars($store['clinicName'] ?? ''); ?>
+                            <img src="./img/ico-external.svg" alt="">
+                          </a>
+                          <div class="texts">
+                            <p class="text">
+                              <img src="./img/ico-building.svg" alt="">
+                              <?php echo htmlspecialchars(($store['prefectureName'] ?? '') . ($store['town'] ?? '') . ($store['address'] ?? '')); ?>
+                            </p>
+                            <p class="text">
+                              <img src="./img/ico-train.svg" alt="">
+                              <?php echo htmlspecialchars($store['accses'] ?? ''); ?>
+                            </p>
+                          </div>
+                        </div>
+                      <?php endforeach; ?>
+                    </div>
+                  </li>
+                <?php endforeach; ?>
+              </ul>
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

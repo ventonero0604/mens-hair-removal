@@ -1,7 +1,7 @@
 .Rank {
   background: white;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 1rem 1rem 3rem;
   display: grid;
   gap: 1.5rem;
 
@@ -46,6 +46,7 @@
         padding: 0.2rem 0.5rem 0.2rem 1rem;
         line-height: 1.2;
         font-weight: 500;
+        flex: 1;
       }
     }
   }

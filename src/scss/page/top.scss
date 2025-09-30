@@ -279,15 +279,39 @@
       }
 
       .table {
-        width: calc(100% + 1rem);
+        width: auto;
+        min-width: 100%;
         margin: 0 -0.5rem;
+        border-collapse: separate;
+        border-spacing: 0;
         th,
         td {
           min-width: 10.8rem;
-          border: 0.5rem solid var(--gray);
-          padding: 0.5rem;
+          border: 0.2rem solid var(--gray);
+          padding: 1rem;
           background: white;
           text-align: center;
+        }
+        &.table-sticky {
+          // テーブル全体がスクロールしないように幅を設定
+          table-layout: fixed;
+
+          // 各行の最初のth（見出し）だけを固定
+          tr > th:first-child {
+            position: sticky;
+            left: 0;
+            z-index: 10;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            background: var(--primary);
+            color: white;
+            min-width: 10.8rem;
+            width: 10.8rem;
+          }
+
+          // データセルは通常通りスクロール
+          tr > td {
+            min-width: 10.8rem;
+          }
         }
         th {
           background: var(--primary);

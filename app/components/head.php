@@ -16,4 +16,5 @@
     rel="stylesheet">
   <script type="module" crossorigin src="./assets/js/main.js"></script>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/override.css">
 </head>

@@ -79,23 +79,46 @@ function initModal() {
   // 「全国26院」リンクがクリックされたときの処理
   const clinicLinks = $('.js-modal');
 
-  clinicLinks.on('click', function (e) {
-    e.preventDefault(); // デフォルトのリンク動作を防ぐ
-    $('.Modal').fadeIn(300); // モーダルを表示
-    $('body').addClass('modal-open'); // bodyにクラスを追加してスクロールを無効化
+  console.log('Found clinic links:', clinicLinks.length);
+
+  // 各リンクの情報を表示
+  clinicLinks.each(function (index) {
+    const serviceName = $(this).data('service');
+    console.log(`Link ${index + 1}: service = "${serviceName}"`);
   });
 
-  // モーダルの閉じるボタンがクリックされたときの処理
+  clinicLinks.on('click', function (e) {
+    e.preventDefault(); // デフォルトのリンク動作を防ぐ
+
+    // クリックされたリンクからサービス名を取得
+    const serviceName = $(this).data('service');
+    console.log('Opening modal for service:', serviceName);
+
+    // 対応するモーダルを表示
+    const modalId = '#storeModal-' + serviceName;
+    console.log('Modal ID:', modalId);
+
+    // モーダル要素が存在するかチェック
+    const $modal = $(modalId);
+    console.log('Modal element found:', $modal.length > 0);
+
+    if ($modal.length > 0) {
+      $modal.fadeIn(300); // 特定のモーダルを表示
+      $('body').addClass('modal-open'); // bodyにクラスを追加してスクロールを無効化
+    } else {
+      console.error('Modal not found for service:', serviceName);
+    }
+  }); // モーダルの閉じるボタンがクリックされたときの処理
   $('.Modal .close').on('click', function (e) {
     e.preventDefault();
-    $('.Modal').fadeOut(300); // モーダルを非表示
+    $(this).closest('.Modal').fadeOut(300); // 該当のモーダルを非表示
     $('body').removeClass('modal-open'); // bodyからクラスを削除してスクロールを有効化
   });
 
   // モーダルの背景がクリックされたときの処理
   $('.Modal').on('click', function (e) {
     if (e.target === this) {
-      $('.Modal').fadeOut(300);
+      $(this).fadeOut(300);
       $('body').removeClass('modal-open');
     }
   });
@@ -103,7 +126,7 @@ function initModal() {
   // ESCキーでモーダルを閉じる
   $(document).on('keydown', function (e) {
     if (e.key === 'Escape' && $('.Modal').is(':visible')) {
-      $('.Modal').fadeOut(300);
+      $('.Modal:visible').fadeOut(300);
       $('body').removeClass('modal-open');
     }
   });
