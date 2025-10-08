@@ -455,7 +455,7 @@
     }
 
     &_toggle:checked ~ &_list {
-      max-height: 2000px; // 十分に大きな値を設定（多数の店舗に対応）
+      max-height: 20000px; // 十分に大きな値を設定（多数の店舗に対応）
     }
   }
 
