@@ -3,3 +3,6 @@
 // body {
 //   color: red;
 // }
+.Top .Compare .content .list .item .right .compare .info .label.-blue {
+    background: var(--primary);
+}

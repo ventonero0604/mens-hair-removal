@@ -38,7 +38,7 @@
   <main class="Top">
     <section class="Kv">
       <h1>
-        <img src="./img/kv.png" alt="2025年 最新トレンド メンズ医療脱毛 比較5選">
+        <img src="./img/kv-hige.png" alt="2025年 最新トレンド メンズ医療脱毛 比較5選">
       </h1>
     </section>
 
@@ -68,10 +68,10 @@
     </section>
 
     <section class="PageLink">
-      <a href="lp_hige.php">
-        <img src="./img/ico-hige.png" alt="">
+      <a href="index.php">
+        <img src="./img/ico-all.png" alt="">
         <p>
-          <em>ヒゲ脱毛</em>ページはこちら
+          <em>全身脱毛</em>ページはこちら
         </p>
       </a>
     </section>
@@ -95,7 +95,7 @@
                                 ?></span><?php echo isset($_GET['area']) && $_GET['area'] != 0 ? 'の' : ''; ?>
           </p>
           <p class="bottom">
-            メンズ医療脱毛クリニック<em class="gradient"><span class="number">3</span><span class="text">選</span></em>
+            メンズヒゲ脱毛クリニック<em class="gradient"><span class="number">3</span><span class="text">選</span></em>
           </p>
         </div>
       </div>

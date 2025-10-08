@@ -1,18 +1,16 @@
 [
   {
-    "Google": null,
     "id": 0,
     "areaNameJp": "",
     "areaNameEn": "",
-    "item01ServiceName": "レジーナオム",
-    "item01ClinicName": "レジーナオム",
-    "item02ServiceName": "メンズエミナル",
-    "item02ClinicName": "メンズエミナル",
-    "item03ServiceName": "メンズリゼ",
-    "item03ClinicName": "メンズリゼ"
+    "item01ServiceName": "メンズリゼ",
+    "item01ClinicName": "メンズリゼ",
+    "item02ServiceName": "ゴリラクリニック",
+    "item02ClinicName": "ゴリラクリニック",
+    "item03ServiceName": "メンズエミナル",
+    "item03ClinicName": "メンズエミナル"
   },
   {
-    "Google": null,
     "id": 10006,
     "areaNameJp": "北海道",
     "areaNameEn": "Hokkaido",
@@ -24,7 +22,6 @@
     "item03ClinicName": "レジーナクリニック札幌院"
   },
   {
-    "Google": null,
     "id": 11002,
     "areaNameJp": "札幌市",
     "areaNameEn": "Sapporo-shi",
@@ -36,7 +33,6 @@
     "item03ClinicName": "レジーナクリニック札幌院"
   },
   {
-    "Google": null,
     "id": 20001,
     "areaNameJp": "青森県",
     "areaNameEn": "Aomori",
@@ -45,10 +41,9 @@
     "item02ServiceName": "メンズエミナル",
     "item02ClinicName": "メンズエミナル青森院",
     "item03ServiceName": "メンズクリア",
-    "item03ClinicName": null
+    "item03ClinicName": "メンズクリア青森駅前店"
   },
   {
-    "Google": null,
     "id": 30007,
     "areaNameJp": "岩手県",
     "areaNameEn": "Iwate",
@@ -57,10 +52,9 @@
     "item02ServiceName": "メンズエミナル",
     "item02ClinicName": "メンズエミナル盛岡院",
     "item03ServiceName": "メンズクリア",
-    "item03ClinicName": null
+    "item03ClinicName": "メンズクリア岩手県盛岡市大通2-1-23 サンクイーンビル3F"
   },
   {
-    "Google": null,
     "id": 40002,
     "areaNameJp": "宮城県",
     "areaNameEn": "Miyagi",
@@ -72,7 +66,6 @@
     "item03ClinicName": "メンズエミナル仙台院"
   },
   {
-    "Google": null,
     "id": 41009,
     "areaNameJp": "仙台市",
     "areaNameEn": "Sendai-shi",
@@ -84,31 +77,28 @@
     "item03ClinicName": "メンズエミナル仙台院"
   },
   {
-    "Google": null,
     "id": 50008,
     "areaNameJp": "秋田県",
     "areaNameEn": "Akita",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 60003,
     "areaNameJp": "山形県",
     "areaNameEn": "Yamagata",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 70009,
     "areaNameJp": "福島県",
     "areaNameEn": "Fukushima",
@@ -117,10 +107,9 @@
     "item02ServiceName": "メンズエミナル",
     "item02ClinicName": "メンズエミナル郡山院",
     "item03ServiceName": "メンズクリア",
-    "item03ClinicName": null
+    "item03ClinicName": "メンズクリア福島駅前店"
   },
   {
-    "Google": null,
     "id": 72036,
     "areaNameJp": "郡山市",
     "areaNameEn": "Koriyama-shi",
@@ -129,46 +118,42 @@
     "item02ServiceName": "メンズエミナル",
     "item02ClinicName": "メンズエミナル郡山院",
     "item03ServiceName": "メンズクリア",
-    "item03ClinicName": null
+    "item03ClinicName": "メンズクリア福島県郡山市中町11番5号 郡山スクエア111号室"
   },
   {
-    "Google": null,
     "id": 80004,
     "areaNameJp": "茨城県",
     "areaNameEn": "Ibaraki",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 90000,
     "areaNameJp": "栃木県",
     "areaNameEn": "Tochigi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 100005,
     "areaNameJp": "群馬県",
     "areaNameEn": "Gunma",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 110001,
     "areaNameJp": "埼玉県",
     "areaNameEn": "Saitama",
@@ -180,19 +165,17 @@
     "item03ClinicName": "メンズエミナル大宮院"
   },
   {
-    "Google": null,
     "id": 111007,
     "areaNameJp": "さいたま市",
     "areaNameEn": "Saitama-shi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 120006,
     "areaNameJp": "千葉県",
     "areaNameEn": "Chiba",
@@ -204,43 +187,39 @@
     "item03ClinicName": "メンズエミナル千葉院"
   },
   {
-    "Google": null,
     "id": 121002,
     "areaNameJp": "千葉市",
     "areaNameEn": "Chiba-shi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 130001,
     "areaNameJp": "東京都",
     "areaNameEn": "Tokyo",
     "item01ServiceName": "メンズリゼ",
-    "item01ClinicName": "メンズリゼ新宿東口院",
+    "item01ClinicName": "",
     "item02ServiceName": "ゴリラクリニック",
-    "item02ClinicName": "ゴリラクリニック新宿本院",
+    "item02ClinicName": "",
     "item03ServiceName": "メンズエミナル",
-    "item03ClinicName": "メンズエミナル新宿院"
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131016,
     "areaNameJp": "千代田区",
     "areaNameEn": "Chiyoda",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131024,
     "areaNameJp": "中央区",
     "areaNameEn": "Chuo",
@@ -252,19 +231,17 @@
     "item03ClinicName": "メンズエミナル銀座院"
   },
   {
-    "Google": null,
     "id": 131032,
     "areaNameJp": "港区",
     "areaNameEn": "Minato",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131041,
     "areaNameJp": "新宿区",
     "areaNameEn": "Shinjuku",
@@ -276,139 +253,127 @@
     "item03ClinicName": "メンズエミナル新宿院"
   },
   {
-    "Google": null,
     "id": 131059,
     "areaNameJp": "文京区",
     "areaNameEn": "Bunkyo",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131067,
     "areaNameJp": "台東区",
     "areaNameEn": "Taito",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131075,
     "areaNameJp": "墨田区",
     "areaNameEn": "Sumida",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131083,
     "areaNameJp": "江東区",
     "areaNameEn": "Koto",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131091,
     "areaNameJp": "品川区",
     "areaNameEn": "Shinagawa",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131105,
     "areaNameJp": "目黒区",
     "areaNameEn": "Meguro",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131113,
     "areaNameJp": "大田区",
     "areaNameEn": "Ota",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131121,
     "areaNameJp": "世田谷区",
     "areaNameEn": "Setagaya",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131130,
     "areaNameJp": "渋谷区",
     "areaNameEn": "Shibuya",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131148,
     "areaNameJp": "中野区",
     "areaNameEn": "Nakano",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131156,
     "areaNameJp": "杉並区",
     "areaNameEn": "Suginami",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131164,
     "areaNameJp": "豊島区",
     "areaNameEn": "Toshima",
@@ -420,91 +385,83 @@
     "item03ClinicName": "メンズエミナル池袋東口院"
   },
   {
-    "Google": null,
     "id": 131172,
     "areaNameJp": "北区",
     "areaNameEn": "Kita",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131181,
     "areaNameJp": "荒川区",
     "areaNameEn": "Arakawa",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131199,
     "areaNameJp": "板橋区",
     "areaNameEn": "Itabashi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131202,
     "areaNameJp": "練馬区",
     "areaNameEn": "Nerima",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131211,
     "areaNameJp": "足立区",
     "areaNameEn": "Adachi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131229,
     "areaNameJp": "葛飾区",
     "areaNameEn": "Katsushika",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 131237,
     "areaNameJp": "江戸川区",
     "areaNameEn": "Edogawa",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 132098,
     "areaNameJp": "町田市",
     "areaNameEn": "Machidashi",
@@ -516,7 +473,6 @@
     "item03ClinicName": "メンズエミナル町田院"
   },
   {
-    "Google": null,
     "id": 140007,
     "areaNameJp": "神奈川県",
     "areaNameEn": "Kanagawa",
@@ -528,7 +484,6 @@
     "item03ClinicName": "メンズエミナル横浜院"
   },
   {
-    "Google": null,
     "id": 141003,
     "areaNameJp": "横浜市",
     "areaNameEn": "Yokohama-shi",
@@ -540,7 +495,6 @@
     "item03ClinicName": "メンズエミナル横浜院"
   },
   {
-    "Google": null,
     "id": 141305,
     "areaNameJp": "川崎市",
     "areaNameEn": "Kawasaki-shi",
@@ -549,22 +503,20 @@
     "item02ServiceName": "メンズエミナル",
     "item02ClinicName": "メンズエミナル川崎院",
     "item03ServiceName": "メンズクリア",
-    "item03ClinicName": null
+    "item03ClinicName": "メンズクリア川崎店"
   },
   {
-    "Google": null,
     "id": 141500,
     "areaNameJp": "相模原市",
     "areaNameEn": "Sagamihara-shi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 150002,
     "areaNameJp": "新潟県",
     "areaNameEn": "Niigata",
@@ -573,10 +525,9 @@
     "item02ServiceName": "メンズエミナル",
     "item02ClinicName": "メンズエミナル新潟院",
     "item03ServiceName": "メンズクリア",
-    "item03ClinicName": null
+    "item03ClinicName": "メンズクリア新潟県新潟市中央区八千代2-1-2 万代シテイビルボードプレイス3F"
   },
   {
-    "Google": null,
     "id": 151009,
     "areaNameJp": "新潟市",
     "areaNameEn": "Niigata-shi",
@@ -585,166 +536,152 @@
     "item02ServiceName": "メンズエミナル",
     "item02ClinicName": "メンズエミナル新潟院",
     "item03ServiceName": "メンズクリア",
-    "item03ClinicName": null
+    "item03ClinicName": "メンズクリア新潟県新潟市中央区八千代2-1-2 万代シテイビルボードプレイス3F"
   },
   {
-    "Google": null,
     "id": 160008,
     "areaNameJp": "富山県",
     "areaNameEn": "Toyama",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 170003,
     "areaNameJp": "石川県",
     "areaNameEn": "Ishikawa",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 180009,
     "areaNameJp": "福井県",
     "areaNameEn": "Fukui",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 190004,
     "areaNameJp": "山梨県",
     "areaNameEn": "Yamanashi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 200000,
     "areaNameJp": "長野県",
     "areaNameEn": "Nagano",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 210005,
     "areaNameJp": "岐阜県",
     "areaNameEn": "Gifu",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 220001,
     "areaNameJp": "静岡県",
     "areaNameEn": "Shizuoka",
-    "item01ServiceName": "メンズリゼ",
-    "item01ClinicName": null,
-    "item02ServiceName": "メンズエミナル",
-    "item02ClinicName": "メンズエミナル静岡院",
-    "item03ServiceName": "メンズクリア",
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 221007,
     "areaNameJp": "静岡市",
     "areaNameEn": "Shizuoka-shi",
-    "item01ServiceName": "メンズリゼ",
-    "item01ClinicName": null,
-    "item02ServiceName": "メンズエミナル",
-    "item02ClinicName": "メンズエミナル静岡院",
-    "item03ServiceName": "メンズクリア",
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 221309,
     "areaNameJp": "浜松市",
     "areaNameEn": "Hamamatsu-shi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 230006,
     "areaNameJp": "愛知県",
     "areaNameEn": "Aichi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 231002,
     "areaNameJp": "名古屋市",
     "areaNameEn": "Nagoya-shi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 240001,
     "areaNameJp": "三重県",
     "areaNameEn": "Mie",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 250007,
     "areaNameJp": "滋賀県",
     "areaNameEn": "Shiga",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 260002,
     "areaNameJp": "京都府",
     "areaNameEn": "Kyoto",
@@ -756,7 +693,6 @@
     "item03ClinicName": "メンズエミナル京都院"
   },
   {
-    "Google": null,
     "id": 261009,
     "areaNameJp": "京都市",
     "areaNameEn": "Kyoto-shi",
@@ -768,7 +704,6 @@
     "item03ClinicName": "メンズエミナル京都院"
   },
   {
-    "Google": null,
     "id": 270008,
     "areaNameJp": "大阪府",
     "areaNameEn": "Osaka",
@@ -780,7 +715,6 @@
     "item03ClinicName": "メンズエミナル梅田院"
   },
   {
-    "Google": null,
     "id": 271004,
     "areaNameJp": "大阪市",
     "areaNameEn": "Osaka-shi",
@@ -792,115 +726,105 @@
     "item03ClinicName": "メンズエミナル梅田院"
   },
   {
-    "Google": null,
     "id": 271403,
     "areaNameJp": "堺市",
     "areaNameEn": "Sakai-shi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 280003,
     "areaNameJp": "兵庫県",
     "areaNameEn": "Hyogo",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 281000,
     "areaNameJp": "神戸市",
     "areaNameEn": "Kobe-shi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 290009,
     "areaNameJp": "奈良県",
     "areaNameEn": "Nara",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 300004,
     "areaNameJp": "和歌山県",
     "areaNameEn": "Wakayama",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 310000,
     "areaNameJp": "鳥取県",
     "areaNameEn": "Tottori",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 320005,
     "areaNameJp": "島根県",
     "areaNameEn": "Shimane",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 330001,
     "areaNameJp": "岡山県",
     "areaNameEn": "Okayama",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 331007,
     "areaNameJp": "岡山市",
     "areaNameEn": "Okayama-shi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 340006,
     "areaNameJp": "広島県",
     "areaNameEn": "Hiroshima",
@@ -912,7 +836,6 @@
     "item03ClinicName": "メンズエミナル広島院"
   },
   {
-    "Google": null,
     "id": 341002,
     "areaNameJp": "広島市",
     "areaNameEn": "Hiroshima-shi",
@@ -924,67 +847,61 @@
     "item03ClinicName": "メンズエミナル広島院"
   },
   {
-    "Google": null,
     "id": 350001,
     "areaNameJp": "山口県",
     "areaNameEn": "Yamaguchi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 360007,
     "areaNameJp": "徳島県",
     "areaNameEn": "Tokushima",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 370002,
     "areaNameJp": "香川県",
     "areaNameEn": "Kagawa",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 380008,
     "areaNameJp": "愛媛県",
     "areaNameEn": "Ehime",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 390003,
     "areaNameJp": "高知県",
     "areaNameEn": "Kochi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 400009,
     "areaNameJp": "福岡県",
     "areaNameEn": "Fukuoka",
@@ -996,19 +913,17 @@
     "item03ClinicName": "メンズエミナル福岡天神院"
   },
   {
-    "Google": null,
     "id": 401005,
     "areaNameJp": "北九州市",
     "areaNameEn": "Kitakyushu-shi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 401307,
     "areaNameJp": "福岡市",
     "areaNameEn": "Fukuoka-shi",
@@ -1020,99 +935,91 @@
     "item03ClinicName": "メンズエミナル福岡天神院"
   },
   {
-    "Google": null,
     "id": 410004,
     "areaNameJp": "佐賀県",
     "areaNameEn": "Saga",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 420000,
     "areaNameJp": "長崎県",
     "areaNameEn": "Nagasaki",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 430005,
     "areaNameJp": "熊本県",
     "areaNameEn": "Kumamoto",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 431001,
     "areaNameJp": "熊本市",
     "areaNameEn": "Kumamoto-shi",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 440001,
     "areaNameJp": "大分県",
     "areaNameEn": "Oita",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 450006,
     "areaNameJp": "宮崎県",
     "areaNameEn": "Miyazaki",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 460001,
     "areaNameJp": "鹿児島県",
     "areaNameEn": "Kagoshima",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   },
   {
-    "Google": null,
     "id": 470007,
     "areaNameJp": "沖縄県",
     "areaNameEn": "Okinawa",
-    "item01ServiceName": null,
-    "item01ClinicName": null,
-    "item02ServiceName": null,
-    "item02ClinicName": null,
-    "item03ServiceName": null,
-    "item03ClinicName": null
+    "item01ServiceName": "",
+    "item01ClinicName": "",
+    "item02ServiceName": "",
+    "item02ClinicName": "",
+    "item03ServiceName": "",
+    "item03ClinicName": ""
   }
 ]

@@ -195,9 +195,9 @@ function getPickupStoreByService($stores, $serviceName, $clinicName)
 
 // ランキング順位に応じたrate値を定義
 $rankingRates = [
-  1 => '4.6', // 1位のrate
-  2 => '3.8', // 2位のrate
-  3 => '2.4'  // 3位のrate
+  1 => '3.0', // 1位のrate
+  2 => '3.0', // 2位のrate
+  3 => '3.0'  // 3位のrate
 ];
 
 // デフォルト値の設定（空文字ベース）
@@ -271,6 +271,9 @@ function generateMachineLabels($product)
         break;
       case '02':
         $labels[] = '<p class="label -orange">蓄熱式</p>';
+        break;
+      case '03':
+        $labels[] = '<p class="label -blue">光脱毛</p>';
         break;
     }
   }

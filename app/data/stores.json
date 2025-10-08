@@ -1,6 +1,5 @@
 [
   {
-    "Google": null,
     "id": 1,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック札幌院",
@@ -11,7 +10,6 @@
     "accses": "札幌市営地下鉄各線「大通駅」より徒歩2分"
   },
   {
-    "Google": null,
     "id": 2,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック仙台院",
@@ -22,7 +20,6 @@
     "accses": "JR各線「仙台駅」、地下鉄「仙台駅」より徒歩6分／JR仙石線「あおば通駅」より徒歩3分"
   },
   {
-    "Google": null,
     "id": 3,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック銀座院",
@@ -33,7 +30,6 @@
     "accses": "東京メトロ日比谷線「銀座駅」B3出口より徒歩2分"
   },
   {
-    "Google": null,
     "id": 4,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック渋谷院",
@@ -44,7 +40,6 @@
     "accses": "渋谷駅から徒歩5分"
   },
   {
-    "Google": null,
     "id": 5,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック新宿院",
@@ -55,7 +50,6 @@
     "accses": "JR各線「新宿駅」東口より徒歩3分"
   },
   {
-    "Google": null,
     "id": 6,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック池袋院",
@@ -66,7 +60,6 @@
     "accses": "JR各線「池袋駅」東口（北）より徒歩2分"
   },
   {
-    "Google": null,
     "id": 7,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック上野院",
@@ -77,7 +70,6 @@
     "accses": "JR山手線「上野駅」より徒歩3分"
   },
   {
-    "Google": null,
     "id": 8,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック吉祥寺院",
@@ -88,7 +80,6 @@
     "accses": "JR中央線・京王井の頭線「吉祥寺駅」より徒歩4分"
   },
   {
-    "Google": null,
     "id": 9,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック町田院",
@@ -99,7 +90,6 @@
     "accses": "小田急小田原線「町田駅」西口より徒歩2分／JR横浜線「町田駅」北口より徒歩4分"
   },
   {
-    "Google": null,
     "id": 10,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック横浜院",
@@ -110,7 +100,6 @@
     "accses": "各線「横浜駅」ジョイナス地下街北9番出口より徒歩4分"
   },
   {
-    "Google": null,
     "id": 11,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック大宮院",
@@ -121,7 +110,6 @@
     "accses": "各線「大宮駅」東口（北）より徒歩1分"
   },
   {
-    "Google": null,
     "id": 12,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック柏院",
@@ -132,7 +120,6 @@
     "accses": "常磐線「柏駅」東口より徒歩3分"
   },
   {
-    "Google": null,
     "id": 13,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック千葉院",
@@ -143,7 +130,6 @@
     "accses": "京成線「千葉中央駅」より徒歩4分"
   },
   {
-    "Google": null,
     "id": 14,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック静岡院",
@@ -154,7 +140,6 @@
     "accses": "静鉄「新静岡駅」より徒歩1分"
   },
   {
-    "Google": null,
     "id": 15,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック名古屋院",
@@ -165,7 +150,6 @@
     "accses": "地下鉄桜通線「国際センター駅」より徒歩4分"
   },
   {
-    "Google": null,
     "id": 16,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック京都四条河原町院",
@@ -176,7 +160,6 @@
     "accses": "阪急「京都河原町駅」10番出口より徒歩2分"
   },
   {
-    "Google": null,
     "id": 17,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック心斎橋院",
@@ -187,7 +170,6 @@
     "accses": "御堂筋線「心斎橋駅」より徒歩3分"
   },
   {
-    "Google": null,
     "id": 18,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック大阪梅田院",
@@ -198,7 +180,6 @@
     "accses": "JR東西線「北新地駅」より徒歩2分"
   },
   {
-    "Google": null,
     "id": 19,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック神戸三宮院",
@@ -209,7 +190,6 @@
     "accses": "JR「三ノ宮駅」直結、阪急・阪神・地下鉄・ポートライナー「三宮駅」より徒歩すぐ"
   },
   {
-    "Google": null,
     "id": 20,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック広島院",
@@ -220,7 +200,6 @@
     "accses": "アストラムライン・広電「本通駅」より徒歩3分"
   },
   {
-    "Google": null,
     "id": 21,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック福岡博多天神院",
@@ -231,7 +210,6 @@
     "accses": "西鉄天神大牟田線「西鉄福岡（天神）駅」より徒歩4分"
   },
   {
-    "Google": null,
     "id": 22,
     "service": "レジーナオム",
     "clinicName": "レジーナクリニック沖縄那覇院",
@@ -242,7 +220,6 @@
     "accses": "ゆいレール「おもろまち駅」より徒歩4分"
   },
   {
-    "Google": null,
     "id": 23,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア札幌院",
@@ -253,7 +230,6 @@
     "accses": "札幌市営地下鉄「大通駅」10番出口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 24,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア新宿院",
@@ -264,7 +240,6 @@
     "accses": "JR各線「新宿駅」東口・中央東口 徒歩1分"
   },
   {
-    "Google": null,
     "id": 25,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア銀座院",
@@ -275,7 +250,6 @@
     "accses": "東京メトロ日比谷線「銀座駅」B3出口より徒歩2分"
   },
   {
-    "Google": null,
     "id": 26,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア渋谷院",
@@ -286,7 +260,6 @@
     "accses": "JR各線「渋谷駅」ハチ公口より徒歩4分"
   },
   {
-    "Google": null,
     "id": 27,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア池袋院",
@@ -297,7 +270,6 @@
     "accses": "JR各線、東武東上線、西武池袋線、東京メトロ「池袋駅」東口より徒歩2分"
   },
   {
-    "Google": null,
     "id": 28,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア上野院",
@@ -308,7 +280,6 @@
     "accses": "各線「上野駅」広小路口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 29,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア町田院",
@@ -319,7 +290,6 @@
     "accses": "小田急線「町田駅」東口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 30,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア立川院",
@@ -330,7 +300,6 @@
     "accses": "JR各線「立川駅」南口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 31,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア横浜院",
@@ -341,7 +310,6 @@
     "accses": "JR各線、東急東横線、京急線、相鉄線、横浜市営地下鉄「横浜駅」南11番出口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 32,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア川崎院",
@@ -352,7 +320,6 @@
     "accses": "京急本線「京急川崎駅」中央口より徒歩4分"
   },
   {
-    "Google": null,
     "id": 33,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア千葉院",
@@ -363,7 +330,6 @@
     "accses": "JR各線「千葉駅」より徒歩4分"
   },
   {
-    "Google": null,
     "id": 34,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア名古屋栄院",
@@ -374,7 +340,6 @@
     "accses": "名古屋市営地下鉄東山線・名城線「栄駅」16番出口より徒歩5分"
   },
   {
-    "Google": null,
     "id": 35,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア大阪梅田院",
@@ -385,7 +350,6 @@
     "accses": "JR東西線「北新地駅」より徒歩2分"
   },
   {
-    "Google": null,
     "id": 36,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイアなんば院",
@@ -396,7 +360,6 @@
     "accses": "南海線「なんば駅」より徒歩2分"
   },
   {
-    "Google": null,
     "id": 37,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア京都院",
@@ -407,7 +370,6 @@
     "accses": "阪急電鉄京都本線「京都河原町駅」10番出口より徒歩2分"
   },
   {
-    "Google": null,
     "id": 38,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア福岡天神院",
@@ -418,7 +380,6 @@
     "accses": "西鉄天神大牟田線「西鉄福岡（天神）駅」から徒歩5分"
   },
   {
-    "Google": null,
     "id": 39,
     "service": "メンズフレイア",
     "clinicName": "メンズフレイア沖縄那覇院",
@@ -429,7 +390,6 @@
     "accses": "ゆいレール「県庁前駅」より徒歩5分"
   },
   {
-    "Google": null,
     "id": 40,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ札幌院",
@@ -440,7 +400,6 @@
     "accses": "地下鉄南北線「すすきの駅」2番出口より徒歩3分"
   },
   {
-    "Google": null,
     "id": 41,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ青森院",
@@ -451,7 +410,6 @@
     "accses": "JR「青森駅」東口より徒歩5分"
   },
   {
-    "Google": null,
     "id": 42,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ八戸院",
@@ -462,7 +420,6 @@
     "accses": "JR「本八戸駅」南口より徒歩10分"
   },
   {
-    "Google": null,
     "id": 43,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ盛岡院",
@@ -473,7 +430,6 @@
     "accses": "JR「盛岡駅」公共地下道B5出口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 44,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ仙台院",
@@ -484,7 +440,6 @@
     "accses": "JR東北本線「仙台駅」西出口1より徒歩1分"
   },
   {
-    "Google": null,
     "id": 45,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼいわき院",
@@ -495,7 +450,6 @@
     "accses": "JR「いわき駅」南口より徒歩4分"
   },
   {
-    "Google": null,
     "id": 46,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ郡山院",
@@ -506,7 +460,6 @@
     "accses": "JR「郡山駅」西口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 47,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ大宮院",
@@ -517,7 +470,6 @@
     "accses": "JR「大宮駅」東口より徒歩4分"
   },
   {
-    "Google": null,
     "id": 48,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ柏院",
@@ -528,7 +480,6 @@
     "accses": "JR「柏駅」東口より徒歩2分"
   },
   {
-    "Google": null,
     "id": 49,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ池袋院",
@@ -539,7 +490,6 @@
     "accses": "西武池袋線「池袋駅」西武南口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 50,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ新宿南口院",
@@ -550,7 +500,6 @@
     "accses": "地下鉄「新宿三丁目駅」E5出口から徒歩2分"
   },
   {
-    "Google": null,
     "id": 51,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ新宿東口院",
@@ -561,7 +510,6 @@
     "accses": "地下鉄「新宿三丁目駅」B5出口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 52,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ渋谷院",
@@ -572,7 +520,6 @@
     "accses": "「渋谷駅」A2出口より徒歩3分"
   },
   {
-    "Google": null,
     "id": 53,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ銀座院",
@@ -583,7 +530,6 @@
     "accses": "地下鉄「銀座駅」A2出口より徒歩5分"
   },
   {
-    "Google": null,
     "id": 54,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ立川院",
@@ -594,7 +540,6 @@
     "accses": "多摩モノレール「立川南駅」南口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 55,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ町田院",
@@ -605,7 +550,6 @@
     "accses": "小田急小田原線「町田駅」東口より徒歩5分"
   },
   {
-    "Google": null,
     "id": 56,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ横浜院",
@@ -616,7 +560,6 @@
     "accses": "「横浜駅」みなみ西口より徒歩4分"
   },
   {
-    "Google": null,
     "id": 57,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ川崎院",
@@ -627,7 +570,6 @@
     "accses": "JR「川崎駅」東口より徒歩2分"
   },
   {
-    "Google": null,
     "id": 58,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ新潟院",
@@ -638,7 +580,6 @@
     "accses": "「新潟駅」万代口より車で10分"
   },
   {
-    "Google": null,
     "id": 59,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ名古屋栄院",
@@ -649,7 +590,6 @@
     "accses": "地下鉄「栄駅」8出入口より徒歩4分"
   },
   {
-    "Google": null,
     "id": 60,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ名古屋駅前院",
@@ -660,7 +600,6 @@
     "accses": "地下鉄「名古屋駅」1出入口より徒歩2分"
   },
   {
-    "Google": null,
     "id": 61,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ京都河原町院",
@@ -671,7 +610,6 @@
     "accses": "阪急京都本線「京都河原町駅」3B出口より徒歩5分"
   },
   {
-    "Google": null,
     "id": 62,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ大阪梅田院",
@@ -682,7 +620,6 @@
     "accses": "地下鉄四つ橋線「西梅田駅」より徒歩1分"
   },
   {
-    "Google": null,
     "id": 63,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ心斎橋院",
@@ -693,7 +630,6 @@
     "accses": "地下鉄「心斎橋駅」出口3より徒歩4分"
   },
   {
-    "Google": null,
     "id": 64,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ神戸三宮院",
@@ -704,7 +640,6 @@
     "accses": "JR「三ノ宮駅」中央口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 65,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ広島院",
@@ -715,7 +650,6 @@
     "accses": "広島電鉄「袋町電停」より徒歩1分"
   },
   {
-    "Google": null,
     "id": 66,
     "service": "メンズリゼ",
     "clinicName": "メンズリゼ福岡天神院",
@@ -726,7 +660,6 @@
     "accses": "空港線「天神駅」天神地下街西1番出口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 67,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック札幌院",
@@ -737,7 +670,6 @@
     "accses": "JR「札幌駅」南口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 68,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック仙台院",
@@ -748,7 +680,6 @@
     "accses": "JR「あおば通駅」1番出口より徒歩2分"
   },
   {
-    "Google": null,
     "id": 69,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック大宮院",
@@ -759,7 +690,6 @@
     "accses": "JR「大宮駅」西口より徒歩3分"
   },
   {
-    "Google": null,
     "id": 70,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック千葉院",
@@ -770,7 +700,6 @@
     "accses": "JR「千葉駅」東口より徒歩3分"
   },
   {
-    "Google": null,
     "id": 71,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック新宿本院",
@@ -781,7 +710,6 @@
     "accses": "東京メトロ・都営新宿線「新宿三丁目駅」C4出口より徒歩2分"
   },
   {
-    "Google": null,
     "id": 72,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック渋谷院",
@@ -792,7 +720,6 @@
     "accses": "JR「渋谷駅」宮益坂口より徒歩5分"
   },
   {
-    "Google": null,
     "id": 73,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック道玄坂院",
@@ -803,7 +730,6 @@
     "accses": "JR「渋谷駅」ハチ公口より徒歩3分"
   },
   {
-    "Google": null,
     "id": 74,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック池袋院",
@@ -814,7 +740,6 @@
     "accses": "JR「池袋駅」東口より徒歩3分"
   },
   {
-    "Google": null,
     "id": 75,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック銀座院",
@@ -825,7 +750,6 @@
     "accses": "東京メトロ日比谷線「銀座駅」B3出口より徒歩2分"
   },
   {
-    "Google": null,
     "id": 76,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック東銀座院",
@@ -836,7 +760,6 @@
     "accses": "東京メトロ日比谷線「東銀座駅」A2出口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 77,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック銀座ANNEX院",
@@ -847,7 +770,6 @@
     "accses": "東京メトロ日比谷線「銀座駅」A3出口より徒歩3分"
   },
   {
-    "Google": null,
     "id": 78,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック上野院",
@@ -858,7 +780,6 @@
     "accses": "JR「上野駅」不忍口より徒歩3分"
   },
   {
-    "Google": null,
     "id": 79,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック町田院",
@@ -869,7 +790,6 @@
     "accses": "JR「町田駅」北口より徒歩2分"
   },
   {
-    "Google": null,
     "id": 80,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック立川院",
@@ -880,7 +800,6 @@
     "accses": "JR「立川駅」北口より徒歩3分"
   },
   {
-    "Google": null,
     "id": 81,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック横浜院",
@@ -891,7 +810,6 @@
     "accses": "JR「横浜駅」みなみ西口より徒歩5分"
   },
   {
-    "Google": null,
     "id": 82,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック名古屋駅前院",
@@ -902,7 +820,6 @@
     "accses": "JR「名古屋駅」ユニモール4番出口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 83,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック名古屋栄院",
@@ -913,7 +830,6 @@
     "accses": "地下鉄東山線・名城線「栄駅」8番出口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 84,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック大阪梅田院",
@@ -924,7 +840,6 @@
     "accses": "泉の広場M14番出口あがってすぐ"
   },
   {
-    "Google": null,
     "id": 85,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック大阪心斎橋院",
@@ -935,7 +850,6 @@
     "accses": "地下鉄御堂筋線「心斎橋駅」4-B号出口より徒歩4分"
   },
   {
-    "Google": null,
     "id": 86,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック京都烏丸院",
@@ -946,7 +860,6 @@
     "accses": "阪急京都線「烏丸駅」・地下鉄烏丸線「四条駅」13番出口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 87,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック神戸三宮院",
@@ -957,7 +870,6 @@
     "accses": "阪急神戸線「神戸三宮駅」東口より徒歩1分"
   },
   {
-    "Google": null,
     "id": 88,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック広島院",
@@ -968,7 +880,6 @@
     "accses": "広島電鉄「本通駅」より徒歩1分"
   },
   {
-    "Google": null,
     "id": 89,
     "service": "ゴリラクリニック",
     "clinicName": "ゴリラクリニック福岡天神院",
@@ -979,7 +890,6 @@
     "accses": "西鉄天神大牟田線「西鉄福岡（天神）駅」南口より徒歩5分"
   },
   {
-    "Google": null,
     "id": 90,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル札幌院",
@@ -990,7 +900,6 @@
     "accses": "大通駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 91,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル青森院",
@@ -1001,7 +910,6 @@
     "accses": "青森駅 徒歩13分"
   },
   {
-    "Google": null,
     "id": 92,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル盛岡院",
@@ -1012,7 +920,6 @@
     "accses": "盛岡駅 徒歩10分"
   },
   {
-    "Google": null,
     "id": 93,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル仙台院",
@@ -1023,7 +930,6 @@
     "accses": "広瀬通駅 徒歩5分"
   },
   {
-    "Google": null,
     "id": 94,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル秋田院",
@@ -1034,7 +940,6 @@
     "accses": "秋田駅 徒歩4分"
   },
   {
-    "Google": null,
     "id": 95,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル郡山院",
@@ -1045,7 +950,6 @@
     "accses": "郡山駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 96,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル新宿院",
@@ -1056,7 +960,6 @@
     "accses": "新宿駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 97,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル渋谷駅前院",
@@ -1067,7 +970,6 @@
     "accses": "渋谷駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 98,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル銀座院",
@@ -1078,7 +980,6 @@
     "accses": "銀座駅 徒歩2分"
   },
   {
-    "Google": null,
     "id": 99,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル池袋東口院",
@@ -1089,7 +990,6 @@
     "accses": "池袋駅 徒歩4分"
   },
   {
-    "Google": null,
     "id": 100,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル池袋西口院",
@@ -1100,7 +1000,6 @@
     "accses": "池袋駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 101,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル上野院",
@@ -1111,7 +1010,6 @@
     "accses": "上野駅 徒歩4分"
   },
   {
-    "Google": null,
     "id": 102,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル立川院",
@@ -1122,7 +1020,6 @@
     "accses": "立川駅 徒歩4分"
   },
   {
-    "Google": null,
     "id": 103,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル町田院",
@@ -1133,7 +1030,6 @@
     "accses": "町田駅 徒歩5分"
   },
   {
-    "Google": null,
     "id": 104,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル横浜院",
@@ -1144,7 +1040,6 @@
     "accses": "横浜駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 105,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル川崎院",
@@ -1155,7 +1050,6 @@
     "accses": "川崎駅 徒歩5分"
   },
   {
-    "Google": null,
     "id": 106,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル大宮院",
@@ -1166,7 +1060,6 @@
     "accses": "大宮駅 徒歩4分"
   },
   {
-    "Google": null,
     "id": 107,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル千葉院",
@@ -1177,7 +1070,6 @@
     "accses": "千葉駅 徒歩5分"
   },
   {
-    "Google": null,
     "id": 108,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル船橋院",
@@ -1188,7 +1080,6 @@
     "accses": "船橋駅 徒歩3分"
   },
   {
-    "Google": null,
     "id": 109,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル宇都宮院",
@@ -1199,7 +1090,6 @@
     "accses": "東武宇都宮駅 徒歩3分"
   },
   {
-    "Google": null,
     "id": 110,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル高崎院",
@@ -1210,7 +1100,6 @@
     "accses": "高崎駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 111,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル水戸院",
@@ -1221,7 +1110,6 @@
     "accses": "水戸駅 徒歩2分"
   },
   {
-    "Google": null,
     "id": 112,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル新潟院",
@@ -1232,7 +1120,6 @@
     "accses": "新潟駅 徒歩8分"
   },
   {
-    "Google": null,
     "id": 113,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル富山院",
@@ -1243,7 +1130,6 @@
     "accses": "富山駅 徒歩3分"
   },
   {
-    "Google": null,
     "id": 114,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル金沢院",
@@ -1254,7 +1140,6 @@
     "accses": "金沢駅 徒歩3分"
   },
   {
-    "Google": null,
     "id": 115,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル福井院",
@@ -1265,7 +1150,6 @@
     "accses": "福井駅 徒歩2分"
   },
   {
-    "Google": null,
     "id": 116,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル甲府院",
@@ -1276,7 +1160,6 @@
     "accses": "甲府駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 117,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル長野院",
@@ -1287,7 +1170,6 @@
     "accses": "長野駅 徒歩2分"
   },
   {
-    "Google": null,
     "id": 118,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル岐阜院",
@@ -1298,7 +1180,6 @@
     "accses": "名鉄岐阜駅 徒歩2分"
   },
   {
-    "Google": null,
     "id": 119,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル静岡院",
@@ -1309,7 +1190,6 @@
     "accses": "静岡駅 徒歩3分"
   },
   {
-    "Google": null,
     "id": 120,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル浜松院",
@@ -1320,7 +1200,6 @@
     "accses": "浜松駅 徒歩4分"
   },
   {
-    "Google": null,
     "id": 121,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル名古屋院",
@@ -1331,7 +1210,6 @@
     "accses": "国際センター駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 122,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル京都院",
@@ -1342,7 +1220,6 @@
     "accses": "烏丸駅 徒歩5分"
   },
   {
-    "Google": null,
     "id": 123,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル梅田院",
@@ -1353,7 +1230,6 @@
     "accses": "大阪梅田駅 徒歩3分"
   },
   {
-    "Google": null,
     "id": 124,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル心斎橋院",
@@ -1364,7 +1240,6 @@
     "accses": "心斎橋駅 徒歩5分"
   },
   {
-    "Google": null,
     "id": 125,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル天王寺院",
@@ -1375,7 +1250,6 @@
     "accses": "天王寺駅 徒歩2分"
   },
   {
-    "Google": null,
     "id": 126,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル堺東院",
@@ -1386,7 +1260,6 @@
     "accses": "堺東駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 127,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル神戸院",
@@ -1397,7 +1270,6 @@
     "accses": "三ノ宮駅 徒歩5分"
   },
   {
-    "Google": null,
     "id": 128,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル姫路院",
@@ -1408,7 +1280,6 @@
     "accses": "姫路駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 129,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル奈良院",
@@ -1419,7 +1290,6 @@
     "accses": "近鉄奈良駅 徒歩2分"
   },
   {
-    "Google": null,
     "id": 130,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル大津院",
@@ -1430,7 +1300,6 @@
     "accses": "大津駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 131,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル和歌山院",
@@ -1441,7 +1310,6 @@
     "accses": "和歌山駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 132,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル岡山院",
@@ -1452,7 +1320,6 @@
     "accses": "岡山駅 徒歩3分"
   },
   {
-    "Google": null,
     "id": 133,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル広島院",
@@ -1463,7 +1330,6 @@
     "accses": "本通駅 徒歩3分"
   },
   {
-    "Google": null,
     "id": 134,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル徳島院",
@@ -1474,7 +1340,6 @@
     "accses": "徳島駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 135,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル高松院",
@@ -1485,7 +1350,6 @@
     "accses": "片原町駅 徒歩6分"
   },
   {
-    "Google": null,
     "id": 136,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル松山院",
@@ -1496,7 +1360,6 @@
     "accses": "松山市駅 徒歩3分"
   },
   {
-    "Google": null,
     "id": 137,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル高知院",
@@ -1507,7 +1370,6 @@
     "accses": "大橋通駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 138,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル福岡天神院",
@@ -1518,7 +1380,6 @@
     "accses": "西鉄福岡(天神)駅 徒歩5分"
   },
   {
-    "Google": null,
     "id": 139,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル小倉院",
@@ -1529,7 +1390,6 @@
     "accses": "小倉駅 徒歩5分"
   },
   {
-    "Google": null,
     "id": 140,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル佐賀院",
@@ -1540,7 +1400,6 @@
     "accses": "佐賀駅 徒歩2分"
   },
   {
-    "Google": null,
     "id": 141,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル長崎院",
@@ -1551,7 +1410,6 @@
     "accses": "観光通駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 142,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル熊本院",
@@ -1562,7 +1420,6 @@
     "accses": "通町筋駅 徒歩2分"
   },
   {
-    "Google": null,
     "id": 143,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル大分院",
@@ -1573,7 +1430,6 @@
     "accses": "大分駅 徒歩2分"
   },
   {
-    "Google": null,
     "id": 144,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル宮崎院",
@@ -1584,7 +1440,6 @@
     "accses": "宮崎駅 徒歩12分"
   },
   {
-    "Google": null,
     "id": 145,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル鹿児島院",
@@ -1595,7 +1450,6 @@
     "accses": "天文館通駅 徒歩1分"
   },
   {
-    "Google": null,
     "id": 146,
     "service": "メンズエミナル",
     "clinicName": "メンズエミナル那覇院",
@@ -1604,5 +1458,1055 @@
     "town": "那覇市",
     "address": "沖縄県那覇市久茂地3-2-20 丸ビル3F",
     "accses": "県庁前駅 徒歩2分"
+  },
+  {
+    "id": 147,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア北海道札幌市中央区南2条西4-1 札幌ナナイロ4F",
+    "regionName": "北海道・東北",
+    "prefectureName": "北海道",
+    "town": "札幌市",
+    "address": "北海道札幌市中央区南2条西4-1 札幌ナナイロ4F",
+    "accses": "札幌市営地下鉄南北線・東西線・東豊線「大通駅」から徒歩約2分"
+  },
+  {
+    "id": 148,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア北海道旭川市1条通8-108 フィール旭川6F",
+    "regionName": "北海道・東北",
+    "prefectureName": "北海道",
+    "town": "旭川市",
+    "address": "北海道旭川市1条通8-108 フィール旭川6F",
+    "accses": "JR函館本線「旭川駅」から徒歩約5分"
+  },
+  {
+    "id": 149,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア青森県八戸市三日町13 さくら野百貨店八戸店2F",
+    "regionName": "北海道・東北",
+    "prefectureName": "青森県",
+    "town": "八戸市",
+    "address": "青森県八戸市三日町13 さくら野百貨店八戸店2F",
+    "accses": "JR八戸線「本八戸駅」から徒歩約9分"
+  },
+  {
+    "id": 150,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア青森県青森市古川1-10-13 AQUA古川一丁目ビル3F-C",
+    "regionName": "北海道・東北",
+    "prefectureName": "青森県",
+    "town": "青森市",
+    "address": "青森県青森市古川1-10-13 AQUA古川一丁目ビル3F-C",
+    "accses": "JR奥羽本線「青森駅」から徒歩約9分"
+  },
+  {
+    "id": 151,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア岩手県盛岡市大通2-1-23 サンクイーンビル3F",
+    "regionName": "北海道・東北",
+    "prefectureName": "岩手県",
+    "town": "盛岡市",
+    "address": "岩手県盛岡市大通2-1-23 サンクイーンビル3F",
+    "accses": "JR東北新幹線「盛岡駅」から徒歩約11分"
+  },
+  {
+    "id": 152,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア宮城県仙台市青葉区中央1-10-1 ヒューモスファイヴ6F",
+    "regionName": "北海道・東北",
+    "prefectureName": "宮城県",
+    "town": "仙台市",
+    "address": "宮城県仙台市青葉区中央1-10-1 ヒューモスファイヴ6F",
+    "accses": "JR東北本線「仙台駅」西口から徒歩約1分"
+  },
+  {
+    "id": 153,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア秋田県秋田市千秋久保田町4-2 OPA8F",
+    "regionName": "北海道・東北",
+    "prefectureName": "秋田県",
+    "town": "秋田市",
+    "address": "秋田県秋田市千秋久保田町4-2 OPA8F",
+    "accses": "JR奥羽本線「秋田駅」西口から徒歩約5分"
+  },
+  {
+    "id": 154,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア山形県山形市香澄町2-3-36 山田ビル2F",
+    "regionName": "北海道・東北",
+    "prefectureName": "山形県",
+    "town": "山形市",
+    "address": "山形県山形市香澄町2-3-36 山田ビル2F",
+    "accses": "JR奥羽本線「山形駅」東口から徒歩約8分"
+  },
+  {
+    "id": 155,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア福島県福島市本町５-６ 本町草野ビル403号室",
+    "regionName": "北海道・東北",
+    "prefectureName": "福島県",
+    "town": "福島市",
+    "address": "福島県福島市本町５-６ 本町草野ビル403号室",
+    "accses": "JR東北本線「福島駅」東口から徒歩約10分"
+  },
+  {
+    "id": 156,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア福島県郡山市中町11番5号 郡山スクエア111号室",
+    "regionName": "北海道・東北",
+    "prefectureName": "福島県",
+    "town": "郡山市",
+    "address": "福島県郡山市中町11番5号 郡山スクエア111号室",
+    "accses": "JR東北本線「郡山駅」から徒歩約10分"
+  },
+  {
+    "id": 157,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア福島県いわき市平字2-23 西村屋ビル2階",
+    "regionName": "北海道・東北",
+    "prefectureName": "福島県",
+    "town": "いわき市",
+    "address": "福島県いわき市平字2-23 西村屋ビル2階",
+    "accses": "JR常磐線「いわき駅」から徒歩約5分"
+  },
+  {
+    "id": 158,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア茨城県水戸市上水戸2-9-10 MEGAドン・キホーテ2F",
+    "regionName": "関東",
+    "prefectureName": "茨城県",
+    "town": "水戸市",
+    "address": "茨城県水戸市上水戸2-9-10 MEGAドン・キホーテ2F",
+    "accses": "JR常磐線「偕楽園駅」から徒歩約25分"
+  },
+  {
+    "id": 159,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア茨城県つくば市吾妻1-6-1 トナリエキュート1F",
+    "regionName": "関東",
+    "prefectureName": "茨城県",
+    "town": "つくば市",
+    "address": "茨城県つくば市吾妻1-6-1 トナリエキュート1F",
+    "accses": "つくばエクスプレス「つくば駅」A5出口から徒歩約1分"
+  },
+  {
+    "id": 160,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア栃木県宇都宮市曲師町3-1 ゆたかYビル2F",
+    "regionName": "関東",
+    "prefectureName": "栃木県",
+    "town": "宇都宮市",
+    "address": "栃木県宇都宮市曲師町3-1 ゆたかYビル2F",
+    "accses": "東武宇都宮線「東武宇都宮駅」から徒歩約6分"
+  },
+  {
+    "id": 161,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア栃木県小山市中央町3-5-20 カーサロブレ3F",
+    "regionName": "関東",
+    "prefectureName": "栃木県",
+    "town": "小山市",
+    "address": "栃木県小山市中央町3-5-20 カーサロブレ3F",
+    "accses": "JR宇都宮線「小山駅」西口から徒歩約5分"
+  },
+  {
+    "id": 162,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア群馬県高崎市八島町20 KSビル1F3号室",
+    "regionName": "関東",
+    "prefectureName": "群馬県",
+    "town": "高崎市",
+    "address": "群馬県高崎市八島町20 KSビル1F3号室",
+    "accses": "JR高崎線「高崎駅」西口から徒歩約3分"
+  },
+  {
+    "id": 163,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア群馬県伊勢崎市西小保方町368 スマーク伊勢崎2F",
+    "regionName": "関東",
+    "prefectureName": "群馬県",
+    "town": "伊勢崎市",
+    "address": "群馬県伊勢崎市西小保方町368 スマーク伊勢崎2F",
+    "accses": "JR両毛線「伊勢崎駅」からバスで約15分"
+  },
+  {
+    "id": 164,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア埼玉県さいたま市大宮区桜木町2-3 大宮マルイ5F",
+    "regionName": "関東",
+    "prefectureName": "埼玉県",
+    "town": "さいたま市",
+    "address": "埼玉県さいたま市大宮区桜木町2-3 大宮マルイ5F",
+    "accses": "JR京浜東北線「大宮駅」西口から徒歩約2分"
+  },
+  {
+    "id": 165,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア埼玉県熊谷市筑波3-202 ティアラ21 5F",
+    "regionName": "関東",
+    "prefectureName": "埼玉県",
+    "town": "熊谷市",
+    "address": "埼玉県熊谷市筑波3-202 ティアラ21 5F",
+    "accses": "JR高崎線「熊谷駅」正面口から徒歩約3分"
+  },
+  {
+    "id": 166,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア埼玉県川口市本町4-2-3 友愛センタービル4F",
+    "regionName": "関東",
+    "prefectureName": "埼玉県",
+    "town": "川口市",
+    "address": "埼玉県川口市本町4-2-3 友愛センタービル4F",
+    "accses": "JR京浜東北線「川口駅」東口から徒歩約5分"
+  },
+  {
+    "id": 167,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア千葉県千葉市中央区富士見2-5-15 塚本千葉第三ビル7F",
+    "regionName": "関東",
+    "prefectureName": "千葉県",
+    "town": "千葉市",
+    "address": "千葉県千葉市中央区富士見2-5-15 塚本千葉第三ビル7F",
+    "accses": "京成千葉線「京成千葉駅」西口から徒歩約3分"
+  },
+  {
+    "id": 168,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア千葉県船橋市本町4‐44‐35 JMFビル船橋01 3F",
+    "regionName": "関東",
+    "prefectureName": "千葉県",
+    "town": "船橋市",
+    "address": "千葉県船橋市本町4‐44‐35 JMFビル船橋01 3F",
+    "accses": "京成本線「京成船橋駅」から徒歩約2分"
+  },
+  {
+    "id": 169,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア千葉県松戸市松戸1307-1 キテミテマツド9F",
+    "regionName": "関東",
+    "prefectureName": "千葉県",
+    "town": "松戸市",
+    "address": "千葉県松戸市松戸1307-1 キテミテマツド9F",
+    "accses": "JR常磐線「松戸駅」西口から徒歩約3分"
+  },
+  {
+    "id": 170,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア千葉県市川市八幡2-15-10 パティオ本八幡5F",
+    "regionName": "関東",
+    "prefectureName": "千葉県",
+    "town": "市川市",
+    "address": "千葉県市川市八幡2-15-10 パティオ本八幡5F",
+    "accses": "JR総武線「本八幡駅」北口から徒歩約1分"
+  },
+  {
+    "id": 171,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア千葉県柏市柏2-5-5 ザ・カシワ拾番1F",
+    "regionName": "関東",
+    "prefectureName": "千葉県",
+    "town": "柏市",
+    "address": "千葉県柏市柏2-5-5 ザ・カシワ拾番1F",
+    "accses": "JR常磐線「柏駅」東口から徒歩約5分"
+  },
+  {
+    "id": 172,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア千葉県流山市おおたかの森西1-2-2 SAKURATERRACE 7F",
+    "regionName": "関東",
+    "prefectureName": "千葉県",
+    "town": "流山市",
+    "address": "千葉県流山市おおたかの森西1-2-2 SAKURATERRACE 7F",
+    "accses": "つくばエクスプレス「流山おおたかの森駅」西口から徒歩約1分"
+  },
+  {
+    "id": 173,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア東京都新宿区西新宿1-16-4 井門西新宿ビル5F",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "新宿区",
+    "address": "東京都新宿区西新宿1-16-4 井門西新宿ビル5F",
+    "accses": "JR山手線「新宿駅」京王モール地上3出口から徒歩約1分"
+  },
+  {
+    "id": 174,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア東京都渋谷区渋谷1-17-14 ACN渋谷ビル5F",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "渋谷区",
+    "address": "東京都渋谷区渋谷1-17-14 ACN渋谷ビル5F",
+    "accses": "JR山手線「渋谷駅」B1出口から徒歩約1分"
+  },
+  {
+    "id": 175,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア東京都豊島区西池袋1-17-7 池袋ルミエール5F",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "豊島区",
+    "address": "東京都豊島区西池袋1-17-7 池袋ルミエール5F",
+    "accses": "JR山手線「池袋駅」C8出口から徒歩約1分"
+  },
+  {
+    "id": 176,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア東京都台東区上野4-4-5 上野c-roadBldg 10F",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "台東区",
+    "address": "東京都台東区上野4-4-5 上野c-roadBldg 10F",
+    "accses": "東京メトロ銀座線「上野広小路駅」から徒歩約1分"
+  },
+  {
+    "id": 177,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア東京都品川区東五反田5-27-10 第一野村ビル7F",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "品川区",
+    "address": "東京都品川区東五反田5-27-10 第一野村ビル7F",
+    "accses": "JR山手線「五反田駅」A4出口から徒歩約1分"
+  },
+  {
+    "id": 178,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア東京都墨田区江東橋2-11-5 河口ビル4F",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "墨田区",
+    "address": "東京都墨田区江東橋2-11-5 河口ビル4F",
+    "accses": "JR総武線「錦糸町駅」南口から徒歩約4分"
+  },
+  {
+    "id": 179,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア東京都足立区千住4-18-11 MAISON SA Ⅶ 3F",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "足立区",
+    "address": "東京都足立区千住4-18-11 MAISON SA Ⅶ 3F",
+    "accses": "JR常磐線「北千住駅」西口から徒歩約6分"
+  },
+  {
+    "id": 180,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア東京都江戸川区西葛西3-16-13 葛西産業第7ビル4F",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "江戸川区",
+    "address": "東京都江戸川区西葛西3-16-13 葛西産業第7ビル4F",
+    "accses": "東京メトロ東西線「西葛西駅」北口から徒歩約2分"
+  },
+  {
+    "id": 181,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア東京都八王子市旭町8-10 比留間ビル4F",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "八王子市",
+    "address": "東京都八王子市旭町8-10 比留間ビル4F",
+    "accses": "JR中央本線「八王子駅」北口から徒歩約2分"
+  },
+  {
+    "id": 182,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア東京都立川市曙町2-18-18 MEGAドン・キホーテ立川店2F",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "立川市",
+    "address": "東京都立川市曙町2-18-18 MEGAドン・キホーテ立川店2F",
+    "accses": "多摩モノレール「立川北駅」から徒歩約3分"
+  },
+  {
+    "id": 183,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア東京都武蔵野市吉祥寺南町1-7-1 マルイ4F",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "武蔵野市",
+    "address": "東京都武蔵野市吉祥寺南町1-7-1 マルイ4F",
+    "accses": "JR中央本線「吉祥寺駅」公園口から徒歩約1分"
+  },
+  {
+    "id": 184,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア東京都町田市原町田6-3-3 町映ビル 6F-A2号室",
+    "regionName": "関東",
+    "prefectureName": "東京都",
+    "town": "町田市",
+    "address": "東京都町田市原町田6-3-3 町映ビル 6F-A2号室",
+    "accses": "小田急小田原線「町田駅」南口から徒歩約1分"
+  },
+  {
+    "id": 185,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア神奈川県横浜市西区高島2丁目13-12 崎陽軒ビル ヨコハマ・ジャスト3号館 8F",
+    "regionName": "関東",
+    "prefectureName": "神奈川県",
+    "town": "横浜市",
+    "address": "神奈川県横浜市西区高島2丁目13-12 崎陽軒ビル ヨコハマ・ジャスト3号館 8F",
+    "accses": "JR東海道本線「横浜駅」東口から徒歩約1分"
+  },
+  {
+    "id": 186,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア神奈川県川崎市川崎区駅前本町7-7 川崎モアーズ5F",
+    "regionName": "関東",
+    "prefectureName": "神奈川県",
+    "town": "川崎市",
+    "address": "神奈川県川崎市川崎区駅前本町7-7 川崎モアーズ5F",
+    "accses": "JR京浜東北線「川崎駅」東口から徒歩約3分"
+  },
+  {
+    "id": 187,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア神奈川県川崎市高津区溝口1-4-1 マルイ7F",
+    "regionName": "関東",
+    "prefectureName": "神奈川県",
+    "town": "川崎市",
+    "address": "神奈川県川崎市高津区溝口1-4-1 マルイ7F",
+    "accses": "JR南武線「武蔵溝ノ口駅」北口から徒歩約3分"
+  },
+  {
+    "id": 188,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア神奈川県川崎市中原区新丸子東2-925-6 Kosugi sun buildings 4F",
+    "regionName": "関東",
+    "prefectureName": "神奈川県",
+    "town": "川崎市",
+    "address": "神奈川県川崎市中原区新丸子東2-925-6 Kosugi sun buildings 4F",
+    "accses": "JR南武線「武蔵小杉駅」北口から徒歩約2分"
+  },
+  {
+    "id": 189,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア神奈川県藤沢市南藤沢22-3 湘南藤沢オーパ6F",
+    "regionName": "関東",
+    "prefectureName": "神奈川県",
+    "town": "藤沢市",
+    "address": "神奈川県藤沢市南藤沢22-3 湘南藤沢オーパ6F",
+    "accses": "JR東海道本線「藤沢駅」南口から徒歩約2分"
+  },
+  {
+    "id": 190,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア神奈川県横須賀市若松町2-7 藤田ビル7F",
+    "regionName": "関東",
+    "prefectureName": "神奈川県",
+    "town": "横須賀市",
+    "address": "神奈川県横須賀市若松町2-7 藤田ビル7F",
+    "accses": "京急本線「横須賀中央駅」東口から徒歩約1分"
+  },
+  {
+    "id": 191,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア神奈川県海老名市扇町13-1 ららぽーと海老名4F",
+    "regionName": "関東",
+    "prefectureName": "神奈川県",
+    "town": "海老名市",
+    "address": "神奈川県海老名市扇町13-1 ららぽーと海老名4F",
+    "accses": "小田急小田原線「海老名駅」西口から徒歩約1分"
+  },
+  {
+    "id": 192,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア新潟県新潟市中央区八千代2-1-2 万代シテイビルボードプレイス3F",
+    "regionName": "中部",
+    "prefectureName": "新潟県",
+    "town": "新潟市",
+    "address": "新潟県新潟市中央区八千代2-1-2 万代シテイビルボードプレイス3F",
+    "accses": "JR信越本線「新潟駅」万代口から徒歩約11分"
+  },
+  {
+    "id": 193,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア富山県高岡市下伏間江383 イオンモール高岡1F",
+    "regionName": "中部",
+    "prefectureName": "富山県",
+    "town": "高岡市",
+    "address": "富山県高岡市下伏間江383 イオンモール高岡1F",
+    "accses": "JR城端線「新高岡駅」北口から徒歩約6分"
+  },
+  {
+    "id": 194,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア石川県金沢市片町1-1-29 混元丹ビル2F",
+    "regionName": "中部",
+    "prefectureName": "石川県",
+    "town": "金沢市",
+    "address": "石川県金沢市片町1-1-29 混元丹ビル2F",
+    "accses": "北陸鉄道石川線「野町駅」から徒歩約17分"
+  },
+  {
+    "id": 195,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア福井県福井市大和田2-418 エルパプラス福井2F",
+    "regionName": "中部",
+    "prefectureName": "福井県",
+    "town": "福井市",
+    "address": "福井県福井市大和田2-418 エルパプラス福井2F",
+    "accses": "えちぜん鉄道勝山永平寺線「越前新保駅」から徒歩約24分"
+  },
+  {
+    "id": 196,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア山梨県中央市下河東3053-1 イオンタウン山梨中央1F",
+    "regionName": "中部",
+    "prefectureName": "山梨県",
+    "town": "中央市",
+    "address": "山梨県中央市下河東3053-1 イオンタウン山梨中央1F",
+    "accses": "JR身延線「小井川駅」から徒歩約15分"
+  },
+  {
+    "id": 197,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア長野県長野市南千歳1-1-1 ながの東急百貨店本館7F",
+    "regionName": "中部",
+    "prefectureName": "長野県",
+    "town": "長野市",
+    "address": "長野県長野市南千歳1-1-1 ながの東急百貨店本館7F",
+    "accses": "JR信越本線「長野駅」善光寺口から徒歩約1分"
+  },
+  {
+    "id": 198,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア長野県松本市大手2丁目2-10 グランドメゾン松本六九2階204号室",
+    "regionName": "中部",
+    "prefectureName": "長野県",
+    "town": "松本市",
+    "address": "長野県松本市大手2丁目2-10 グランドメゾン松本六九2階204号室",
+    "accses": "JR篠ノ井線「松本駅」から徒歩約7分"
+  },
+  {
+    "id": 199,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア岐阜県岐阜市神田町8-4 アートビル2F",
+    "regionName": "中部",
+    "prefectureName": "岐阜県",
+    "town": "岐阜市",
+    "address": "岐阜県岐阜市神田町8-4 アートビル2F",
+    "accses": "名鉄名古屋本線「名鉄岐阜駅」から徒歩約2分"
+  },
+  {
+    "id": 200,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア静岡県静岡市葵区伝馬町5-2 伝馬町アイワビルリモーネ 2F",
+    "regionName": "中部",
+    "prefectureName": "静岡県",
+    "town": "静岡市",
+    "address": "静岡県静岡市葵区伝馬町5-2 伝馬町アイワビルリモーネ 2F",
+    "accses": "静岡鉄道静岡清水線「新静岡駅」から徒歩約3分"
+  },
+  {
+    "id": 201,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア静岡県浜松市中央区鍛冶町140 Cビル501号",
+    "regionName": "中部",
+    "prefectureName": "静岡県",
+    "town": "浜松市",
+    "address": "静岡県浜松市中央区鍛冶町140 Cビル501号",
+    "accses": "遠州鉄道鉄道線「新浜松駅」から徒歩約1分"
+  },
+  {
+    "id": 202,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア静岡県沼津市大手町1-1-6 イーラde1F",
+    "regionName": "中部",
+    "prefectureName": "静岡県",
+    "town": "沼津市",
+    "address": "静岡県沼津市大手町1-1-6 イーラde1F",
+    "accses": "JR東海道本線「沼津駅」南口から徒歩約2分"
+  },
+  {
+    "id": 203,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア愛知県名古屋市中村区名駅4-25-21 石田ビル6F",
+    "regionName": "中部",
+    "prefectureName": "愛知県",
+    "town": "名古屋市",
+    "address": "愛知県名古屋市中村区名駅4-25-21 石田ビル6F",
+    "accses": "JR東海道本線「名古屋駅」から徒歩約6分"
+  },
+  {
+    "id": 204,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア愛知県名古屋市中区錦3-15-5 エルテビル2F",
+    "regionName": "中部",
+    "prefectureName": "愛知県",
+    "town": "名古屋市",
+    "address": "愛知県名古屋市中区錦3-15-5 エルテビル2F",
+    "accses": "名古屋市営地下鉄東山線「栄駅」8A出口から徒歩約1分"
+  },
+  {
+    "id": 205,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア愛知県豊橋市曙町松並101-210 豊橋ミラまち1F",
+    "regionName": "中部",
+    "prefectureName": "愛知県",
+    "town": "豊橋市",
+    "address": "愛知県豊橋市曙町松並101-210 豊橋ミラまち1F",
+    "accses": "豊橋鉄道渥美線「南栄駅」から徒歩約12分"
+  },
+  {
+    "id": 206,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア愛知県岡崎市明大寺町川端19-13 山七東岡崎ビル3F",
+    "regionName": "中部",
+    "prefectureName": "愛知県",
+    "town": "岡崎市",
+    "address": "愛知県岡崎市明大寺町川端19-13 山七東岡崎ビル3F",
+    "accses": "名鉄名古屋本線「東岡崎駅」から徒歩約1分"
+  },
+  {
+    "id": 207,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア愛知県一宮市栄3-7-1 石照ビル5F",
+    "regionName": "中部",
+    "prefectureName": "愛知県",
+    "town": "一宮市",
+    "address": "愛知県一宮市栄3-7-1 石照ビル5F",
+    "accses": "JR東海道本線「尾張一宮駅」から徒歩約1分"
+  },
+  {
+    "id": 208,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア愛知県豊田市西町5-5 VITS豊田タウン3F",
+    "regionName": "中部",
+    "prefectureName": "愛知県",
+    "town": "豊田市",
+    "address": "愛知県豊田市西町5-5 VITS豊田タウン3F",
+    "accses": "名鉄三河線「豊田市駅」西口から徒歩約5分"
+  },
+  {
+    "id": 209,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア愛知県知多郡東浦町大字緒川字旭6-2 イオンモール東浦エンジョイライフ館1F",
+    "regionName": "中部",
+    "prefectureName": "愛知県",
+    "town": "知多郡東浦町",
+    "address": "愛知県知多郡東浦町大字緒川字旭6-2 イオンモール東浦エンジョイライフ館1F",
+    "accses": "JR武豊線「緒川駅」東口から徒歩約2分"
+  },
+  {
+    "id": 210,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア三重県四日市市諏訪栄町7-34 近鉄百貨店四日市店6F",
+    "regionName": "近畿",
+    "prefectureName": "三重県",
+    "town": "四日市市",
+    "address": "三重県四日市市諏訪栄町7-34 近鉄百貨店四日市店6F",
+    "accses": "近鉄名古屋線「近鉄四日市駅」から徒歩約1分"
+  },
+  {
+    "id": 211,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア滋賀県草津市大路1-8-25 エムビル4F",
+    "regionName": "近畿",
+    "prefectureName": "滋賀県",
+    "town": "草津市",
+    "address": "滋賀県草津市大路1-8-25 エムビル4F",
+    "accses": "JR東海道本線「草津駅」東口から徒歩約2分"
+  },
+  {
+    "id": 212,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア京都府京都市下京区立売中之町104−1 井門四条ビル4F",
+    "regionName": "近畿",
+    "prefectureName": "京都府",
+    "town": "京都市",
+    "address": "京都府京都市下京区立売中之町104−1 井門四条ビル4F",
+    "accses": "阪急京都本線「烏丸駅」から徒歩約1分"
+  },
+  {
+    "id": 213,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア大阪府大阪市北区曾根崎2-1-12 国道ビル～ラ・オカシオン～2F",
+    "regionName": "近畿",
+    "prefectureName": "大阪府",
+    "town": "大阪市",
+    "address": "大阪府大阪市北区曾根崎2-1-12 国道ビル～ラ・オカシオン～2F",
+    "accses": "JR東西線「北新地駅」11-43出口から徒歩約3分"
+  },
+  {
+    "id": 214,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア大阪府大阪市都島区東野田町2-9-23 晃進ビル8F",
+    "regionName": "近畿",
+    "prefectureName": "大阪府",
+    "town": "大阪市",
+    "address": "大阪府大阪市都島区東野田町2-9-23 晃進ビル8F",
+    "accses": "JR大阪環状線「京橋駅」中央口から徒歩約1分"
+  },
+  {
+    "id": 215,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア大阪府大阪市中央区難波4-2-4 いちご御堂筋ビル11F",
+    "regionName": "近畿",
+    "prefectureName": "大阪府",
+    "town": "大阪市",
+    "address": "大阪府大阪市中央区難波4-2-4 いちご御堂筋ビル11F",
+    "accses": "Osaka Metro御堂筋線「なんば駅」10番出口から徒歩約1分"
+  },
+  {
+    "id": 216,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア大阪府大阪市阿倍野区旭町1-1-8 加賀タワービル6F",
+    "regionName": "近畿",
+    "prefectureName": "大阪府",
+    "town": "大阪市",
+    "address": "大阪府大阪市阿倍野区旭町1-1-8 加賀タワービル6F",
+    "accses": "JR大阪環状線「天王寺駅」14番出口から徒歩約1分"
+  },
+  {
+    "id": 217,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア大阪府堺市堺区南花田口町2-3-1 堺東高橋ビル9F",
+    "regionName": "近畿",
+    "prefectureName": "大阪府",
+    "town": "堺市",
+    "address": "大阪府堺市堺区南花田口町2-3-1 堺東高橋ビル9F",
+    "accses": "南海高野線「堺東駅」北出口から徒歩約1分"
+  },
+  {
+    "id": 218,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア大阪府高槻市北園町12-18 高槻クリスタルビル2F",
+    "regionName": "近畿",
+    "prefectureName": "大阪府",
+    "town": "高槻市",
+    "address": "大阪府高槻市北園町12-18 高槻クリスタルビル2F",
+    "accses": "阪急京都本線「高槻市駅」から徒歩約2分"
+  },
+  {
+    "id": 219,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア大阪府豊中市新千里東町1‐4‐2 千里ライフサイエンスセンタービル2F",
+    "regionName": "近畿",
+    "prefectureName": "大阪府",
+    "town": "豊中市",
+    "address": "大阪府豊中市新千里東町1‐4‐2 千里ライフサイエンスセンタービル2F",
+    "accses": "北大阪急行電鉄「千里中央駅」から徒歩約1分"
+  },
+  {
+    "id": 220,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア大阪府和泉市あゆみ野4-4-7 ららぽーと和泉4F",
+    "regionName": "近畿",
+    "prefectureName": "大阪府",
+    "town": "和泉市",
+    "address": "大阪府和泉市あゆみ野4-4-7 ららぽーと和泉4F",
+    "accses": "泉北高速鉄道線「和泉中央駅」からバスで約15分"
+  },
+  {
+    "id": 221,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア大阪府松原市天美東3-500 セブンパーク天美3F",
+    "regionName": "近畿",
+    "prefectureName": "大阪府",
+    "town": "松原市",
+    "address": "大阪府松原市天美東3-500 セブンパーク天美3F",
+    "accses": "近鉄南大阪線「河内天美駅」から徒歩約15分"
+  },
+  {
+    "id": 222,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア兵庫県神戸市中央区三宮町1-5-1 銀泉三宮ビル6F",
+    "regionName": "近畿",
+    "prefectureName": "兵庫県",
+    "town": "神戸市",
+    "address": "兵庫県神戸市中央区三宮町1-5-1 銀泉三宮ビル6F",
+    "accses": "JR神戸線「三ノ宮駅」西口から徒歩約1分"
+  },
+  {
+    "id": 223,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア兵庫県姫路市駅前町331 ペシュ駅前Ⅲ 2F",
+    "regionName": "近畿",
+    "prefectureName": "兵庫県",
+    "town": "姫路市",
+    "address": "兵庫県姫路市駅前町331 ペシュ駅前Ⅲ 2F",
+    "accses": "JR神戸線「姫路駅」から徒歩約4分"
+  },
+  {
+    "id": 224,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア兵庫県西宮市甲風園1-11-14 野村ビル3F",
+    "regionName": "近畿",
+    "prefectureName": "兵庫県",
+    "town": "西宮市",
+    "address": "兵庫県西宮市甲風園1-11-14 野村ビル3F",
+    "accses": "阪急神戸本線「西宮北口駅」北西口から徒歩約3分"
+  },
+  {
+    "id": 225,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア兵庫県明石市東仲ノ町6-1 アスピア明石南館2F",
+    "regionName": "近畿",
+    "prefectureName": "兵庫県",
+    "town": "明石市",
+    "address": "兵庫県明石市東仲ノ町6-1 アスピア明石南館2F",
+    "accses": "JR神戸線「明石駅」南口から徒歩約3分"
+  },
+  {
+    "id": 226,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア兵庫県加古川市別府町緑町2 アリオ加古川2F",
+    "regionName": "近畿",
+    "prefectureName": "兵庫県",
+    "town": "加古川市",
+    "address": "兵庫県加古川市別府町緑町2 アリオ加古川2F",
+    "accses": "山陽電鉄本線「別府駅」から徒歩約7分"
+  },
+  {
+    "id": 227,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア奈良県奈良市西大寺東町2-1-63 サンワシティ3-5号室",
+    "regionName": "近畿",
+    "prefectureName": "奈良県",
+    "town": "奈良市",
+    "address": "奈良県奈良市西大寺東町2-1-63 サンワシティ3-5号室",
+    "accses": "近鉄奈良線「大和西大寺駅」北口から徒歩約1分"
+  },
+  {
+    "id": 228,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア和歌山県和歌山市美園町5-1-3 池村ビル6F",
+    "regionName": "近畿",
+    "prefectureName": "和歌山県",
+    "town": "和歌山市",
+    "address": "和歌山県和歌山市美園町5-1-3 池村ビル6F",
+    "accses": "JR紀勢本線「和歌山駅」中央口から徒歩約1分"
+  },
+  {
+    "id": 229,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア鳥取県鳥取市今町2丁目281 今町ビル1階",
+    "regionName": "中国・四国",
+    "prefectureName": "鳥取県",
+    "town": "鳥取市",
+    "address": "鳥取県鳥取市今町2丁目281 今町ビル1階",
+    "accses": "JR因美線「鳥取駅」北口から徒歩約5分"
+  },
+  {
+    "id": 230,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア島根県松江市朝日町498 松江センタービル303号室",
+    "regionName": "中国・四国",
+    "prefectureName": "島根県",
+    "town": "松江市",
+    "address": "島根県松江市朝日町498 松江センタービル303号室",
+    "accses": "JR山陰本線「松江駅」から徒歩約4分"
+  },
+  {
+    "id": 231,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア岡山県岡山市北区駅前町1-1-1 成通岡山ビル5F",
+    "regionName": "中国・四国",
+    "prefectureName": "岡山県",
+    "town": "岡山市",
+    "address": "岡山県岡山市北区駅前町1-1-1 成通岡山ビル5F",
+    "accses": "JR山陽本線「岡山駅」東口から徒歩約1分"
+  },
+  {
+    "id": 232,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア岡山県倉敷市阿知2-1-17 津加佐ビル5F",
+    "regionName": "中国・四国",
+    "prefectureName": "岡山県",
+    "town": "倉敷市",
+    "address": "岡山県倉敷市阿知2-1-17 津加佐ビル5F",
+    "accses": "JR山陽本線「倉敷駅」南口から徒歩約3分"
+  },
+  {
+    "id": 233,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア広島県広島市中区紙屋町2-2-6 紙屋町 イワミビル5階B号室",
+    "regionName": "中国・四国",
+    "prefectureName": "広島県",
+    "town": "広島市",
+    "address": "広島県広島市中区紙屋町2-2-6 紙屋町 イワミビル5階B号室",
+    "accses": "広島電鉄本線「本通駅」から徒歩約1分"
+  },
+  {
+    "id": 234,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア広島県福山市東桜町1-43 備広福山駅前ビル 4F",
+    "regionName": "中国・四国",
+    "prefectureName": "広島県",
+    "town": "福山市",
+    "address": "広島県福山市東桜町1-43 備広福山駅前ビル 4F",
+    "accses": "JR山陽本線「福山駅」南口から徒歩約5分"
+  },
+  {
+    "id": 235,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア山口県下関市竹崎町4−4−8 シーモール下関3F",
+    "regionName": "中国・四国",
+    "prefectureName": "山口県",
+    "town": "下関市",
+    "address": "山口県下関市竹崎町4−4−8 シーモール下関3F",
+    "accses": "JR山陽本線「下関駅」東口から徒歩約1分"
+  },
+  {
+    "id": 236,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア徳島県徳島市一番町3-7 サンステージ一番町3F",
+    "regionName": "中国・四国",
+    "prefectureName": "徳島県",
+    "town": "徳島市",
+    "address": "徳島県徳島市一番町3-7 サンステージ一番町3F",
+    "accses": "JR高徳線「徳島駅」から徒歩約3分"
+  },
+  {
+    "id": 237,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア香川県高松市常磐町1-3-1 瓦町フラッグB1F",
+    "regionName": "中国・四国",
+    "prefectureName": "香川県",
+    "town": "高松市",
+    "address": "香川県高松市常磐町1-3-1 瓦町フラッグB1F",
+    "accses": "ことでん琴平線「瓦町駅」直結"
+  },
+  {
+    "id": 238,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア愛媛県松山市千舟町4-4-6 千舟町ビル4F",
+    "regionName": "中国・四国",
+    "prefectureName": "愛媛県",
+    "town": "松山市",
+    "address": "愛媛県松山市千舟町4-4-6 千舟町ビル4F",
+    "accses": "伊予鉄道市駅線「松山市駅」から徒歩約5分"
+  },
+  {
+    "id": 239,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア高知県高知市帯屋町2丁目3-3 スカイシップ2階北西号室",
+    "regionName": "中国・四国",
+    "prefectureName": "高知県",
+    "town": "高知市",
+    "address": "高知県高知市帯屋町2丁目3-3 スカイシップ2階北西号室",
+    "accses": "とさでん交通伊野線「大橋通駅」から徒歩約3分"
+  },
+  {
+    "id": 240,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア福岡県福岡市中央区大名2-1-35 モントーレ大名ガーデン4F",
+    "regionName": "九州・沖縄",
+    "prefectureName": "福岡県",
+    "town": "福岡市",
+    "address": "福岡県福岡市中央区大名2-1-35 モントーレ大名ガーデン4F",
+    "accses": "福岡市地下鉄空港線「赤坂駅」から徒歩約5分"
+  },
+  {
+    "id": 241,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア福岡県北九州市小倉北区室町1-1-1 リバーウォーク北九州2F",
+    "regionName": "九州・沖縄",
+    "prefectureName": "福岡県",
+    "town": "北九州市",
+    "address": "福岡県北九州市小倉北区室町1-1-1 リバーウォーク北九州2F",
+    "accses": "JR鹿児島本線「西小倉駅」から徒歩約3分"
+  },
+  {
+    "id": 242,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア福岡県筑紫野市針摺東3-3-1 ゆめタウン筑紫野本館2F",
+    "regionName": "九州・沖縄",
+    "prefectureName": "福岡県",
+    "town": "筑紫野市",
+    "address": "福岡県筑紫野市針摺東3-3-1 ゆめタウン筑紫野本館2F",
+    "accses": "西鉄天神大牟田線「朝倉街道駅」から徒歩約7分"
+  },
+  {
+    "id": 243,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア福岡県糟屋郡久山町山田1169-1 トリアスモール",
+    "regionName": "九州・沖縄",
+    "prefectureName": "福岡県",
+    "town": "糟屋郡久山町",
+    "address": "福岡県糟屋郡久山町山田1169-1 トリアスモール",
+    "accses": "JR香椎線「土井駅」からバスで約15分"
+  },
+  {
+    "id": 244,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア佐賀県佐賀市巨勢町大字牛島730 南館1F",
+    "regionName": "九州・沖縄",
+    "prefectureName": "佐賀県",
+    "town": "佐賀市",
+    "address": "佐賀県佐賀市巨勢町大字牛島730 南館1F",
+    "accses": "JR長崎本線「佐賀駅」からバスで約20分"
+  },
+  {
+    "id": 245,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア長崎県長崎市銅座町14-9 ICNビル7F",
+    "regionName": "九州・沖縄",
+    "prefectureName": "長崎県",
+    "town": "長崎市",
+    "address": "長崎県長崎市銅座町14-9 ICNビル7F",
+    "accses": "長崎電軌１系統「観光通駅」から徒歩約1分"
+  },
+  {
+    "id": 246,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア長崎県佐世保市下京町7-27 田中テナント201号室",
+    "regionName": "九州・沖縄",
+    "prefectureName": "長崎県",
+    "town": "佐世保市",
+    "address": "長崎県佐世保市下京町7-27 田中テナント201号室",
+    "accses": "松浦鉄道西九州線「佐世保中央駅」から徒歩約5分"
+  },
+  {
+    "id": 247,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア熊本県熊本市中央区上通町1-25 MS1ビル2F",
+    "regionName": "九州・沖縄",
+    "prefectureName": "熊本県",
+    "town": "熊本市",
+    "address": "熊本県熊本市中央区上通町1-25 MS1ビル2F",
+    "accses": "熊本市電Ａ系統「通町筋駅」から徒歩約1分"
+  },
+  {
+    "id": 248,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア大分県大分市中央町1-1-20 ニューガイア大分駅前ビルディング4F",
+    "regionName": "九州・沖縄",
+    "prefectureName": "大分県",
+    "town": "大分市",
+    "address": "大分県大分市中央町1-1-20 ニューガイア大分駅前ビルディング4F",
+    "accses": "JR日豊本線「大分駅」府内中央口から徒歩約4分"
+  },
+  {
+    "id": 249,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア宮崎県宮崎市橘通西3-9-1 カメリアセキモトビル1F",
+    "regionName": "九州・沖縄",
+    "prefectureName": "宮崎県",
+    "town": "宮崎市",
+    "address": "宮崎県宮崎市橘通西3-9-1 カメリアセキモトビル1F",
+    "accses": "JR日豊本線「宮崎駅」西口から徒歩約10分"
+  },
+  {
+    "id": 250,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア鹿児島県鹿児島市東千石町11-14 オカダミシンビル2F",
+    "regionName": "九州・沖縄",
+    "prefectureName": "鹿児島県",
+    "town": "鹿児島市",
+    "address": "鹿児島県鹿児島市東千石町11-14 オカダミシンビル2F",
+    "accses": "鹿児島市電１系統「天文館通駅」から徒歩約1分"
+  },
+  {
+    "id": 251,
+    "service": "メンズクリア",
+    "clinicName": "メンズクリア沖縄県那覇市おもろまち4-8-20 フクエイビル1F",
+    "regionName": "九州・沖縄",
+    "prefectureName": "沖縄県",
+    "town": "那覇市",
+    "address": "沖縄県那覇市おもろまち4-8-20 フクエイビル1F",
+    "accses": "沖縄都市モノレール線「おもろまち駅」から徒歩約7分"
   }
 ]
