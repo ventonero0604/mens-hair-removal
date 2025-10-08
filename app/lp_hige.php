@@ -105,14 +105,18 @@
           $rankings = [$compare1, $compare2, $compare3];
           $rankImages = ['./img/img-no1.png', './img/img-no2.png', './img/img-no3.png'];
           $rankNumbers = [1, 2, 3];
+          // ヒゲ脱毛用のURLマッピング
+          $higeUrls = ['linkUrlHige01', 'linkUrlHige02', 'linkUrlHige03'];
 
           foreach ($rankings as $index => $ranking):
+            // 現在のランキング位置に応じたヒゲ脱毛用URLを設定
+            $currentHigeUrl = $ranking[$higeUrls[$index]] ?? '#';
           ?>
             <li class="item">
               <img class="rank" src="<?php echo $rankImages[$index]; ?>" alt="<?php echo $rankNumbers[$index]; ?>">
               <div class="body">
                 <div class="left">
-                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="logo">
+                  <a href="<?php echo htmlspecialchars($currentHigeUrl); ?>" class="logo">
                     <img src="./img/logo/<?php echo $ranking['imageLogo'] ?: 'regina.png'; ?>" alt="<?php echo htmlspecialchars($ranking['service'] ?? ''); ?>">
                   </a>
                   <div class="rate">
@@ -122,7 +126,7 @@
                       <?php echo htmlspecialchars($ranking['rate'] ?? '4.5'); ?>
                     </p>
                   </div>
-                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="name">
+                  <a href="<?php echo htmlspecialchars($currentHigeUrl); ?>" class="name">
                     <?php echo htmlspecialchars($ranking['service'] ?? ''); ?>
                   </a>
                 </div>
@@ -175,7 +179,7 @@
               <div class="footer">
                 <div class="ButtonUnit">
                   <p class="tooltip"><em>最安値</em>のネット予約</p>
-                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="Button -primary -medium">公式サイトはコチラ</a>
+                  <a href="<?php echo htmlspecialchars($currentHigeUrl); ?>" class="Button -primary -medium">公式サイトはコチラ</a>
                 </div>
                 <div class="ButtonUnit">
                   <p class="attention">店舗一覧/コース…等</p>
@@ -190,6 +194,8 @@
       <div class="content -table">
         <?php
         $compareRankings = [$compare1, $compare2, $compare3];
+        // ヒゲ脱毛用のURLマッピング（テーブル用）
+        $tableHigeUrls = ['linkUrlHige01', 'linkUrlHige02', 'linkUrlHige03'];
         ?>
         <table class="table table-sticky">
           <tbody>
@@ -197,10 +203,13 @@
               <th>
                 <span class="text-sm">クリニック名</span>
               </th>
-              <?php foreach ($compareRankings as $ranking): ?>
+              <?php foreach ($compareRankings as $tableIndex => $ranking):
+                // テーブル用のヒゲ脱毛URLを設定
+                $tableHigeUrl = $ranking[$tableHigeUrls[$tableIndex]] ?? '#';
+              ?>
                 <td>
                   <div class="item">
-                    <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="logo">
+                    <a href="<?php echo htmlspecialchars($tableHigeUrl); ?>" class="logo">
                       <img src="./img/logo/<?php echo htmlspecialchars($ranking['imageLogo'] ?? 'regina.png'); ?>" alt="<?php echo htmlspecialchars($ranking['service'] ?? ''); ?>">
                     </a>
                     <div class="rate">
@@ -210,7 +219,7 @@
                         <?php echo htmlspecialchars($ranking['rate'] ?? '4.5'); ?>
                       </p>
                     </div>
-                    <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="name">
+                    <a href="<?php echo htmlspecialchars($tableHigeUrl); ?>" class="name">
                       <?php echo htmlspecialchars($ranking['service'] ?? ''); ?>
                     </a>
                   </div>
@@ -322,9 +331,12 @@
               <th>
                 公式サイト
               </th>
-              <?php foreach ($compareRankings as $ranking): ?>
+              <?php foreach ($compareRankings as $tableIndex2 => $ranking):
+                // 公式サイトボタン用のヒゲ脱毛URLを設定
+                $tableHigeUrl2 = $ranking[$tableHigeUrls[$tableIndex2]] ?? '#';
+              ?>
                 <td>
-                  <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="Button -primary -small leading-tight">公式<br>サイト</a>
+                  <a href="<?php echo htmlspecialchars($tableHigeUrl2); ?>" class="Button -primary -small leading-tight">公式<br>サイト</a>
                 </td>
               <?php endforeach; ?>
             </tr>
@@ -414,14 +426,18 @@
         $rankings = [$compare1, $compare2, $compare3];
         $rankImages = ['./img/img-ranking-badge-1.png', './img/img-ranking-badge-2.png', './img/img-ranking-badge-3.png'];
         $rankNumbers = [1, 2, 3];
+        // ランキングセクション用のヒゲ脱毛URL
+        $rankingHigeUrls = ['linkUrlHige01', 'linkUrlHige02', 'linkUrlHige03'];
 
         foreach ($rankings as $index => $ranking):
+          // ランキング用のヒゲ脱毛URLを設定
+          $rankingHigeUrl = $ranking[$rankingHigeUrls[$index]] ?? '#';
         ?>
           <aside class="Rank">
             <div class="Rank_header" id="<?php echo $ranking['strAnchor']; ?>">
               <h3 class="Rank_header_title">
                 <img src="<?php echo $rankImages[$index]; ?>" alt="<?php echo $rankNumbers[$index]; ?>">
-                <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>">
+                <a href="<?php echo htmlspecialchars($rankingHigeUrl); ?>">
                   <?php echo htmlspecialchars($ranking['clinicName'] ?? ''); ?>
                 </a>
               </h3>
@@ -444,7 +460,7 @@
             </div>
             <div class="ButtonUnit -full">
               <p class="tooltip -inside"><em>最安値</em>のネット予約</p>
-              <a href="<?php echo htmlspecialchars($ranking['linkUrlLp'] ?? '#'); ?>" class="Button -primary -large">公式サイトはコチラ</a>
+              <a href="<?php echo htmlspecialchars($rankingHigeUrl); ?>" class="Button -primary -large">公式サイトはコチラ</a>
             </div>
             <ul class="Rank_info">
               <li>
@@ -749,7 +765,11 @@
       <ul class="Undecided_list">
         <?php
         $undecidedData = [$compare1, $compare2];
+        // Undecided用のヒゲ脱毛URL（1位と2位のみ）
+        $undecidedHigeUrls = ['linkUrlHige01', 'linkUrlHige02'];
         foreach ($undecidedData as $index => $clinic):
+          // Undecided用のヒゲ脱毛URLを設定
+          $undecidedHigeUrl = $clinic[$undecidedHigeUrls[$index]] ?? '#';
         ?>
           <li class="Card">
             <div class="Card_header">
@@ -758,7 +778,7 @@
                   <img src="./img/ranking/<?php echo htmlspecialchars($clinic['imageBanner']); ?>" alt="">
                 </figure>
               <?php endif; ?>
-              <a href="<?php echo htmlspecialchars($clinic['linkUrlLp'] ?? '#'); ?>" class="Card_header_link">
+              <a href="<?php echo htmlspecialchars($undecidedHigeUrl); ?>" class="Card_header_link">
                 <?php echo htmlspecialchars($clinic['service'] ?? ''); ?>
               </a>
             </div>
@@ -786,7 +806,7 @@
               <p class="Card_info -small">
                 <?php echo htmlspecialchars($clinic['pickupCopy'] ?? ''); ?>
               </p>
-              <a href="<?php echo htmlspecialchars($clinic['linkUrlLp'] ?? '#'); ?>" class="Button -primary -small">
+              <a href="<?php echo htmlspecialchars($undecidedHigeUrl); ?>" class="Button -primary -small">
                 公式サイトはコチラ
               </a>
             </div>
@@ -807,7 +827,7 @@
                 <img src="./img/ranking/<?php echo htmlspecialchars($compare1['imageBanner']); ?>" alt="<?php echo htmlspecialchars($compare1['service'] ?? ''); ?>">
               </figure>
             <?php endif; ?>
-            <a href="<?php echo htmlspecialchars($compare1['linkUrlLp'] ?? '#'); ?>" class="Card_header_link">
+            <a href="<?php echo htmlspecialchars($compare1['linkUrlHige01'] ?? '#'); ?>" class="Card_header_link">
               <?php echo htmlspecialchars($compare1['service'] ?? ''); ?>
             </a>
           </div>
@@ -835,7 +855,7 @@
             <p class="Card_info">
               <?php echo htmlspecialchars($compare1['pickupCopy'] ?? ''); ?>
             </p>
-            <a href="<?php echo htmlspecialchars($compare1['linkUrlLp'] ?? '#'); ?>" class="Button -primary -medium">
+            <a href="<?php echo htmlspecialchars($compare1['linkUrlHige01'] ?? '#'); ?>" class="Button -primary -medium">
               公式サイトはコチラ
             </a>
           </div>
